@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+    .wrap { width:400px; margin:30px auto; } 
+    #id, #pw { display:block; width:320px; margin-top:8px; margin-bottom:8px;
+    height: 42px; padding-left: 15px; padding-right: 15px; }
+    input[type=submit], input[type=reset] { display:block; width:150px; margin:8px; 
+    height: 42px; line-height: 42px; float:left; }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <form action="" method="post">
+            <fieldset>
+                <legend>로그인</legend>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><input type="text" name="id" id="id" placeholder="아이디 입력"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" name="pw" id="pw" placeholder="비밀번호 입력"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="로그인"> 
+                            <input type="reset" value="취소"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
