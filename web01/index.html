@@ -18,11 +18,12 @@
     .hd { width: 100%; height:122px; position:absolute; top: 0; 
     left: 0; z-index:91; }
     .hd_wrap { width: 1200px; margin: 0 auto; }
-    .logo { display:block; width: 120px; height: auto; float:left; margin:30px 0px; }
-    .logo img { display:block; width: 100%; height: auto;  }
+    .logo { display:block; width: 140px; height: auto; float:left;
+    margin:30px 40px; }
+    .logo img { display:block; width: 100%; height: auto; }
     .tnb { float:right; margin: 30px 0px; }
-    .tnb a { padding: 1.5em; font-size:12px; color:#333; }
-    .tnb a:hover { color:deepskyblue; font-weight:700; text-decoration: underline; text-decoration-style:dotted; }
+    .tnb a { padding: 1.5em; font-size:14px; color:#333; }
+    .tnb a:hover { color:rgb(221, 78, 34); font-weight:700; text-decoration: underline; text-decoration-style:dotted; }
     .gnb { clear:both; width: 100%; }
     /* clear-fix 처리 */
     .gnb:after { content:""; display:block; clear:both; } 
@@ -43,39 +44,72 @@
     .vs { clear:both; width: 100%; height:100vh; overflow:hidden; }
     .vdo { display: block; width:100%; height:auto; }
     .vdo2 { display: block; width:100%; height:auto; }
+    
     .page { clear:both; width: 100%; }
     .page_wrap { width: 1200px; margin: 0 auto; }
     #page1, #page3 { background-color:#ececec; }
     .page_tit { text-align: center; font-size:32px; padding-top:1.2em; padding-bottom: 0.8em; }
     .lst { clear:both; width: 1200px; }
     .lst:after { content:""; display:block; clear: both;}
-    .lst li {margin-bottom: 40px;}
-    .lst li.left { float:left; width: 800px; height: 500px;}
-    .lst li.right { float:right; width: 350px; height: 500px;}
-    .ico_lst {clear: both; width: 100%; overflow: hidden;}
-    .ico_lst li a { display: block; background-repeat: no-repeat; background-position: 0px center; background-size: auto 80%; padding-left: 55px; }
-
+    .lst li { margin-bottom: 40px; }
+    .lst li.left { float:left; width: 816px; height: 459px; }
+    .lst li.right { float:right; width:350px; height: 459px; }
+    .ico_lst { clear:both; width: 100%; overflow:hidden; }
+    .ico_lst li a { display:block; background-repeat: no-repeat; 
+    background-position:0px center; background-size:auto 80%; 
+    padding-left: 55px; }
+    .ico_lst li a.icon1 { background-image: url("./img/icon/ico_service_01.svg"); }
+    .ico_lst li a.icon2 { background-image: url("./img/icon/ico_service_02.svg");}
+    .ico_lst li a.icon3 { background-image: url("./img/icon/ico_service_03.svg"); }
+    .cate_tit { color:#222; font-size:20px; padding-bottom: 0.5em; }
+    .cate_com { color:#222; font-size:14px; overflow:hidden;
+    white-space:nowrap; text-overflow:ellipsis; }
     .cate_tit{color: #222; font-style: 20px; padding-bottom: 0.5em;}
     .cate_com{color: #222; font-style: 14px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 
-    #page2 {background-color: #ccc; }
-    .pic_lst {clear: both; width: 100%;}
-    .pic_lst::after {content:""; display: block; clear: both;}
-    .pic_lst li {float: left;}
-    .pic_lst li a{display: block; width: 360px; margin-right: 100; overflow: hidden;}
-    .pic_lst li a img{display: block; width: 300px; margin-left: 60px; text-decoration: 0.8s;}
-    /*.pic_lst li a:hover img{margin-left: 0;}*/
+    #page2 { background-color: rgba(230, 248, 255, 0.5); }
+    .pic_lst { clear:both; width: 100%; padding-bottom: 80px; }
+    .pic_lst:after { content:""; display:block; clear:both; }
+    .pic_lst li { float:left; position:relative; margin-bottom: 40px; }
+    .pic_lst li a { display:block; width: 360px; margin-right: 40px;
+    overflow: hidden; height: 300px; }
+    .pic_lst li a img { display:block; width:600px; margin-left: -120px; transition-duration:0.8s; }
+    .pic_lst li a:hover img { margin-left: 0; }
+    .pic_lst li a .hv_box { width: 360px; height: 300px; color:#fff; opacity:0; position:absolute; top:0; left: 0; z-index:10; transition-duration:0.8s; background-color:transparent; }
+    .pic_lst li a:hover .hv_box { opacity:1; }
+    .pic_tit { position:absolute; top:30px; left: 30px; 
+    text-shadow:0px 0px 3px rgb(209, 15, 15); }
+    .pic_com { position:absolute; right:30px; bottom:30px; 
+        text-shadow:0px 0px 3px rgb(31, 85, 10); }
 
-    #page3 {background-repeat: no-repeat; background-size: cover; height: 100vh; background-image: url(); background-position: center center; overflow: hidden;}
-    #page3 .page_wrap {width: 100%;}
-    .circle_lst { clear: both; width: 5500px;}
-    .circle_lst li{width: 240px; height: 240px; border-radius: 120px; overflow: hidden; background-color: #fff; position: relative; float: left; margin: 28px;}
-    .circle_lst li a {display: block; width: 100%; height: 100%;}
-    .circle_lst li a img{display: block; width: 200px; height: auto; position: absolute; top: 50%; left: 20px; z-index: 11; margin-top: -28px;} 
-    .ft {clear: both; width: 100%; height: 200px; background-color: rgb(30, 88, 136);}
-    .ft_warp{clear: both; width: 1200px; margin: 0 auto; padding-top: 50px;}
-    .ft_logo {float: left; width: 150px;}
-    .mid_box{float: left; width: 760px; padding-left: 100px;}
+
+    #page3 { background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position:center center; height: 100vh; background-image:url("./img/bg_partners.jpg"); overflow:hidden; }
+    #page3 .page_wrap { width: 100%; }
+    .circle_lst { clear:both; width: 4455px; }
+    .circle_lst li { width: 200px; height: 200px; position:relative; border-radius:120px; overflow:hidden; background-color: #fff;
+    float:left; margin:28px;  }
+    .circle_lst.lst2 li { float:right; }
+    .circle_lst li a { display:block; width: 100%; height: 100%; }
+    .circle_lst li a img { display:block; width:170px; height:100px; 
+    position:absolute; top:40%; left: 20px; z-index:11; margin-top: -28px; }
+
+    .ft { clear:both; width: 100%; height: 200px; background-color: rgb(124, 122, 117); padding-bottom: 50px; }
+    .ft_wrap { clear:both; width: 1200px; margin: 0 auto; padding-top: 50px;  }
+    .ft_wrap:after { content:""; display:block; clear:both; }
+    .ft_logo { float:left; width: 150px; }
+    .mid_box { float:left; width: 760px; padding-left: 100px; }
+    .fnb { clear:both; }
+    .fnb a { color:#fff; font-size:14px; padding: 24px; }
+    .fnb a.dpc { color:deeppink; }
+    .addr { padding-left: 24px; color:#ececec; padding-top: 20px; 
+    font-size:12px; line-height: 2; }
+    .copyright { padding-left: 24px; color:#fff; padding-top: 10px; }
+    .sel_box { float:right; border-bottom:1px solid #fff;
+    height: 44px; line-height: 44px; text-align:center; width: 140px; }
+    #sel { border:none; outline: none; background-color: transparent; color:#fff; }
+    #sel option { color:#333; }
     </style>
 <script>
     $(document).ready(function(){
@@ -88,8 +122,10 @@
                 $(".hd").css("position","absolute");
             }
         });
-        $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"))
-        $lst1_obj = $(".circcle_lst li").clone(); 
+        $
+        $("<ul class='circle_lst lst2'></ul>").insertAfter($(".circle_lst"));
+        $lst1_obj = $(".circle_lst li").clone();
+        $(".circle_lst.lst2").append($lst1_obj);
     });    
     </script>
 </head>
@@ -97,7 +133,7 @@
    <div class="warp">
     <header class ="hd">
         <div class ="hd_warp">
-            <a href="" class="logo"><img src="/web01/img/common.jfif" alt="로고"></a>
+            <a href="" class="logo"><img src="/web01/img/common-removebg-preview.png" alt="로고"></a>
             <nav class = "tnb">
                 <a href="login.html">로그인</a>
                 <a href="join.html">회원가입</a>
@@ -151,7 +187,7 @@
 </header> 
 <div class="content">
     <figure class="vs">
-        <video width="1800" height="900" src="/web01/video/로드자전거 XRS X 조보아 by. 삼천리자전거.mp4" autoplay loop  muted></video>  
+        <video width="1860" height="1570" src="/web01/video/로드자전거 XRS X 조보아 by. 삼천리자전거.mp4" autoplay loop  muted></video>  
     </figure>
     <section class="page" id="page1">
         <div class="page_warp">
@@ -304,23 +340,23 @@
         <div class="page_wrap">
             <h2 class="page_tit">ALL<br>RIDING</h2>
             <ul class="circle_lst">
-                <li><a href=""><img src="/web01/img/1.jpg" alt="1"></a></li>
-                <li><a href=""><img src="/web01/img/2.jpg" alt="2"></a></li>
-                <li><a href=""><img src="/web01/img/3.jpg" alt="3"></a></li>
-                <li><a href=""><img src="/web01/img/4.jpg" alt="4"></a></li>
-                <li><a href=""><img src="/web01/img/5.jpg" alt="5"></a></li>
-                <li><a href=""><img src="/web01/img/6.jpg" alt="6"></a></li>
-                <li><a href=""><img src="/web01/img/7.jpg" alt="7"></a></li>
-                <li><a href=""><img src="/web01/img/8.jpg" alt="8"></a></li>
-                <li><a href=""><img src="/web01/img/9.jpg" alt="9"></a></li>
-                <li><a href=""><img src="/web01/img/10.jpg" alt="10"></a></li>
-                <li><a href=""><img src="/web01/img/11.jpg" alt="11"></a></li>
-                <li><a href=""><img src="/web01/img/12.jpg" alt="12"></a></li>
-                <li><a href=""><img src="/web01/img/13.jpg" alt="13"></a></li>
-                <li><a href=""><img src="/web01/img/14.jpg" alt="14"></a></li>
-                <li><a href=""><img src="/web01/img/15.jpg" alt="15"></a></li>
-                <li><a href=""><img src="/web01/img/16.jpg" alt="16"></a></li>
-                <li><a href=""><img src="/web01/img/17.jpg" alt="17"></a></li>
+                <li><a href=""><img src="/web01/img/logo/1.jpg" alt="1"></a></li>
+                <li><a href=""><img src="/web01/img/logo/2.png" alt="2"></a></li>
+                <li><a href=""><img src="/web01/img/logo/3.png" alt="3"></a></li>
+                <li><a href=""><img src="/web01/img/logo/4.jfif" alt="4"></a></li>
+                <li><a href=""><img src="/web01/img/logo/5.jpg" alt="5"></a></li>
+                <li><a href=""><img src="/web01/img/logo/6.png" alt="6"></a></li>
+                <li><a href=""><img src="/web01/img/logo/7.png" alt="7"></a></li>
+                <li><a href=""><img src="/web01/img/logo/8.webp" alt="8"></a></li>
+                <li><a href=""><img src="/web01/img/logo/9.jfif" alt="9"></a></li>
+                <li><a href=""><img src="/web01/img/logo/10.png" alt="10"></a></li>
+                <li><a href=""><img src="/web01/img/logo/11.png" alt="11"></a></li>
+                <li><a href=""><img src="/web01/img/logo/12.png" alt="12"></a></li>
+                <li><a href=""><img src="/web01/img/logo/13.png" alt="13"></a></li>
+                <li><a href=""><img src="/web01/img/logo/14.png" alt="14"></a></li>
+                <li><a href=""><img src="/web01/img/logo/15.png" alt="15"></a></li>
+                <li><a href=""><img src="/web01/img/logo/16.jpg" alt="16"></a></li>
+                <li><a href=""><img src="/web01/img/logo/7.png" alt="17"></a></li>
        
             </ul>
         </div>
@@ -328,7 +364,7 @@
 </div>
 <footer class="ft">
     <div class="ft_wrap">
-        <div class="ft_logo"><img src="/web01/img/common.jfif" alt="로고"></div>
+        <div class="ft_logo"><img src="/web01/img/common-removebg-preview.png" alt="로고"></div>
         <div class="mid_box">
             <nav class="fnb">
                 <a href="">개인정보취급방침</a>
