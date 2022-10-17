@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>삼천리자전거</title>
+    <!--메타포-->
+    <meta name="description" content="자전거는 대한민국 구석구석을 잇는 매개체로 자리 잡았습니다. 전국 1,200여 삼천리자전거 대리점은
+    대한민국의 모든 길에 자전거 타는 기쁨이 흐를 수 있도록, 여러분의 가장 가까운 곳에서 함께 하고 있습니다.">
+    <meta name="keywords" content="천리자전거, 삼천리, 자전거, 아팔란치아, 삼천리자전거대리점, 전기자전거, 산악, 로드, 하이브리드, 시티, 폴딩, 주니어">
+    <!--오픈그래프-->
+    <!--파비콘-->
+    <link rel="icon" href="/favicons/favicons/bicycle-solid.png">
+    <link rel="stylesheet" href="/css/reset.css">
+    <!--각종 플러그인과 설정 파일-->
+    <style>
+    /* header.css */
+    .hd { position:fixed; }
+
+    /* content */
+    .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
+    .vs img { display:block; width: 100%; height:auto; }
+    .bread { clear:both; width: 100%; line-height: 60px; border-bottom:3px solid #eee; }
+    .bread_fr { width: 1200px; margin: 0 auto; }
+    .page { clear:both; width: 100%; min-height:100vh;}
+    .page:after { content:""; display:block; clear:both; }
+    .page_wrap { width: 1200px; margin: 0 auto; }
+    .content { display:none; }
+    .content:target { display:block; }
+
+    .page_title { padding-top: 1em; }
+    .home { color:#333; }
+    .to_top { position:fixed; bottom:80px; right:80px; z-index:999; 
+    background-color:rgba(11,11,11,0.75); color:#fff; display:block; width: 60px;
+    height: 60px; line-height: 60px; text-align: center; font-size:20px; border-radius:32px; visibility:hidden; transition-duration:0.8s; }
+    .to_top:hover { background-color: deepskyblue; }
+    .to_top.on { visibility: visible; }
+    </style>
+    <link rel="stylesheet" href="footer.css">
+    <script>
+    $(document).ready(function(){
+        $(".to_top").attr("href", location.href);
+        $(window).scroll(function(){
+            var ht = $(window).height();
+            var tp = $(this).scrollTop();
+            if(tp>=300){
+                $(".to_top").addClass("on");
+                $(".to_top").attr("href", location.href);
+            } else {
+                $(".to_top").removeClass("on");
+                $(".to_top").attr("href", location.href);
+            }
+        });
+    });    
+    </script>
+</head>
+<body>
+<div class="wrap">
+    <header class="hd">
+        <div class="hd_wrap">
+            <a href="index.html" class="logo"><img src="/img/logo_black.svg" alt="로고"></a>
+            <nav class="tnb">
+                <a href="login.html">로그인</a>
+                <a href="join.html">회원가입</a>
+                <a href="sitemap.html">사이트맵</a>
+            </nav>
+            <nav class="gnb">
+                <ul>
+                    <li class="item1">
+                        <a href="" class="dp1">자전거</a>
+                        <ul class="sub">
+                            <li><a href="company.html#page1">스타일</a></li>
+                            <li><a href="company.html#page2">브랜드</a></li>
+                            <li><a href="company.html#page3">실용성</a></li>
+                        </ul>
+                    </li>
+                    <li class="item2">
+                        <a href="" class="dp1">용품</a>
+                        <ul class="sub">
+                            <li><a href="product.html#page1">자전거 장착</a></li>
+                            <li><a href="product.html#page2">라이더 착용</a></li>
+                            <li><a href="product.html#page3">유지관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="item3">
+                        <a href="" class="dp1">고객지원</a>
+                        <ul class="sub">
+                            <li><a href="service.html#page1">자주 묻는 질문</a></li>
+                            <li><a href="service.html#page2">제품설명서</a></li>
+                            <li><a href="service.html#page3">지난제품보기</a></li>
+                        </ul>
+                    </li>
+                    <li class="item4">
+                        <a href="" class="dp1">회사정보</a>
+                        <ul class="sub">
+                            <li><a href="custom.html#page1">All.ways</a></li>
+                            <li><a href="custom.html#page2">오시는길</a></li>
+                            <li><a href="custom.html#page3">윤리강령</a></li>
+                        </ul>
+                    </li>
+                    <li class="item5">
+                        <a href="" class="dp1">뉴스</a>
+                        <ul class="sub">
+                            <li><a href="install.html#page1">이벤트</a></li>
+                            <li><a href="install.html#page2">자전거안전</a></li>
+                            <li><a href="install.html#page3">제품소개</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content" id="page1">
+        <figure class="vs">
+            <img src="./img/표지.jpg" alt="비주얼">
+        </figure>
+        <div class="bread">
+            <div class="bread_fr">
+                <a href="index.html" class="home">HOME</a> &gt;
+                <select name="sel1" id="sel1" class="sel">
+                    <option>용품</option>
+                    <option value="company.html#page1">자전거</option>
+                    <option value="service.html#page1">고객지원</option>
+                    <option value="custom.html#page1">회사정보</option>
+                    <option value="install.html#page1">뉴스</option>
+                </select> &gt; 
+                <select name="sel2" id="sel2" class="sel">
+                    <option selected>자전거 장착</option>
+                    <option value="product.html#page2">라이더착용</option>
+                    <option value="product.html#page3">유지관리</option>
+                </select>
+            </div>
+        </div>
+        <section class="page">
+            <div class="page_wrap">
+                <h2 class="page_title">자전거장착</h2>
+
+            </div>
+        </section>
+    </div>
+    <div class="content" id="page2">
+        <figure class="vs">
+            <img src="./img/표지.jpg" alt="비주얼">
+        </figure>
+        <div class="bread">
+            <div class="bread_fr">
+                <a href="index.html" class="home">HOME</a> &gt;
+                <select name="sel3" id="sel3" class="sel">
+                    <option>용품</option>
+                    <option value="company.html#page1">자전거</option>
+                    <option value="service.html#page1">고객지원</option>
+                    <option value="custom.html#page1">회사정보</option>
+                    <option value="install.html#page1">뉴스</option>
+                </select> &gt; 
+                <select name="sel4" id="sel4" class="sel">
+                    <option selected>라이더착용</option>
+                    <option value="product.html#page1">자전거 장착</option>
+                    <option value="product.html#page3">유지관리</option>
+                </select>
+            </div>
+        </div>
+        <section class="page">
+            <div class="page_wrap">
+                <h2 class="page_title">라이더착용</h2>
+            </div>
+        </section>
+    </div>
+    <div class="content" id="page3">
+        <figure class="vs">
+            <img src="./img/표지.jpg" alt="비주얼">
+        </figure>
+        <div class="bread">
+            <div class="bread_fr">
+                <a href="index.html" class="home">HOME</a> &gt;
+                <select name="sel5" id="sel5" class="sel">
+                    <option>용품</option>
+                    <option value="company.html#page1">자전거</option>
+                    <option value="service.html#page1">고객지원</option>
+                    <option value="custom.html#page1">회사정보</option>
+                    <option value="install.html#page1">뉴스</option>
+                </select> &gt; 
+                <select name="sel6" id="sel6" class="sel">
+                    <option selected>유지관리</option>
+                    <option value="product.html#page1">자전거 장착</option>
+                    <option value="product.html#page2">라이더착용</option>
+                </select>
+            </div>
+        </div>
+        <section class="page">
+            <div class="page_wrap">
+                <h2 class="page_title">유지관리</h2>
+
+            </div>
+        </section>
+    </div>
+    <script>
+    var sel = document.getElementsByClassName("sel");
+    for(var i=0;i<sel.length;i++){
+        sel[i].addEventListener("change", function(){
+            location.href = this.value;
+        });
+    }
+    </script>
+   <footer class="ft">
+    <div class="ft_wrap">
+        <div class="ft_logo"><img src="/img/common-removebg-preview.png" alt="로고"></div>
+        <div class="mid_box">
+            <nav class="fnb">
+                <a href="">개인정보취급방침</a>
+                <a href="">내부정보관리규정</a>
+                <a href="">이메일무단수집거부</a>
+            </nav>
+            <p class="addr">
+                본사 : 서울특별시 강남구 테헤란로 445(삼성동 144-27, 본솔빌딩 7층) | 의왕공장(A/S) : 경기도 의왕시 고래들길 57 | A/S : 02-2671-3000<br>
+            </p>
+            <p class="copyright">Copyright © 2016 - 2017 Samchuly Bicycle. All rights reserved</p>
+        </div>
+        <div class="sel_box">
+            <select name="sel" id="sel" class="sel" onchange="sel_link(this)">
+                <option value="">패밀리 사이트</option>
+                <option value="https://www.cellobike.co.kr/main/main.html">첼로자전거</option>
+                <option value="https://www.glnco.co.kr/main/main.html">GL&Co</option>
+            </select>
+        </div>
+        <script>
+        function sel_link(sel){
+            location.href = sel.value;
+        }
+        </script>
+    </div>
+</footer>
+</div>
+</body>
+</html>
