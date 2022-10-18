@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+
+ 
+
+#map_canvas { margin-bottom:40px; }
+#contact p { text-align:left;	padding-left:30px; line-height:30px; margin-top:25px;
+	padding-right:25px; }
+
+ 
+
+</style>
+<!--여기부터 -->
+
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> 
+
+<script> 
+
+//좌표 값을 바꿔서 입력 36.3491563,127.3776857
+
+function initialize() {
+
+  var myLatlng = new google.maps.LatLng(36.3491563,127.3776857);
+
+  var mapOptions = {
+
+    zoom: 17,
+
+    center: myLatlng
+
+  }
+
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+
+ 
+
+  var marker = new google.maps.Marker({
+
+      position: myLatlng,
+
+      map: map,
+
+      title: '해양수산대전지사'	  //레이블을 바꿔서 입력
+
+  });
+
+}
+
+ 
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+ </script>
+
+<link href="http://apis.map.daum.net/favicon.ico" rel="shortcut icon"> 
+
+<meta name="viewport" content="width=720">
+
+<meta property="og:type" content="website">
+
+<meta property="og:title" content="Daum 지도 API">
+
+<link rel="stylesheet" type="text/css" href="http://s1.daumcdn.net/svc/attach/U03/cssjs/mapapidoc/1421136453605/service.min.css">
+
+<style>
+
+body { background:white; }
+
+</style>
+
+<script type="text/javascript" src="http://dmaps.daum.net/map_js_init/v3.js"></script>
+
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U03/cssjs/jquery/jquery-1.11.0.js"></script>
+
+<script type="text/javascript" src="http://s1.daumcdn.net/svc/original/U0301/cssjs/JSON-js/fc535e9cc8/json2.min.js"></script>
+
+</head>
+
+<body onload="initialize()"><!-- body 태그에 onload이벤트 등록 -->
+<!--[if gte IE 10]><!-->
+
+    <body class="web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+
+        <!--<![endif]-->
+        
+        <!--[if lte IE 7]>
+        
+        <body class="very_low web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+        
+        <![endif]-->
+        
+        <!--[if lte IE 9]>
+        
+        <body class="low web guide" data-page_section="web" data-page_type="guide" data-title="Daum 지도 Web API 가이드">
+        
+        <![endif]-->
+<div id="content">
+
+	<div class="content_wrap">
+
+		<section class="row" id="contact">
+
+			<h2 class="sub_title1">CONTACT</h2>
+
+			<article class="full_col h600" style="margin-bottom:50px;">
+
+			<div id="map_canvas" style="width:1011px; height:600px"></div>
+
+			</article>
+
+		</section>
+
+	</div>
+
+</body>
+
+</html>

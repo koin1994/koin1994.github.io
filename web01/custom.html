@@ -121,117 +121,120 @@
             <div class="bread_fr">
                 <a href="index.html" class="home">HOME</a> &gt;
                 <select name="sel1" id="sel1" class="sel">
-                    <option>용품</option>
+                    <option>회사정보</option>
                     <option value="company.html#page1">자전거</option>
+                    <option value="product.html#page1">용품</option>
                     <option value="service.html#page1">고객지원</option>
-                    <option value="custom.html#page1">회사정보</option>
                     <option value="install.html#page1">뉴스</option>
                 </select> &gt; 
                 <select name="sel2" id="sel2" class="sel">
-                    <option selected>자전거 장착</option>
-                    <option value="product.html#page2">라이더착용</option>
-                    <option value="product.html#page3">유지관리</option>
+                    <option>All.ways</option>
+                    <option value="custom.html#page2">오시는길</option>
+                    <option value="custom.html#page3">윤리강령</option>
                 </select>
             </div>
         </div>
         <section class="page">
             <div class="page_wrap">
-                <h2 class="page_title">자전거장착</h2>
-
+                <h2 class="page_title">All.ways</h2>
             </div>
         </section>
     </div>
-    <div class="content" id="page2">
-        <figure class="vs">
-            <img src="./img/표지.jpg" alt="비주얼">
-        </figure>
-        <div class="bread">
-            <div class="bread_fr">
-                <a href="index.html" class="home">HOME</a> &gt;
-                <select name="sel3" id="sel3" class="sel">
-                    <option>용품</option>
+</div>
+<div class="content" id="page2">
+    <figure class="vs">
+        <img src="./img/표지.jpg" alt="비주얼">
+    </figure>
+    <div class="bread">
+        <div class="bread_fr">
+            <a href="index.html" class="home">HOME</a> &gt;
+            <select name="sel3" id="sel3" class="sel">
+                <option>회사정보</option>
                     <option value="company.html#page1">자전거</option>
+                    <option value="product.html#page1">용품</option>
                     <option value="service.html#page1">고객지원</option>
-                    <option value="custom.html#page1">회사정보</option>
                     <option value="install.html#page1">뉴스</option>
-                </select> &gt; 
-                <select name="sel4" id="sel4" class="sel">
-                    <option selected>라이더착용</option>
-                    <option value="product.html#page1">자전거 장착</option>
-                    <option value="product.html#page3">유지관리</option>
-                </select>
-            </div>
-        </div>
-        <section class="page">
-            <div class="page_wrap">
-                <h2 class="page_title">라이더착용</h2>
-            </div>
-        </section>
-    </div>
-    <div class="content" id="page3">
-        <figure class="vs">
-            <img src="./img/표지.jpg" alt="비주얼">
-        </figure>
-        <div class="bread">
-            <div class="bread_fr">
-                <a href="index.html" class="home">HOME</a> &gt;
-                <select name="sel5" id="sel5" class="sel">
-                    <option>용품</option>
-                    <option value="company.html#page1">자전거</option>
-                    <option value="service.html#page1">고객지원</option>
-                    <option value="custom.html#page1">회사정보</option>
-                    <option value="install.html#page1">뉴스</option>
-                </select> &gt; 
-                <select name="sel6" id="sel6" class="sel">
-                    <option selected>유지관리</option>
-                    <option value="product.html#page1">자전거 장착</option>
-                    <option value="product.html#page2">라이더착용</option>
-                </select>
-            </div>
-        </div>
-        <section class="page">
-            <div class="page_wrap">
-                <h2 class="page_title">유지관리</h2>
-
-            </div>
-        </section>
-    </div>
-    <script>
-    var sel = document.getElementsByClassName("sel");
-    for(var i=0;i<sel.length;i++){
-        sel[i].addEventListener("change", function(){
-            location.href = this.value;
-        });
-    }
-    </script>
-   <footer class="ft">
-    <div class="ft_wrap">
-        <div class="ft_logo"><img src="/web01/img/common-removebg-preview.png" alt="로고"></div>
-        <div class="mid_box">
-            <nav class="fnb">
-                <a href="">개인정보취급방침</a>
-                <a href="">내부정보관리규정</a>
-                <a href="">이메일무단수집거부</a>
-            </nav>
-            <p class="addr">
-                본사 : 서울특별시 강남구 테헤란로 445(삼성동 144-27, 본솔빌딩 7층) | 의왕공장(A/S) : 경기도 의왕시 고래들길 57 | A/S : 02-2671-3000<br>
-            </p>
-            <p class="copyright">Copyright © 2016 - 2017 Samchuly Bicycle. All rights reserved</p>
-        </div>
-        <div class="sel_box">
-            <select name="sel" id="sel" class="sel" onchange="sel_link(this)">
-                <option value="">패밀리 사이트</option>
-                <option value="https://www.cellobike.co.kr/main/main.html">첼로자전거</option>
-                <option value="https://www.glnco.co.kr/main/main.html">GL&Co</option>
+            </select> &gt; 
+            <select name="sel4" id="sel4" class="sel">
+                <option selected>오시는길</option>
+                <option value="custom.html#page1">ALL.ways</option>
+                <option value="custom.html#page3">윤리강령</option>
+                
             </select>
         </div>
-        <script>
-        function sel_link(sel){
-            location.href = sel.value;
-        }
-        </script>
     </div>
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">오시는길</h2>
+        </div>
+    </section>
+</div>
+<div class="content" id="page3">
+    <figure class="vs">
+        <img src="./img/표지.jpg" alt="비주얼">
+    </figure>
+    <div class="bread">
+        <div class="bread_fr">
+            <a href="index.html" class="home">HOME</a> &gt;
+            <select name="sel5" id="sel5" class="sel">
+                <option>회사정보</option>
+                    <option value="company.html#page1">자전거</option>
+                    <option value="product.html#page1">용품</option>
+                    <option value="service.html#page1">고객지원</option>
+                    <option value="install.html#page1">뉴스</option>
+            </select> &gt; 
+            <select name="sel6" id="sel6" class="sel">
+                <option selected>윤리강령</option>
+                <option value="custom.html#page1">All.ways</option>
+                <option value="custom.html#page2">오시는길</option>
+                
+            </select>
+        </div>
+    </div>
+    <section class="page">
+        <div class="page_wrap">
+            <h2 class="page_title">윤리강령</h2>
+
+        </div>
+    </section>
+</div>
+
+<script>
+var sel = document.getElementsByClassName("sel");
+for(var i=0;i<sel.length;i++){
+    sel[i].addEventListener("change", function(){
+        location.href = this.value;
+    });
+}
+</script>
+<footer class="ft">
+<div class="ft_wrap">
+    <div class="ft_logo"><img src="/web01/img/common-removebg-preview.png" alt="로고"></div>
+    <div class="mid_box">
+        <nav class="fnb">
+            <a href="">개인정보취급방침</a>
+            <a href="">내부정보관리규정</a>
+            <a href="">이메일무단수집거부</a>
+        </nav>
+        <p class="addr">
+            본사 : 서울특별시 강남구 테헤란로 445(삼성동 144-27, 본솔빌딩 7층) | 의왕공장(A/S) : 경기도 의왕시 고래들길 57 | A/S : 02-2671-3000<br>
+        </p>
+        <p class="copyright">Copyright © 2016 - 2017 Samchuly Bicycle. All rights reserved</p>
+    </div>
+    <div class="sel_box">
+        <select name="sel" id="sel" class="sel" onchange="sel_link(this)">
+            <option value="">패밀리 사이트</option>
+            <option value="https://www.cellobike.co.kr/main/main.html">첼로자전거</option>
+            <option value="https://www.glnco.co.kr/main/main.html">GL&Co</option>
+        </select>
+    </div>
+    <script>
+    function sel_link(sel){
+        location.href = sel.value;
+    }
+    </script>
+</div>
 </footer>
 </div>
 </body>
-</html>
+</html>        
