@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="/web01/footer.css">
     <style>
     /* header.css */
-    .hd { position:fixed; }
+    
         
     /* content */
     .vs { clear:both; width: 100%; height:300px; overflow: hidden; }
@@ -30,6 +30,39 @@
     .page_wrap { width: 1200px; margin: 0 auto; }
     .content { display:none; }
     .content:target { display:block; }
+
+    .pic_lst { clear:both; width: 100%; }
+    .pic_lst li { width: 30%; float:left; margin-right: 5%; margin-bottom: 60px;
+    position:relative; }
+    .pic_lst li a { display:block; position:relative; }
+    .pic_lst li a .pic_fr { width: 100%; height:450px; overflow:hidden; background-color:#dcdcdc;  }
+    .pic_lst li a img { display:block; width: 100%; height:auto; }
+    .pic_lst li:nth-child(3n) { margin-right: 0; }
+    .pic_tit { line-height:2; overflow:hidden; text-overflow: ellipsis;
+    white-space:nowrap; color:#222; }
+    .pic_com, .pic_info { line-height:2; overflow:hidden; text-overflow: ellipsis;
+    white-space:nowrap; color:#222;  }
+    .sale_price { font-size:16px; font-weight: bold; color:red; }
+    .origin_price { text-decoration: line-through; }
+    .pic_hd { position:absolute; top:0; left: 0; z-index:10; 
+    width: 100%; height:32px; opacity:0.8; text-shadow:2px 2px 0px #fff, 1px 1px 0px #fff;}
+    .ht_ico { display:block; float:left; width:100px; line-height: 32px; height: 32px; padding-left: 10px; padding-top: 10px; color:#333; }
+    
+
+    .tb_fr { float:left; }
+    .tb { display:table; border-collapse: collapse; }
+    .tb tr { display:table-row; }
+    .tb td, .tb th { display:table-cell; text-align: center; 
+    border-bottom:1px solid #333; line-height: 30px; }
+    .tb td a { display:block; color:#333; overflow:hidden; text-overflow: ellipsis; 
+    white-space:nowrap; padding-right: 10px; width:330px; }
+    .tb .nt_num { width:50px; }
+    .tb .nt_tit { width:200px; }
+    .tb .nt_auth { width: 700px; }
+    .tb .nt_afte { width: 600px; }
+    .tb td.nt_tit { width:340px; text-align: center;}
+    .tb tr:first-child th { border-top:3px solid #333; }
+    .tb tr:last-child td { border-bottom:3px solid #333; }
 
     .page_title { padding-top: 1em; }
     .home { color:#333; }
@@ -138,7 +171,82 @@
         <section class="page">
             <div class="page_wrap">
                 <h2 class="page_title">자주묻는질문</h2>
-
+                
+                <div class="tb_fr">
+                    <table class="tb">
+                        <thead>
+                            <tr>
+                                <th class="nt_num">연번</th>
+                                <th class="nt_tit">항목</th>
+                                <th class="nt_auth">내용</th>
+                                <th class="nt_date">작성자</th>
+                            </tr>                            
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="nt_num">1</td>
+                                <td class="nt_tit"><a href="">제품관련</td>
+                                <td class="nt_auth">자전거 종류가 많아서 어떤 자전거를 선택해야 할지 모르겠습니다.</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">2</td>
+                                <td class="nt_tit"><a href="">제품관련</a></td>
+                                <td class="nt_auth">자전거에도 사이즈가 있던데, 어떤 사이즈를 선택해야 할까요?</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">3</td>
+                                <td class="nt_tit"><a href="">제품관련</a></td>
+                                <td class="nt_auth">전기자전거 구동방식에 '파스(PAS)'와 '스로틀(Throttle)'이 있던데 차이가 궁금합니다.</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">4</td>
+                                <td class="nt_tit"><a href="">구매관련</a></td>
+                                <td class="nt_auth">왜? 삼천리자전거를 구입해야 하나요?</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">5</td>
+                                <td class="nt_tit"><a href="">구매관련</a></td>
+                                <td class="nt_auth">자전거를 구입하려고 하는데, 어느 매장에서 구입해야 좋을지 모르겠습니다.</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">6</td>
+                                <td class="nt_tit"><a href="">구매관련</a></td>
+                                <td class="nt_auth">헬멧은 반드시 착용해야 하는 건가요?</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">7</td>
+                                <td class="nt_tit"><a href="">AS관련</a></td>
+                                <td class="nt_auth">제품의 교환 및 환불 규정은 어떻게 되나요?</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">8</td>
+                                <td class="nt_tit"><a href="">AS관련</a></td>
+                                <td class="nt_auth">품질보증기간이 궁금합니다.</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">9</td>
+                                <td class="nt_tit"><a href="">AS관련</a></td>
+                                <td class="nt_auth">A/S 신청 방법이 궁금합니다</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                            <tr>
+                                <td class="nt_num">10</td>
+                                <td class="nt_tit"><a href="">AS관련</a></td>
+                                <td class="nt_auth">제품 설명서를 잃어버렸습니다. 다시 받을 수 있나요?</td>
+                                <td class="nt_date">삼천리자전거</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             </div>
         </section>
     </div>
@@ -167,6 +275,92 @@
         <section class="page">
             <div class="page_wrap">
                 <h2 class="page_title">제품설명서</h2>
+                <div class="con_wrap">
+                    <ul class="pic_lst">
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man1.PNG" alt="pic1"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating on"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 LX</h3>
+                                
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man2.PNG" alt="pic2"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 H</h3>
+                               
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man3.PNG" alt="pic3"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 FS / XC / 시티</h3>
+                               
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man4.PNG" alt="pic4"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 HX</h3>
+                             
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man5.PNG" alt="pic5"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 Q SF (겸용)</h3>
+                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man6.PNG" alt="pic6"></div>
+                                <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 Q SF (PAS 전용)</h3>
+                            
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man7.PNG" alt="pic7"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 Q SF 플러스</h3>
+                             
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/man8.PNG" alt="pic8"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 마이크로 SF</h3>
+                              
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="pic_fr"><img src="/web01/img/man9.PNG" alt="pic9"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 FE</h3>
+                             
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="pic_fr"><img src="/web01/img/man10.PNG" alt="pic10"></div>
+                                <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">2022 팬텀 데이지</h3>
+                             
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
             </div>
         </section>
     </div>
@@ -195,7 +389,93 @@
         <section class="page">
             <div class="page_wrap">
                 <h2 class="page_title">지난제품보기</h2>
-
+                <div class="con_wrap">
+                    <ul class="pic_lst">
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan1.PNG" alt="pic1"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating on"></span></div>
+                                <h3 class="pic_tit">팬텀 제로 핑크 에디션</h3>
+                                <p class="pic_info">단종년도 : 2019년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan2.PNG" alt="pic2"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">팬텀 마이크로</h3>
+                                <p class="pic_info">단종년도 : 2018년</p>
+                               
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan3.PNG" alt="pic3"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
+                                <h3 class="pic_tit">데프트 30</h3>
+                                <p class="pic_info">단종년도 : 2019년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan4.PNG" alt="pic4"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">데프트 10</h3>
+                                <p class="pic_info">단종년도 : 2019년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan5.PNG" alt="pic5"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">루트</h3>
+                                <p class="pic_info">단종년도 : 2020년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan6.PNG" alt="pic6"></div>
+                                <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">팬텀 이콘</h3>
+                                <p class="pic_info">단종년도 : 2021년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan7.PNG" alt="pic7"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">딩고</h3>
+                                <p class="pic_info">단종년도 : 2019년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="pic_fr"><img src="/web01/img/dan8.PNG" alt="pic8"></div>
+                                <div class="pic_hd"><span class="ht_ico best"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">팬텀 xc</h3>
+                                <p class="pic_info">단종년도 : 2021년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="pic_fr"><img src="/web01/img/dan9.PNG" alt="pic9"></div>
+                                <div class="pic_hd"><span class="ht_ico new"></span><span class="starating on"></span></div>
+                                <h3 class="pic_tit">팬텀 제로</h3>
+                                <p class="pic_info">단종년도 : 2018년</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="pic_fr"><img src="/web01/img/dan10.PNG" alt="pic10"></div>
+                                <div class="pic_hd"><span class="ht_ico hit"></span><span class="starating"></span></div>
+                                <h3 class="pic_tit">루트</h3>
+                                <p class="pic_info">단종년도 : 2019년</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
             </div>
         </section>
     </div>
