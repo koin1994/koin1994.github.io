@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://localhost:8090/pro03/GetTourCateListCtrl.do?cate=F -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>장소 상세보기</title>
+	<link rel="stylesheet" href="./tourF_files/bulma.min.css">
+	<link rel="stylesheet" href="./tourF_files/bulma-carousel.min.css">
+	<script src="./tourF_files/bulma-carousel.min.js.다운로드"></script>
+	<style>
+		body,
+		html {
+			font-family: 'Noto Sans KR', sans-serif;
+		}
+
+		.table {
+			min-width: 960px;
+		}
+
+		#logo {
+			display: block;
+			width: 200px;
+			height: 73px;
+			padding-top: 24px;
+			background-image: url("https://www.goyang.go.kr/visitgoyang/images/2020/common/h1.png");
+			background-size: 75% auto;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+
+		#nav-group {
+			border-bottom: 3px solid #ddd;
+		}
+
+		#gnb .navbar-link::after {
+			content: "";
+			display: none;
+		}
+
+		#sidebar .navbar {
+			display: block;
+			width: 100%;
+			background-color: transparent;
+		}
+
+		#sidebar .navbar-item {
+			float: none;
+			clear: both;
+			display: block;
+			width: 100%;
+		}
+
+		#frm1.search_form {
+			border-top: 2px solid #ddd;
+			border-bottom: 2px solid #ddd;
+			height: 60px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+
+		#frm1 .inline {
+			width: 70%;
+			float: left;
+			margin-right: 2%;
+		}
+
+		#frm1.search_form .inline {
+			display: inline-block;
+			width: auto;
+		}
+
+		.navbar-item.has-dropdown.is-hoverable {
+			min-width: 110px;
+			position: static;
+		}
+
+		.navbar-item.has-dropdown.is-hoverable a {
+			font-weight: 800;
+		}
+
+		.navbar-item.has-dropdown.is-hoverable.single {
+			position: relative;
+		}
+
+		#nav .navbar-dropdown.cate {
+			min-width: 940px;
+			width: 940px;
+			position: absolute;
+			left: 50px;
+		}
+
+		#nav .navbar-dropdown.single {
+			min-width: 150px;
+			width: 150px;
+			left: auto;
+			top: 68px;
+		}
+
+		#nav .navbar-dropdown.cate a {
+			display: inline-block;
+			padding: 8px;
+			margin-right: 20px;
+			width: 120px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			font-weight: 500;
+		}
+
+		#nav .navbar-dropdown.single a {
+			display: inline-block;
+			width: 150px;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
+			font-weight: 500;
+		}
+
+		p.title {
+			font-size: 1.4rem;
+		}
+
+		p.subtitle {
+			font-size: 1.1rem;
+		}
+
+		.item_com {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			display: -webkit-box;
+			-webkit-line-clamp: 3;
+			-webkit-box-orient: vertical;
+			font-size: 0.9rem;
+		}
+
+		.breadcrumb ul li:last-child {
+			padding-right: 1.5rem;
+		}
+
+		.table {
+			min-width: 960px;
+		
+
+		background-size:100% auto;
+		background-repeat:no-repeat;
+		}
+
+		#nav {
+			border-bottom: 3px solid #ddd;
+		}
+	</style>
+	<script src="./tourF_files/jquery-latest.js.다운로드"></script>
+	<style type="text/css"></style>
+</head>
+
+<body>
+
+
+
+	<div id="nav-group">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation" id="nav" style="height : 70px;">
+                <div class="navbar-brand">
+                    <a class="navbar-item" id="logo" href="index.html">
+                    </a>
+
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start" id="gnb">
+                        <!-- ajax로 메뉴 로딩하여 추가하기 -->
+                        <div class="navbar-item has-dropdown  is-hoverable ">
+                            <a href="TourA.html" class="navbar-link is-arrowless">
+                                관광명소
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate01">
+                                <a href="TourA.html#page1">서오릉(西五陵)</a>
+                                <a href="TourA.html#page2">킨텍스(KINTEX)</a>
+                                <a href="TourA.html#page3">북한산(北漢山)</a>
+                                <a href="TourA.html#page4">흥국사(興國寺)</a>
+                                <a href="TourA.html#page5">일산 호수공원</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourB.html" class="navbar-link cate is-arrowless">
+                                체험
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate02">
+                                <a href="TourB.html#page1">고양 낙농치즈 테마체험장</a>
+                                <a href="TourB.html#page2">꿈나무 교육농장</a>
+                                <a href="TourB.html#page3">원당허브마을</a>
+                                <a href="TourB.html#page4">씨티칼리지 플랜테이션</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourC.html" class="navbar-link cate is-arrowless">
+                                문화행사
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate03">
+                                <a href="TourC.html#page1">고양국제꽃박람회</a>
+                                <a href="TourC.html#page2">행주대첩제</a>
+                                <a href="TourC.html#page3">펫츠런(Pets Run) 고양</a>
+                                <a href="TourC.html#page4">호수예술축제</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourD.html" class="navbar-link cate is-arrowless">
+                                정기축제
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate04">
+                                <a href="TourD.html#page1">고양국제야외조각축제</a>
+                                <a href="TourD.html#page2">경기국제관광박람회</a>
+                                <a href="TourD.html#page3">고양호수꽃빛축제</a>
+                                <a href="TourD.html#page4">행주산성해맞이축제</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourE.html" class="navbar-link cate is-arrowless">
+                                숙박
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate05">
+                                <a href="TourE.html#page1">소노캄 고양</a>
+                                <a href="TourE.html#page2">흥국사 템플스테이</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourF.html" class="navbar-link cate is-arrowless">
+                                음식점
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate06">
+                                <a href="TourF.html#page1">벵게식당</a>
+                                <a href="TourF.html#page2">일산칼국수</a>
+                                <a href="TourF.html#page3">자유로장어웅어회</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourG.html" class="navbar-link cate is-arrowless">
+                                쇼핑
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate07">
+                                <a href="TourG.html#page1">라페스타</a>
+                                <a href="TourG.html#page2">웨스턴돔</a>
+                                <a href="TourG.html#page3">덕이동로데오거리</a>
+                                <a href="TourG.html#page4">원마운트</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a class="navbar-link is-arrowless">
+                                관광안내
+                            </a>
+                            <div class="navbar-dropdown single">
+                                <a class="navbar-item" href="NoticeList.html">
+                                    공지사항
+                                </a>
+                                <a class="navbar-item" href="ReviewList.html">
+                                    고객리뷰
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable single">
+                            <a class="navbar-link is-arrowless">
+                                고양관광정보
+                            </a>
+
+                            <div class="navbar-dropdown single">
+                                <a class="navbar-item"
+                                    href="https://www.goyang.go.kr/visitgoyang/contents/information/mapRequest.asp?cate_depth2=CD6300&amp;cateCode=CD6320">
+                                    관광안내홍보물신청
+                                </a>
+                                <a class="navbar-item"
+                                    href="https://www.goyang.go.kr/visitgoyang/contents/information/explain_guide.asp?cate_depth2=CD6200&amp;cateCode=CD6230">
+                                    문화관광해설 안내 및 예약
+                                </a>
+                                <a class="navbar-item" href="http://www.goyang.go.kr/ghistory/index.do">
+                                    사이버 역사 박물관
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item" href="https://goyangcitytour.modoo.at/">
+                                    시티투어
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end" id="tnb">
+                        <div class="navbar-item">
+
+                            <div class="buttons">
+                                <a href="agree.html" class="button is-success">
+                                    <strong>회원가입</strong>
+                                </a>
+                                <a href="login.html" class="button is-light">
+                                    로그인
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+			<script>
+				$(document).ready(function () {
+					$.ajax({
+						url: "/pro03/MemuLoadCtrl.do",
+						type: "POST",
+						enctype: "UTF-8",
+						datatype: "json",
+						processData: false,
+						contentType: false,
+						cache: false,
+						success: function (data) {
+							$(".navbar-dropdown.cate").empty();
+							var trans = $.parseJSON(data);
+							$.each(trans, function (key, value) {
+								if (key == "data") {
+									for (var i = 0; i < value.length; i++) {
+										if (value[i].cate == "A") {
+											$("#cate01").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										} else if (value[i].cate == "B") {
+											$("#cate02").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										} else if (value[i].cate == "C") {
+											$("#cate03").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										} else if (value[i].cate == "D") {
+											$("#cate04").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										} else if (value[i].cate == "E") {
+											$("#cate05").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										} else if (value[i].cate == "F") {
+											$("#cate06").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										} else if (value[i].cate == "G") {
+											$("#cate07").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+										}
+									}
+								}
+							});
+
+						}
+					});
+				});
+			</script>
+		</div>
+	</div>
+	<nav class="breadcrumb" aria-label="breadcrumbs"
+		style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+		<ul style="float:right;">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="TourList.html">전체 장소</a></li>
+			<li class="is-active"><a href="tourF.html"
+					aria-current="page">
+
+
+
+
+
+
+
+					<span>음식</span>
+
+
+
+				</a></li>
+		</ul>
+	</nav>
+	<section class="section">
+		<div class="container" style="clear : both; margin-right:420px;">
+			<h1 class="title">장소 상세보기</h1>
+			<div id="con">
+				<div class="tile is-ancestor columns" style="padding-bottom:40px;">
+
+
+					<div class="tile is-3" style="box-sizing:border-box;">
+						<article class="tile is-child is-one-third notification"
+							style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+							<p class="title">벵게식당</p>
+							<p class="subtitle">
+
+
+
+
+
+
+
+								<span>음식</span>
+
+
+
+							</p>
+							<figure class="image is-4by3">
+								<img src="./tourF_files/bang.jpg" alt="벵게식당">
+							</figure>
+							<div class="content" style="margin:10px;">
+								<p class="item_com">미꾸라지를 통째로 넣고 푹 끓여내기 때문에 국물이 진하고 깊은 맛이 특징이다. 직접 담근 고추장을 풀어 얼큰하고
+									칼칼하면서도 뒷맛을 개운하게 잡아준다. 취향에 따라 미꾸라지는 갈아서 먹을 수도 있다. 20년 가까이 한자리를 지키고 있는 ‘대자골 토속음식’도 경기
+									북부식 털레기를 낸다. </p>
+							</div>
+							<a href="TourF.html#page1"
+								class="button is-primary">자세히 보기</a>
+						</article>
+					</div>
+
+					<div class="tile is-3" style="box-sizing:border-box;">
+						<article class="tile is-child is-one-third notification"
+							style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+							<p class="title">일산칼국수</p>
+							<p class="subtitle">
+
+
+
+
+
+
+
+								<span>음식</span>
+
+
+
+							</p>
+							<figure class="image is-4by3">
+								<img src="./tourF_files/kal.jpg" alt="일산칼국수">
+							</figure>
+							<div class="content" style="margin:10px;">
+								<p class="item_com">닭고기는 단백질과 필수지방산이 풍부하게 들어있고 진한 국물로 우려낼 경우 몸을 따뜻하게 하는 효과가 있다. 이 같은 닭고기
+									육수에 바지락을 넣어 시원한 맛을 더하고, 직접 반죽해 쫄깃쫄깃한 면발을 듬뿍 넣은 닭칼국수는 사계절 언제 먹어도 든든한 한 끼 식사가 된다.
+									면발만큼이나 푸짐하게 넣어주는 닭고기도 정겨운 인심을 느끼게 한다.</p>
+							</div>
+							<a href="TourF.html#page2"
+								class="button is-primary">자세히 보기</a>
+						</article>
+					</div>
+
+					<div class="tile is-3" style="box-sizing:border-box;">
+						<article class="tile is-child is-one-third notification"
+							style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+							<p class="title">자유로장어웅어회</p>
+							<p class="subtitle">
+
+
+
+
+
+
+
+								<span>음식</span>
+
+
+
+							</p>
+							<figure class="image is-4by3">
+								<img src="./tourF_files/dnd.jpg" alt="자유로장어웅어회">
+							</figure>
+							<div class="content" style="margin:10px;">
+								<p class="item_com">웅어는 성질이 급하여 잡힌 즉시 죽어버리기 때문에 그 자리에서 내장과 머리를 떼어내고 얼음에 보관하는데, 요즘은 냉동기술이
+									발달해 사계절 언제든 웅어회를 맛볼 수 있다. 현재 식당들에서 내는 웅어회는 이처럼 냉동된 회를 후추와 참기름을 넣고 야채와 버무린 형태다. 냉동을
+									거친 횟감이라 별 기대를 하지 않았는데 씹을수록 고소하고 은은한 향이 배어난다. 제철인 4~5월이면 살이 더욱 연하고 부드러우며 달콤한 수박향이 난다고
+									한다.</p>
+							</div>
+							<a href="TourF.html#page3"
+								class="button is-primary">자세히 보기</a>
+						</article>
+					</div>
+
+
+
+				</div>
+			</div>
+			<div class="buttons">
+				<a href="TourList.html" class="button is-info">전체 목록</a>
+			</div>
+		</div>
+	</section>
+
+
+	<style>
+		#footer {
+			clear: both;
+			border-top: #c1c1c1 solid 1px;
+			background: #f1f1f1;
+			height: 109px;
+		}
+	</style>
+	<footer class="footer">
+		<div class="container poRe">
+			<div class="fLogo"><img src="./tourF_files/f_logo.png" alt="고양시 문화관광"></div>
+			<p>
+				<a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
+				031-909-9000 수화상담(경기도) 070-7947-3939
+				<br>Copyright 2018 GOYANGCITY. All rights reserved.
+			</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>장소 상세보기</title>
+
+    <link rel="stylesheet" href="./tourA_files/bulma.min.css">
+    <link rel="stylesheet" href="./tourA_files/bulma-carousel.min.css">
+    <script src="./tourA_files/bulma-carousel.min.js.다운로드"></script>
+    <style>
+        body,
+        html {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+               .table {
+            min-width: 960px;
+        }
+
+        #logo {
+            display: block;
+            width: 200px;
+            height: 73px;
+            padding-top: 24px;
+            background-image: url("https://www.goyang.go.kr/visitgoyang/images/2020/common/h1.png");
+            background-size: 75% auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #nav-group {
+            border-bottom: 3px solid #ddd;
+        }
+
+        #gnb .navbar-link::after {
+            content: "";
+            display: none;
+        }
+
+        #sidebar .navbar {
+            display: block;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        #sidebar .navbar-item {
+            float: none;
+            clear: both;
+            display: block;
+            width: 100%;
+        }
+
+        #frm1.search_form {
+            border-top: 2px solid #ddd;
+            border-bottom: 2px solid #ddd;
+            height: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        #frm1 .inline {
+            width: 70%;
+            float: left;
+            margin-right: 2%;
+        }
+
+        #frm1.search_form .inline {
+            display: inline-block;
+            width: auto;
+        }
+
+        .navbar-item.has-dropdown.is-hoverable {
+            min-width: 110px;
+            position: static;
+        }
+
+        .navbar-item.has-dropdown.is-hoverable a {
+            font-weight: 800;
+        }
+
+        .navbar-item.has-dropdown.is-hoverable.single {
+            position: relative;
+        }
+
+        #nav .navbar-dropdown.cate {
+            min-width: 940px;
+            width: 940px;
+            position: absolute;
+            left: 50px;
+        }
+
+        #nav .navbar-dropdown.single {
+            min-width: 150px;
+            width: 150px;
+            left: auto;
+            top: 68px;
+        }
+
+        #nav .navbar-dropdown.cate a {
+            display: inline-block;
+            padding: 8px;
+            margin-right: 20px;
+            width: 120px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        #nav .navbar-dropdown.single a {
+            display: inline-block;
+            width: 150px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        p.title {
+            font-size: 1.4rem;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+        }
+
+        .item_com {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb ul li:last-child {
+            padding-right: 1.5rem;
+        }
+
+        .table {
+            min-width: 960px;
+
+
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+
+        #nav {
+            border-bottom: 3px solid #ddd;
+        }
+    </style>
+    <script src="./tourA_files/jquery-latest.js.다운로드"></script>
+    <style type="text/css"></style>
+</head>
+
+<body>
+    <div id="nav-group">
+        <div class="container">
+            <nav class="navbar" role="navigation" aria-label="main navigation" id="nav" style="height : 70px;">
+                <div class="navbar-brand">
+                    <a class="navbar-item" id="logo" href="index.html">
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarBasicExample">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+                </div>
+                <div id="navbarBasicExample" class="navbar-menu">
+                    <div class="navbar-start" id="gnb">
+                        <!-- ajax로 메뉴 로딩하여 추가하기 -->
+                        <div class="navbar-item has-dropdown  is-hoverable ">
+                            <a href="TourA.html" class="navbar-link is-arrowless">
+                                관광명소
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate01">
+                                <a href="TourA.html#page1">서오릉(西五陵)</a>
+                                <a href="TourA.html#page2">킨텍스(KINTEX)</a>
+                                <a href="TourA.html#page3">북한산(北漢山)</a>
+                                <a href="TourA.html#page4">흥국사(興國寺)</a>
+                                <a href="TourA.html#page5">일산 호수공원</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourB.html" class="navbar-link cate is-arrowless">
+                                체험
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate02">
+                                <a href="TourB.html#page1">고양 낙농치즈 테마체험장</a>
+                                <a href="TourB.html#page2">꿈나무 교육농장</a>
+                                <a href="TourB.html#page3">원당허브마을</a>
+                                <a href="TourB.html#page4">씨티칼리지 플랜테이션</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourC.html" class="navbar-link cate is-arrowless">
+                                문화행사
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate03">
+                                <a href="TourC.html#page1">고양국제꽃박람회</a>
+                                <a href="TourC.html#page2">행주대첩제</a>
+                                <a href="TourC.html#page3">펫츠런(Pets Run) 고양</a>
+                                <a href="TourC.html#page4">호수예술축제</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourD.html" class="navbar-link cate is-arrowless">
+                                정기축제
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate04">
+                                <a href="TourD.html#page1">고양국제야외조각축제</a>
+                                <a href="TourD.html#page2">경기국제관광박람회</a>
+                                <a href="TourD.html#page3">고양호수꽃빛축제</a>
+                                <a href="TourD.html#page4">행주산성해맞이축제</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourE.html" class="navbar-link cate is-arrowless">
+                                숙박
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate05">
+                                <a href="TourE.html#page1">소노캄 고양</a>
+                                <a href="TourE.html#page2">흥국사 템플스테이</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourF.html" class="navbar-link cate is-arrowless">
+                                음식점
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate06">
+                                <a href="TourF.html#page1">벵게식당</a>
+                                <a href="TourF.html#page2">일산칼국수</a>
+                                <a href="TourF.html#page3">자유로장어웅어회</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a href="TourG.html" class="navbar-link cate is-arrowless">
+                                쇼핑
+                            </a>
+                            <div class="navbar-dropdown cate" id="cate07">
+                                <a href="TourG.html#page1">라페스타</a>
+                                <a href="TourG.html#page2">웨스턴돔</a>
+                                <a href="TourG.html#page3">덕이동로데오거리</a>
+                                <a href="TourG.html#page4">원마운트</a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable ">
+                            <a class="navbar-link is-arrowless">
+                                관광안내
+                            </a>
+                            <div class="navbar-dropdown single">
+                                <a class="navbar-item" href="NoticeList.html">
+                                    공지사항
+                                </a>
+                                <a class="navbar-item" href="ReviewList.html">
+                                    고객리뷰
+                                </a>
+                            </div>
+                        </div>
+                        <div class="navbar-item has-dropdown is-hoverable single">
+                            <a class="navbar-link is-arrowless">
+                                고양관광정보
+                            </a>
+
+                            <div class="navbar-dropdown single">
+                                <a class="navbar-item"
+                                    href="https://www.goyang.go.kr/visitgoyang/contents/information/mapRequest.asp?cate_depth2=CD6300&amp;cateCode=CD6320">
+                                    관광안내홍보물신청
+                                </a>
+                                <a class="navbar-item"
+                                    href="https://www.goyang.go.kr/visitgoyang/contents/information/explain_guide.asp?cate_depth2=CD6200&amp;cateCode=CD6230">
+                                    문화관광해설 안내 및 예약
+                                </a>
+                                <a class="navbar-item" href="http://www.goyang.go.kr/ghistory/index.do">
+                                    사이버 역사 박물관
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item" href="https://goyangcitytour.modoo.at/">
+                                    시티투어
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-end" id="tnb">
+                        <div class="navbar-item">
+
+                            <div class="buttons">
+                                <a href="agree.html" class="button is-success">
+                                    <strong>회원가입</strong>
+                                </a>
+                                <a href="login.html" class="button is-light">
+                                    로그인
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <script>
+                $(document).ready(function () {
+                    $.ajax({
+                        url: "/pro03/MemuLoadCtrl.do",
+                        type: "POST",
+                        enctype: "UTF-8",
+                        datatype: "json",
+                        processData: false,
+                        contentType: false,
+                        cache: false,
+                        success: function (data) {
+                            $(".navbar-dropdown.cate").empty();
+                            var trans = $.parseJSON(data);
+                            $.each(trans, function (key, value) {
+                                if (key == "data") {
+                                    for (var i = 0; i < value.length; i++) {
+                                        if (value[i].cate == "A") {
+                                            $("#cate01").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        } else if (value[i].cate == "B") {
+                                            $("#cate02").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        } else if (value[i].cate == "C") {
+                                            $("#cate03").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        } else if (value[i].cate == "D") {
+                                            $("#cate04").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        } else if (value[i].cate == "E") {
+                                            $("#cate05").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        } else if (value[i].cate == "F") {
+                                            $("#cate06").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        } else if (value[i].cate == "G") {
+                                            $("#cate07").append("<a href='/pro03/GetTourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
+                                        }
+                                    }
+                                }
+                            });
+
+                        }
+                    });
+                });
+            </script>
+        </div>
+    </div>
+    <nav class="breadcrumb" aria-label="breadcrumbs"
+        style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+        <ul style="float:right;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="TourList.html">전체 장소</a></li>
+            <li class="is-active"><a href="TourA.html" aria-current="page">
+                    <span>관광</span>
+                </a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <div class="container" style="clear : both; margin-right:420px;">
+            <h1 class="title">장소 상세보기</h1>
+            <div id="con">
+                <div class="tile is-ancestor columns" style="padding-bottom:40px;">
+                    <div class="tile is-3" style="box-sizing:border-box;">
+                        <article class="tile is-child is-one-third notification"
+                            style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+                            <p class="title">서오릉(西五陵)</p>
+                            <p class="subtitle">
+                                <span>관광</span>
+                           </p>
+                            <figure class="image is-4by3">
+                                <img src="./tourA_files/seo.jpg" alt="서오릉(西五陵)">
+                            </figure>
+                            <div class="content" style="margin:10px;">
+                                <p class="item_com">고양시 덕양구 용두동에 위치하며 경릉, 창릉, 익릉, 명릉, 홍릉이 모여 있어 서오릉이라고 한다. 서북방향으로 서삼릉이
+                                    위치하는데 불과 2.5㎞정도 떨어져 있어 서팔릉이라고 불러도 좋을 듯 하지만 발음이 좋지 못하다. 구리시의 동구릉 다음으로 큰 조선왕조의 왕실
+                                    족분군이며 동남쪽으로 서울 은평구와 붙어 있다.</p>
+                            </div>
+                            <a href="TourAdetail.html#page1" class="button is-primary">자세히 보기</a>
+                        </article>
+                    </div>
+
+                    <div class="tile is-3" style="box-sizing:border-box;">
+                        <article class="tile is-child is-one-third notification"
+                            style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+                            <p class="title">킨텍스(KINTEX)</p>
+                            <p class="subtitle">
+                                <span>관광</span>
+                            </p>
+                            <figure class="image is-4by3">
+                                <img src="./tourA_files/kintex.jpg" alt="킨텍스(KINTEX)">
+                            </figure>
+                            <div class="content" style="margin:10px;">
+                                <p class="item_com">○ 전시홀 : 총 10개홀
+                                    전용 주차장 4,000대, 임시 주차장 4,000대
+                                    ○ 회의실 : 중회의실 25개, 대회의실 12개
+                                    ○ 부대시설 : 식음시설 및 농협중앙회 킨텍스점 등
+                                    편의시설 제공</p>
+                            </div>
+                            <a href="TourAdetail.html#page2" class="button is-primary">자세히 보기</a>
+                        </article>
+                    </div>
+                    <div class="tile is-3" style="box-sizing:border-box;">
+                        <article class="tile is-child is-one-third notification"
+                            style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+                            <p class="title">북한산(北漢山)</p>
+                            <p class="subtitle">
+                                <span>관광</span>
+                            </p>
+                            <figure class="image is-4by3">
+                                <img src="./tourA_files/hansan.jpg" alt="북한산(北漢山)">
+                            </figure>
+                            <div class="content" style="margin:10px;">
+                                <p class="item_com">일명 한국의 알프스로 불리는 명산으로 면적의 약 92%가 고양시에 위치해 있다.
+                                    최고봉인 백운대를 비롯한 주봉우리가 고양시에 있고 인수봉, 만경봉과 더불어 삼각산으로 불리며 2003년에 명승지 제10호로 지정되었다.
+                                    북한산은 삼국시대 초기에 백제가 고구려의 남진을 막기위해 북한산성을 축조하였다.
+                                    그 후 이곳에서는 신라와 고구려의 치열한 전투가 벌어지기도 하였으며, 고려, 조선시대에는 수도인 개성과 한양의 방어를 위한 전략적 요출지로 이용하기도
+                                    하였다.
+                                    북한산 태고사 경내에 있는 원중국사의 부도탑과 그 비석은 보물로 지정되어 있으며 북한산성은 사적 제162호로 지정 보호하고 있다.</p>
+                            </div>
+                            <a href="TourA.html#page3" class="button is-primary">자세히 보기</a>
+                        </article>
+                    </div>
+
+                    <div class="tile is-3" style="box-sizing:border-box;">
+                        <article class="tile is-child is-one-third notification"
+                            style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+                            <p class="title">흥국사(興國寺)</p>
+                            <p class="subtitle">
+                                <span>관광</span>
+                            </p>
+                            <figure class="image is-4by3">
+                                <img src="./tourA_files/temple.jpg" alt="흥국사(興國寺)">
+                            </figure>
+                            <div class="content" style="margin:10px;">
+                                <p class="item_com">한미산(일명 노고산)아래에 있는 이 절의 본래 이름은 흥서암(興瑞庵)으로 문무왕 1년(661년) 원효대사에 의해
+                                    창건되었는데 그후 영조 46년(1770년)에 왕이 친히 행치하여 잠시 머물렀을때 산 이름을 노고산에서 한미산으로 바꾸고 절이름도 흥국사로 바꾸었다.
+                                    약사전(藥師殿)은 이 절의 본전(本殿)이다. 전 안에 약사여래상을 모시고 불상 뒤에 정조 16년(1792년)에 제작된 약사후불탱화가 걸려 있다.</p>
+                            </div>
+                            <a href="TourA.html#page4" class="button is-primary">자세히 보기</a>
+                        </article>
+                    </div>
+
+                    <div class="tile is-3" style="box-sizing:border-box;">
+                        <article class="tile is-child is-one-third notification"
+                            style="background-color:transparent; border:1px solid #eee; margin-right:10px!important;">
+                            <p class="title">일산 호수공원</p>
+                            <p class="subtitle">
+                                <span>관광</span>
+                            </p>
+                            <figure class="image is-4by3">
+                                <img src="./tourA_files/hosu.jpg" alt="일산 호수공원">
+                            </figure>
+                            <div class="content" style="margin:10px;">
+                                <p class="item_com">자전거 전용 도로 위에 끝없이 이어지는 1, 2인승 자전거들, 인도에는 조깅인파와 런닝하는 사람들, 돌계단 위에서 온갖
+                                    묘기를 연출 하는 보드 매니아, 그리고 주말마다 이어지는 공연... 문화의 공원인 이곳에는 길을 따라 조형물, 인공 시냇물, 고사 분수, 그리고 일산의
+                                    새로운 명물인 노래하는 분수대 등 다양한 볼거리도 있어 연인들의 데이트코스나 가족 휴식처로 만점입니다.</p>
+                            </div>
+                            <a href="TourA.html#page5" class="button is-primary">자세히 보기</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <a href="TourList.html" class="button is-info">전체 목록</a>
+            </div>
+        </div>
+    </section>
+
+
+    <style>
+        #footer {
+            clear: both;
+            border-top: #c1c1c1 solid 1px;
+            background: #f1f1f1;
+            height: 109px;
+        }
+    </style>
+    <footer class="footer">
+        <div class="container poRe">
+            <div class="fLogo"><img src="./tourA_files/f_logo.png" alt="고양시 문화관광"></div>
+            <p>
+                <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
+                031-909-9000 수화상담(경기도) 070-7947-3939
+                <br>Copyright 2018 GOYANGCITY. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
