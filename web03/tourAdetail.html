@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <!-- saved from url=(0028)http://localhost:8090/pro03/ -->
 <html>
-
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,6 +8,8 @@
     <link rel="stylesheet" href="./tourAdetail_files/bulma.min.css">
     <link rel="stylesheet" href="./tourAdetail_files/bulma-carousel.min.css">
     <script src="./tourAdetail_files/bulma-carousel.min.js.다운로드"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script src="./tourAdetail_files/jquery-latest.js.다운로드"></script>
     <style>
         body,
         html {
@@ -141,16 +142,24 @@
 
         .table {
             min-width: 960px;
-            background-size: 100% auto;
-            background-repeat: no-repeat;
+        
+    
+        background-size:100% auto;
+        background-repeat:no-repeat;
         }
 
         #nav {
             border-bottom: 3px solid #ddd;
         }
-    </style>
-    <script src="./tourAdetail_files/jquery-latest.js.다운로드"></script>
-    <style>
+    
+  
+    
+        body {
+            background: white;
+        }
+    
+    
+   
         .notice {
             float: left;
             width: 420px;
@@ -251,7 +260,6 @@
     </style>
     <style type="text/css"></style>
 </head>
-
 <body>
     <div id="nav-group">
         <div class="container">
@@ -399,21 +407,21 @@
             </nav>
         </div>
     </div>
+  
     <div class="content" id="page1">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
-            <ul style="float:right;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tourlist.html">전체 장소</a></li>
-                <li><a href="tourA.html"><span>관광</span>
-                    </a>
-                </li>
-                <li class="is-active"><a href="tourAdetail.html#page1" aria-current="page1">서오릉(西五陵)</a></li>
-            </ul>
+        style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+        <ul style="float:right;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tourlist.html">전체 장소</a></li>
+            <li><a href="tourA.html"><span>관광</span>
+            <li class="is-active"><a href="tourAdetail.html#page1" aria-current="page1">서오릉(西五陵)</a></li>
+            </a></li>
+           
+        </ul>
         </nav>
-
         <section class="section">
-            <div class="container">
+            <div class="container" style="clear : both; margin-right:420px;">
                 <h1 class="title">장소 상세보기</h1>
                 <div id="con">
                     <table class="table">
@@ -477,30 +485,36 @@
                                 <input type="hidden" name="place" id="place" value="서오릉(西五陵)">
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
-            </div>
-            <div class="buttons">
-                <a href="tourList.html" class="button is-info">전체 목록</a>
-                <a href="tourA.html" class="button is-info">카테고리 목록</a>
+               
+                <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25274.67637814633!2d126.85061392474098!3d37.64133813886459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c97649f38bc99%3A0x837b152f927ae1c!2z7ISc7Jik66aJ!5e0!3m2!1sko!2skr!4v1670202624444!5m2!1sko!2skr"
+                width="600" height="450" style="border:0; padding-left: 10px;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="buttons">
+                    <a href="tourList.html" class="button is-info">전체 목록</a>
+                    <a href="tourA.html" class="button is-info">카테고리 목록</a>
+                </div>
             </div>
         </section>
     </div>
-
-
+  
     <div class="content" id="page2">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
-            <ul style="float:right;">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="tourlist.html">전체 장소</a></li>
-                <li><a href="tourA.html"><span>관광</span>
-                    </a>
-                </li>
-                <li class="is-active"><a href="tourAdetail.html#page2" aria-current="page2">킨텍스(KINTEX)</a></li>
-            </ul>
-        </nav>
+        style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+        <ul style="float:right;">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tourlist.html">전체 장소</a></li>
+            <li><a href="tourA.html"><span>관광</span>
+                </a>
+            </li>
+            <li class="is-active"><a href="tourAdetail.html#page2" aria-current="page2">킨텍스(KINTEX)</a></li>
+        </ul>
+    </nav>
         <section class="section">
+          
             <div class="container">
                 <h1 class="title">장소 상세보기</h1>
                 <div id="con">
@@ -564,11 +578,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25265.280008767575!2d126.70613357910156!3d37.668948000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8577af38f6a9%3A0x7c68820222a0f168!2z7YKo7YWN7Iqk!5e0!3m2!1sko!2skr!4v1670228567391!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="buttons">
+                    <a href="tourList.html" class="button is-info">전체 목록</a>
+                    <a href="tourA.html" class="button is-info">카테고리 목록</a>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="tourList.html" class="button is-info">전체 목록</a>
-                <a href="tourA.html" class="button is-info">카테고리 목록</a>
-            </div>
+           
 
         </section>
     </div>
@@ -636,7 +652,10 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>일명 한국의 알프스로 불리는 명산으로 면적의 약 92%가 고양시에 위치해 있다. 최고봉인 백운대를 비롯한 주봉우리가 고양시에 있고 인수봉, 만경봉과 더불어 삼각산으로 불리며 2003년에 명승지 제10호로 지정되었다. 북한산은 삼국시대 초기에 백제가 고구려의 남진을 막기위해 북한산성을 축조하였다. 그 후 이곳에서는 신라와 고구려의 치열한 전투가 벌어지기도 하였으며, 고려, 조선시대에는 수도인 개성과 한양의 방어를 위한 전략적 요출지로 이용하기도 하였다. 북한산 태고사 경내에 있는 원중국사의 부도탑과 그 비석은 보물로 지정되어 있으며 북한산성은 사적 제162호로 지정 보호하고 있다.</p>
+                                <p>일명 한국의 알프스로 불리는 명산으로 면적의 약 92%가 고양시에 위치해 있다. 최고봉인 백운대를 비롯한 주봉우리가 고양시에 있고 인수봉, 만경봉과
+                                    더불어 삼각산으로 불리며 2003년에 명승지 제10호로 지정되었다. 북한산은 삼국시대 초기에 백제가 고구려의 남진을 막기위해 북한산성을 축조하였다. 그
+                                    후 이곳에서는 신라와 고구려의 치열한 전투가 벌어지기도 하였으며, 고려, 조선시대에는 수도인 개성과 한양의 방어를 위한 전략적 요출지로 이용하기도
+                                    하였다. 북한산 태고사 경내에 있는 원중국사의 부도탑과 그 비석은 보물로 지정되어 있으며 북한산성은 사적 제162호로 지정 보호하고 있다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -648,12 +667,14 @@
                         </tr>
                     </tbody>
                 </table>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12634.01844163594!2d126.98457824107523!3d37.660849113317425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbdd5b945eccf%3A0xfb9486536d6d79f9!2z67aB7ZWc7IKw!5e0!3m2!1sko!2skr!4v1670228623805!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="buttons">
+                    <a href="tourList.html" class="button is-info">전체 목록</a>
+                    <a href="tourA.html" class="button is-info">카테고리 목록</a>
+                </div>
+    
             </div>
-            <div class="buttons">
-                <a href="tourList.html" class="button is-info">전체 목록</a>
-                <a href="tourA.html" class="button is-info">카테고리 목록</a>
-            </div>
-
+           
         </section>
     </div>
 
@@ -719,7 +740,9 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>한미산(일명 노고산)아래에 있는 이 절의 본래 이름은 흥서암(興瑞庵)으로 문무왕 1년(661년) 원효대사에 의해 창건되었는데 그후 영조 46년(1770년)에 왕이 친히 행치하여 잠시 머물렀을때 산 이름을 노고산에서 한미산으로 바꾸고 절이름도 흥국사로 바꾸었다. 약사전(藥師殿)은 이 절의 본전(本殿)이다. 전 안에 약사여래상을 모시고 불상 뒤에 정조 16년(1792년)에 제작된 약사후불탱화가 걸려 있다.</p>
+                                <p>한미산(일명 노고산)아래에 있는 이 절의 본래 이름은 흥서암(興瑞庵)으로 문무왕 1년(661년) 원효대사에 의해 창건되었는데 그후 영조
+                                    46년(1770년)에 왕이 친히 행치하여 잠시 머물렀을때 산 이름을 노고산에서 한미산으로 바꾸고 절이름도 흥국사로 바꾸었다. 약사전(藥師殿)은 이 절의
+                                    본전(本殿)이다. 전 안에 약사여래상을 모시고 불상 뒤에 정조 16년(1792년)에 제작된 약사후불탱화가 걸려 있다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -731,11 +754,13 @@
                         </tr>
                     </tbody>
                 </table>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50534.140545266986!2d126.86987705820312!3d37.663688900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c961625d96d7d%3A0xe659c51f09a2721b!2z7Z2l6rWt7IKs!5e0!3m2!1sko!2skr!4v1670228667037!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="buttons">
+                    <a href="tourList.html" class="button is-info">전체 목록</a>
+                    <a href="tourA.html" class="button is-info">카테고리 목록</a>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="tourList.html" class="button is-info">전체 목록</a>
-                <a href="tourA.html" class="button is-info">카테고리 목록</a>
-            </div>
+           
 
         </section>
     </div>
@@ -802,7 +827,9 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>자전거 전용 도로 위에 끝없이 이어지는 1, 2인승 자전거들, 인도에는 조깅인파와 런닝하는 사람들, 돌계단 위에서 온갖 묘기를 연출 하는 보드 매니아, 그리고 주말마다 이어지는 공연... 문화의 공원인 이곳에는 길을 따라 조형물, 인공 시냇물, 고사 분수, 그리고 일산의 새로운 명물인 노래하는 분수대 등 다양한 볼거리도 있어 연인들의 데이트코스나 가족 휴식처로 만점입니다.</p>
+                                <p>자전거 전용 도로 위에 끝없이 이어지는 1, 2인승 자전거들, 인도에는 조깅인파와 런닝하는 사람들, 돌계단 위에서 온갖 묘기를 연출 하는 보드 매니아,
+                                    그리고 주말마다 이어지는 공연... 문화의 공원인 이곳에는 길을 따라 조형물, 인공 시냇물, 고사 분수, 그리고 일산의 새로운 명물인 노래하는 분수대
+                                    등 다양한 볼거리도 있어 연인들의 데이트코스나 가족 휴식처로 만점입니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -814,15 +841,17 @@
                         </tr>
                     </tbody>
                 </table>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202135.87668400587!2d126.76481340592129!3d37.663940629769755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229291980!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="buttons">
+                    <a href="tourList.html" class="button is-info">전체 목록</a>
+                    <a href="tourA.html" class="button is-info">카테고리 목록</a>
+                </div>
             </div>
-            <div class="buttons">
-                <a href="tourList.html" class="button is-info">전체 목록</a>
-                <a href="tourA.html" class="button is-info">카테고리 목록</a>
-            </div>
+          
 
         </section>
     </div>
-    
+
 
 
 
