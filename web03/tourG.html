@@ -7,9 +7,9 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>장소 상세보기</title>
-	<link rel="stylesheet" href="./tourG_files/bulma.min.css">
-	<link rel="stylesheet" href="./tourG_files/bulma-carousel.min.css">
-	<script src="./tourG_files/bulma-carousel.min.js.다운로드"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
 	<style>
 		body,
 		html {
@@ -148,7 +148,12 @@
 			background-repeat: no-repeat;
 		}
 
-		
+		#footer {
+			clear: both;
+			border-top: #c1c1c1 solid 1px;
+			background: #f1f1f1;
+			height: 109px;
+		}
 	</style>
 	<script src="./tourG_files/jquery-latest.js.다운로드"></script>
 	<style type="text/css"></style>
@@ -299,45 +304,7 @@
 					</div>
 				</div>
 			</nav>
-			<script>
-				$(document).ready(function () {
-					$.ajax({
-						url: "/pro03/MemuLoadCtrl.do",
-						type: "POST",
-						enctype: "UTF-8",
-						datatype: "json",
-						processData: false,
-						contentType: false,
-						cache: false,
-						success: function (data) {
-							$(".navbar-dropdown.cate").empty();
-							var trans = $.parseJSON(data);
-							$.each(trans, function (key, value) {
-								if (key == "data") {
-									for (var i = 0; i < value.length; i++) {
-										if (value[i].cate == "A") {
-											$("#cate01").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										} else if (value[i].cate == "B") {
-											$("#cate02").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										} else if (value[i].cate == "C") {
-											$("#cate03").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										} else if (value[i].cate == "D") {
-											$("#cate04").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										} else if (value[i].cate == "E") {
-											$("#cate05").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										} else if (value[i].cate == "F") {
-											$("#cate06").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										} else if (value[i].cate == "G") {
-											$("#cate07").append("<a href='/pro03/GettourDetailCtrl.do?no=" + value[i].no + "'>" + value[i].place + "</a>");
-										}
-									}
-								}
-							});
 
-						}
-					});
-				});
-			</script>
 		</div>
 	</div>
 	<nav class="breadcrumb" aria-label="breadcrumbs"
@@ -439,17 +406,10 @@
 	</section>
 
 
-	<style>
-		#footer {
-			clear: both;
-			border-top: #c1c1c1 solid 1px;
-			background: #f1f1f1;
-			height: 109px;
-		}
-	</style>
+
 	<footer class="footer">
 		<div class="container poRe">
-			<div class="fLogo"><img src="./tourG_files/f_logo.png" alt="고양시 문화관광"></div>
+			<div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
 			<p>
 				<a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
 				031-909-9000 수화상담(경기도) 070-7947-3939

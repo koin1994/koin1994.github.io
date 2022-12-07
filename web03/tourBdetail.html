@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>메인 페이지</title>
-    <link rel="stylesheet" href="./tourAdetail_files/bulma.min.css">
-    <link rel="stylesheet" href="./tourAdetail_files/bulma-carousel.min.css">
-    <script src="./tourAdetail_files/bulma-carousel.min.js.다운로드"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <style>
         body,
         html {
@@ -145,100 +145,6 @@
             background-repeat: no-repeat;
         }
 
-       
-    </style>
-    <script src="./tourAdetail_files/jquery-latest.js.다운로드"></script>
-    <style>
-        .notice {
-            float: left;
-            width: 420px;
-            height: 180px;
-            margin: 30px 0;
-            position: relative;
-        }
-
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            clear: both;
-            display: block;
-        }
-
-        .speaker {
-            float: right;
-            width: 701px;
-            margin: -148px -800px;
-        }
-
-        .slider-text {
-            position: absolute;
-            right: 0;
-            bottom: 0
-        }
-
-        #slider .card-content {
-            max-width: 50%;
-        }
-
-        #slider {
-            overflow: hidden;
-            height: 588px;
-        }
-
-        @media screen and (max-width: 1023px) {
-            #slider .card-content {
-                display: none;
-            }
-        }
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .item-slide img {
-            max-width: 1200px;
-        }
-
-        .caption-container {
-            color: white;
-        }
-
-        .mBan ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            text-align: center;
-            margin: 246px -393px 52px;
-            float: left;
-        }
-
         .content {
             display: none;
         }
@@ -246,8 +152,14 @@
         .content:target {
             display: block;
         }
+
+        #footer {
+            clear: both;
+            border-top: #c1c1c1 solid 1px;
+            background: #f1f1f1;
+            height: 109px;
+        }
     </style>
-    <style type="text/css"></style>
 </head>
 
 <body>
@@ -399,8 +311,9 @@
     </div>
     <div class="content" id="page1">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourB.html"><span>체험</span>
@@ -418,8 +331,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourBdetail_files/cheeze.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourB_files/cheeze.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -460,7 +373,9 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>고양 낙농치즈 테마체험장은 지난10년 동안 공예체험프로그램을 활동했던 경험과 치즈와 피자 프로그램을 연계해 2010년에 체험장을 오픈하였습니다. 2012년 고양시에서 더 큰 발전을 기대하며 상호명을 "고양낙농치즈테마체험장"으로 변경하였습니다. 만들기+배우기+즐기는 체험 학습 프로그램을 진행하며 내일의 일꾼이 되는 아이들에게 꿈과 창의적인 활동 및 인성교육에 도움이 되도록 노력하고 있습니다.</p>
+                                <p>고양 낙농치즈 테마체험장은 지난10년 동안 공예체험프로그램을 활동했던 경험과 치즈와 피자 프로그램을 연계해 2010년에 체험장을 오픈하였습니다.
+                                    2012년 고양시에서 더 큰 발전을 기대하며 상호명을 "고양낙농치즈테마체험장"으로 변경하였습니다. 만들기+배우기+즐기는 체험 학습 프로그램을 진행하며
+                                    내일의 일꾼이 되는 아이들에게 꿈과 창의적인 활동 및 인성교육에 도움이 되도록 노력하고 있습니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -472,21 +387,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.974243997475!2d126.85158651565067!3d37.69680392441397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c91471da88e97%3A0xb48120521058820c!2zKOyjvCnqs6DslpHrgpnrho3ssrTtl5jsnqU!5e0!3m2!1sko!2skr!4v1670229407363!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3156.974243997475!2d126.85158651565067!3d37.69680392441397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c91471da88e97%3A0xb48120521058820c!2zKOyjvCnqs6DslpHrgpnrho3ssrTtl5jsnqU!5e0!3m2!1sko!2skr!4v1670229407363!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourB.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
         </section>
     </div>
 
 
     <div class="content" id="page2">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourB.html"><span>체험</span>
@@ -503,8 +422,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourBdetail_files/tree.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourB_files/tree.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -545,7 +464,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>사회적 기업을 지향하며 "무농약인증, 행주치마인증, G마크인증, 유황농산물을 재배하는 체험농장. * 유산양 먹이주기 한살이 배우기 *산양유로 천연비누 만들기 * 커피나무 한살이 배우기 * 목공체험 도자기 체험 * 핸드드립 커피로스팅 체험</p>
+                                <p>사회적 기업을 지향하며 "무농약인증, 행주치마인증, G마크인증, 유황농산물을 재배하는 체험농장. * 유산양 먹이주기 한살이 배우기 *산양유로 천연비누
+                                    만들기 * 커피나무 한살이 배우기 * 목공체험 도자기 체험 * 핸드드립 커피로스팅 체험</p>
                             </td>
                         </tr>
                         <tr>
@@ -557,13 +477,16 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.466876018558!2d126.88126491564954!3d37.63822642777613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9744b06ae453%3A0xbaa3b5ebcfabf8d8!2z6r-I64KY66y06rWQ7Jyh64aN7J6l!5e0!3m2!1sko!2skr!4v1670229433539!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.466876018558!2d126.88126491564954!3d37.63822642777613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9744b06ae453%3A0xbaa3b5ebcfabf8d8!2z6r-I64KY66y06rWQ7Jyh64aN7J6l!5e0!3m2!1sko!2skr!4v1670229433539!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourB.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-          
+
 
         </section>
     </div>
@@ -571,8 +494,9 @@
 
     <div class="content" id="page3">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourB.html"><span>체험</span>
@@ -589,8 +513,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourBdetail_files/hub.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourB_files/hub.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -631,7 +555,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>약 100여 종의 허브와 각종 화훼를 재배, 전시, 판매하는 허브 농장으로 각종허브용품과 허브식물들을 직접 접해볼수 있다. 비누, 양초, 천연향수 만들기 등허브를 이용한 다양한 체험교실도 운영하며 집에서 키우던 허브에 이상이 생기면 치료를 받을 수 있는 허브 병원도있다.</p>
+                                <p>약 100여 종의 허브와 각종 화훼를 재배, 전시, 판매하는 허브 농장으로 각종허브용품과 허브식물들을 직접 접해볼수 있다. 비누, 양초, 천연향수 만들기
+                                    등허브를 이용한 다양한 체험교실도 운영하며 집에서 키우던 허브에 이상이 생기면 치료를 받을 수 있는 허브 병원도있다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -643,21 +568,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6316.426001973496!2d126.85020857771285!3d37.667702511735065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c90df9637d5d3%3A0x628933d6cfeedfa2!2z7JuQ64u57ZeI67iM66eI7J2E!5e0!3m2!1sko!2skr!4v1670229452690!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6316.426001973496!2d126.85020857771285!3d37.667702511735065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c90df9637d5d3%3A0x628933d6cfeedfa2!2z7JuQ64u57ZeI67iM66eI7J2E!5e0!3m2!1sko!2skr!4v1670229452690!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourB.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
 
     <div class="content" id="page4">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourB.html"><span>체험</span>
@@ -674,7 +603,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourBdetail_files/plantation.jpg" class="lazy"
+                                    <img src="./tourB_files/plantation.jpg" class="lazy"
                                         onerror="this.style.display='none'" alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
@@ -704,7 +633,7 @@
                         <tr>
                             <th>장소명</th>
                             <td>
-								씨티칼리지 플랜테이션
+                                씨티칼리지 플랜테이션
                             </td>
                         </tr>
                         <tr>
@@ -716,7 +645,9 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>도심을 벗어나 서울의 서북쪽으로 드라이브하듯 달려가면 아름다운 정원과 아름드리 나무가 자연 그대로의 모습으로 간직되고 있는 곳. 플랜테이션은 광활한 초록의 공간을 아우르는 개울과 연못 그리고 북한산이 병풍처럼 넓게 펼쳐져 있고, 드넓은 잔디밭은 일산을 벗어나 자연을 즐기고픈 모두에게 편안한 휴식. 그 이상을 선사해줍니다.</p>
+                                <p>도심을 벗어나 서울의 서북쪽으로 드라이브하듯 달려가면 아름다운 정원과 아름드리 나무가 자연 그대로의 모습으로 간직되고 있는 곳. 플랜테이션은 광활한
+                                    초록의 공간을 아우르는 개울과 연못 그리고 북한산이 병풍처럼 넓게 펼쳐져 있고, 드넓은 잔디밭은 일산을 벗어나 자연을 즐기고픈 모두에게 편안한 휴식.
+                                    그 이상을 선사해줍니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -728,29 +659,23 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.586619581396!2d126.88201311565041!3d37.68242012523999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c96c0b12ed9e1%3A0x8e9198c8a7f25b15!2z7ZSM656c7YWM7J207IWY!5e0!3m2!1sko!2skr!4v1670229473434!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.586619581396!2d126.88201311565041!3d37.68242012523999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c96c0b12ed9e1%3A0x8e9198c8a7f25b15!2z7ZSM656c7YWM7J207IWY!5e0!3m2!1sko!2skr!4v1670229473434!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourB.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
 
-    
-    <style>
-        #footer {
-            clear: both;
-            border-top: #c1c1c1 solid 1px;
-            background: #f1f1f1;
-            height: 109px;
-        }
-    </style>
     <footer class="footer">
         <div class="container poRe">
-            <div class="fLogo"><img src="./tourAdetail_files/f_logo.png" alt="고양시 문화관광"></div>
+            <div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
             <p>
                 <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
                 031-909-9000 수화상담(경기도) 070-7947-3939

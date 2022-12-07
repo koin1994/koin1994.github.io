@@ -2,131 +2,244 @@
 <!-- saved from url=(0028)http://localhost:8090/pro03/ -->
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>메인 페이지</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
-<style>
-body, html { font-family: 'Noto Sans KR', sans-serif; }
-.table { min-width:960px; }
-#logo { display:block; width:200px; height:73px; padding-top : 24px; background-image:url("https://www.goyang.go.kr/visitgoyang/images/2020/common/h1.png");
-background-size:75% auto; background-repeat:no-repeat; background-position:center center; }
-#nav-group { border-bottom:3px solid #ddd; }
-#gnb .navbar-link::after { content:""; display:none; }
-#sidebar .navbar { display:block; width:100%; background-color:transparent; }
-#sidebar .navbar-item { float:none; clear:both; display:block; width:100%; }
-#frm1.search_form { border-top:2px solid #ddd; border-bottom:2px solid #ddd; height:60px; padding-top:10px; padding-bottom:10px;  }
-#frm1 .inline { width:70%; float:left; margin-right:2%; }
-#frm1.search_form .inline { display:inline-block; width:auto; } 
-.navbar-item.has-dropdown.is-hoverable { min-width:110px; position:static; }
-.navbar-item.has-dropdown.is-hoverable a { font-weight:800; }
-.navbar-item.has-dropdown.is-hoverable.single { position:relative; }
-#nav .navbar-dropdown.cate { min-width:940px; width:940px; position:absolute; left:50px; }
-#nav .navbar-dropdown.single { min-width:150px; width:150px; left:auto; top:68px; }
-#nav .navbar-dropdown.cate a { display:inline-block; padding:8px; margin-right:20px;  
-width:120px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
-font-weight:500; }
-#nav .navbar-dropdown.single a { display:inline-block; width:150px; text-overflow:ellipsis; overflow:hidden; white-space:nowrap; 
-font-weight:500; }
-p.title { font-size:1.4rem; }
-p.subtitle { font-size:1.1rem; }
-.item_com {   overflow: hidden;  text-overflow: ellipsis;  display: -webkit-box;
-  -webkit-line-clamp: 3;  -webkit-box-orient: vertical; font-size:0.9rem; }
-.breadcrumb ul li:last-child { padding-right:1.5rem; }
-.table { min-width:960px; 
-background-size:100% auto; background-repeat:no-repeat; }
-#nav { border-bottom:3px solid #ddd; }
-</style>
-<script src="./index_files/jquery-latest.js.다운로드"></script>
-<style>
-.notice {
-    float: left;
-    width: 420px;
-    height: 180px;
-    margin: 30px 0;
-    position: relative;
-}
-.container {
-    width: 1200px;
-    margin: 0 auto;
-    clear: both;
-    display: block;
-}
-.speaker {
-    float: right;
-    width: 701px;
-    margin: -148px -800px;
-}
-.slider-text {
-    position: absolute;
-    right: 0;
-    bottom: 0
-  }
-#slider .card-content{
-    max-width: 50%;
-  }
-#slider{
-    overflow: hidden;
-    height : 588px;
-  } 
-@media screen and (max-width: 1023px) {
-    #slider .card-content{
-      display: none;
-    }
-  }
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-.item-slide img {
-  max-width: 1200px;
-}
-.caption-container {
-  color: white;
-}
-.mBan ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    text-align: center;
-    margin: 246px -393px 52px;
-    float: left;
-}
-</style>
-	
-<style type="text/css"></style></head>
-<body>
-  	
+    <style>
+        body,
+        html {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
 
- 
-	<div id="nav-group">
+        .table {
+            min-width: 960px;
+        }
+
+        #logo {
+            display: block;
+            width: 200px;
+            height: 73px;
+            padding-top: 24px;
+            background-image: url("https://www.goyang.go.kr/visitgoyang/images/2020/common/h1.png");
+            background-size: 75% auto;
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        #nav-group {
+            border-bottom: 3px solid #ddd;
+        }
+
+        #gnb .navbar-link::after {
+            content: "";
+            display: none;
+        }
+
+        #sidebar .navbar {
+            display: block;
+            width: 100%;
+            background-color: transparent;
+        }
+
+        #sidebar .navbar-item {
+            float: none;
+            clear: both;
+            display: block;
+            width: 100%;
+        }
+
+        #frm1.search_form {
+            border-top: 2px solid #ddd;
+            border-bottom: 2px solid #ddd;
+            height: 60px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        #frm1 .inline {
+            width: 70%;
+            float: left;
+            margin-right: 2%;
+        }
+        #frm1.search_form .inline {
+            display: inline-block;
+            width: auto;
+        }
+        .navbar-item.has-dropdown.is-hoverable {
+            min-width: 110px;
+            position: static;
+        }
+        .navbar-item.has-dropdown.is-hoverable a {
+            font-weight: 800;
+        }
+        .navbar-item.has-dropdown.is-hoverable.single {
+            position: relative;
+        }
+        #nav .navbar-dropdown.cate {
+            min-width: 940px;
+            width: 940px;
+            position: absolute;
+            left: 50px;
+        }
+
+        #nav .navbar-dropdown.single {
+            min-width: 150px;
+            width: 150px;
+            left: auto;
+            top: 68px;
+        }
+
+        #nav .navbar-dropdown.cate a {
+            display: inline-block;
+            padding: 8px;
+            margin-right: 20px;
+            width: 120px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        #nav .navbar-dropdown.single a {
+            display: inline-block;
+            width: 150px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            font-weight: 500;
+        }
+
+        p.title {
+            font-size: 1.4rem;
+        }
+
+        p.subtitle {
+            font-size: 1.1rem;
+        }
+
+        .item_com {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            font-size: 0.9rem;
+        }
+
+        .breadcrumb ul li:last-child {
+            padding-right: 1.5rem;
+        }
+
+        #footer {
+            clear: both;
+            border-top: #c1c1c1 solid 1px;
+            background: #f1f1f1;
+            height: 109px;
+        }
+
+        /* 부분스타일 */
+        .table {
+            min-width: 960px;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+
+        .notice {
+            float: left;
+            width: 420px;
+            height: 180px;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            clear: both;
+            display: block;
+        }
+
+        .speaker {
+            float: right;
+            width: 701px;
+            margin: -148px -800px;
+        }
+
+        .slider-text {
+            position: absolute;
+            right: 0;
+            bottom: 0
+        }
+
+        #slider .card-content {
+            max-width: 50%;
+        }
+
+        #slider {
+            overflow: hidden;
+            height: 588px;
+        }
+
+        @media screen and (max-width: 1023px) {
+            #slider .card-content {
+                display: none;
+            }
+        }
+
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+        .item-slide img {
+            max-width: 1200px;
+        }
+
+        .caption-container {
+            color: white;
+        }
+
+        .mBan ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            text-align: center;
+            margin: 246px -393px 52px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav-group">
         <div class="container">
             <nav class="navbar" role="navigation" aria-label="main navigation" id="nav" style="height : 70px;">
                 <div class="navbar-brand">
@@ -141,7 +254,7 @@ background-size:100% auto; background-repeat:no-repeat; }
                 </div>
                 <div id="navbarBasicExample" class="navbar-menu">
                     <div class="navbar-start" id="gnb">
-                        <!-- ajax로 메뉴 로딩하여 추가하기 -->
+
                         <div class="navbar-item has-dropdown  is-hoverable ">
                             <a href="tourA.html" class="navbar-link is-arrowless">
                                 관광명소
@@ -256,7 +369,6 @@ background-size:100% auto; background-repeat:no-repeat; }
                     </div>
                     <div class="navbar-end" id="tnb">
                         <div class="navbar-item">
-
                             <div class="buttons">
                                 <a href="agree.html" class="button is-success">
                                     <strong>회원가입</strong>
@@ -265,214 +377,165 @@ background-size:100% auto; background-repeat:no-repeat; }
                                     로그인
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </nav>
-	<script>
-	$(document).ready(function(){
-		$.ajax({
-			url:"/pro03/MemuLoadCtrl.do",
-			type:"POST",
-			enctype:"UTF-8",
-			datatype:"json",
-			processData:false,
-			contentType:false, 
-			cache:false,
-			success:function(data){
-				$(".navbar-dropdown.cate").empty();
-				var trans = $.parseJSON(data);
-				$.each(trans, function(key, value){
-					if(key=="data"){
-						for(var i=0;i<value.length;i++){
-							if(value[i].cate=="A"){
-								$("#cate01").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="B"){
-								$("#cate02").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="C"){
-								$("#cate03").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="D"){
-								$("#cate04").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="E"){
-								$("#cate05").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="F"){
-								$("#cate06").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							} else if(value[i].cate=="G"){
-								$("#cate07").append("<a href='/pro03/GettourDetailCtrl.do?no="+value[i].no+"'>"+value[i].place+"</a>");
-							}
-						}
-					}
-				});
-				
-			}
-		});
-	});
-	</script>
-	</div>
-</div>
-  	
-<section>
-    <div id="slider">
-        <div class="card" >
-            <div class="card-image" >
-                <figure class="image is-16by9 is-covered" style="padding-top : 30.25%">
-                    <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_03.png" alt="" />
-                </figure>
+
+        </div>
+    </div>
+    <section>
+        <div id="slider">
+            <div class="card">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered" style="padding-top : 30.25%">
+                        <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_03.png" alt="" />
+                    </figure>
+                </div>
             </div>
-       </div>
-        <div class="card ">
-            <div class="card-image">
-                <figure class="image is-16by9 is-covered" style="padding-top : 30.25%">
-                    <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_01.png" alt="" />
-                </figure>
+            <div class="card ">
+                <div class="card-image">
+                    <figure class="image is-16by9 is-covered" style="padding-top : 30.25%">
+                        <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_01.png" alt="" />
+                    </figure>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-image">
+                    <p class="image is-16by9 is-covered" style="padding-top : 30.25%">
+                        <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_02.png" alt="" />
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="card ">
-            <div class="card-image">
-                <p class="image is-16by9 is-covered" style="padding-top : 30.25%">
-                    <img src="https://www.goyang.go.kr/visitgoyang/images/2020/main/visual_02.png" alt="" />
-                </p>
-            </div>
-        </div>
-      </div>
-</section>
+    </section>
     <div class="container">
-		<div class="notice">
-			<h1><strong>공지사항</strong></h1>
-			<ul>
-				<li>
-					<a href="NoticeList.html#page1">
-					2022 고양관광특구 페스티벌 BIG3
-					</a>
-					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
-					<span class="date">2022-10-21</span>
-				</li>
-			
-				<li>
-					<a href="NoticeList.html#page2">
-					2022 고양가을꽃축제 개최안내
-					</a>
-					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
-					<span class="date">2022-10-07</span>
-				</li>
-			
-				<li>
-					<a href="NoticeList.html#page3">
-					2022 고양호수예술축제 개최안내
-					</a>
-					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
-					<span class="date">2022-09-28</span>
-				</li>
-			
-				<li>
-					<a href="NoticeList.html#page4">
-					뮤비 속 고양시를 찾아라! 고양 평화누리길...
-					</a>
-					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
-					<span class="date">2021-12-30</span>
-				</li>
-			
-				<li>
-					<a href="NoticeList.html#page5">
-					한강하구 생태역사평화이야기
-					</a>
-					<!--<img src="./images/2020/main/icon_new.png" alt="새글" />//-->
-					<span class="date">2021-12-02</span>
-				</li>
-			</ul>
-			<div class="speaker">
-			<!-- <a href="#"><img src="./images/2020/main/speaker.png" alt="2020 한국관광 품질인증 신청접수2000년 4월 27일(월) ~ 8월 31일(월)" /></a> -->
-			<a href="https://goyang.dadora.kr/client/index.html" target="_blank"><img src="./index_files/speaker.jpg" alt="고양 스마트관광전자지도 다도라" style="max-width:100%;"></a>
-		</div>
-	</div>
-	</div>
-	
+        <div class="notice">
+            <h1><strong>공지사항</strong></h1>
+            <ul>
+                <li>
+                    <a href="NoticeList.html#page1">
+                        2022 고양관광특구 페스티벌 BIG3
+                    </a>
+
+                    <span class="date">2022-10-21</span>
+                </li>
+
+                <li>
+                    <a href="NoticeList.html#page2">
+                        2022 고양가을꽃축제 개최안내
+                    </a>
+
+                    <span class="date">2022-10-07</span>
+                </li>
+
+                <li>
+                    <a href="NoticeList.html#page3">
+                        2022 고양호수예술축제 개최안내
+                    </a>
+
+                    <span class="date">2022-09-28</span>
+                </li>
+
+                <li>
+                    <a href="NoticeList.html#page4">
+                        뮤비 속 고양시를 찾아라! 고양 평화누리길...
+                    </a>
+
+                    <span class="date">2021-12-30</span>
+                </li>
+
+                <li>
+                    <a href="NoticeList.html#page5">
+                        한강하구 생태역사평화이야기
+                    </a>
+
+                    <span class="date">2021-12-02</span>
+                </li>
+            </ul>
+            <div class="speaker">
+
+                <a href="https://goyang.dadora.kr/client/index.html" target="_blank"><img
+                        src="./index_files/speaker.jpg" alt="고양 스마트관광전자지도 다도라" style="max-width:100%;"></a>
+            </div>
+        </div>
+    </div>
     <script>
-	    bulmaCarousel.attach('#slider', {
-	        slidesToScroll: 1,
-	        slidesToShow: 1,
-	        infinite: true,
-	        autoplay: true,
-	    });
-	    var slideIndex = 1;
-		showSlides(slideIndex);
-		
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-		
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-		
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("item-slide");
-		  var captionText = document.getElementById("caption");
-		  if (n > slides.length) {slideIndex = 1}
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";
-		  }
-		}
+        bulmaCarousel.attach('#slider', {
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            infinite: true,
+            autoplay: true,
+        });
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("item-slide");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+        }
     </script>
     <div class="mBan">
-	<ul>
-		<li><a href="http://www.xn--299au8v81i1iaw91b5jf.com/" target="_blank">
-			<img src="./index_files/24.gif" alt="고양아트마켓">
-				</a>
-		</li>
-		<li><a href="https://dmz.gg.go.kr/gg_dmz-tour/peace/" target="_blank">
-			<img src="./index_files/21.gif" alt="평화누리길">
-			</a>
-		</li>
-		<li><a href="http://ggtour.or.kr/" target="_blank">
-			<img src="./index_files/22.gif" alt="평화누리길 다음카페">
-			</a>
-		</li>
-		<li><a href="https://www.goyang.go.kr/index.do" target="_blank">
-			<img src="./index_files/1.gif" alt="고양시">
-			</a>
-		</li>
-		<li><a href="https://goyangcitytour.modoo.at/" target="_blank">
-			<img src="./index_files/14.gif" alt="고양시티투어">
-			</a>
-		</li>
-		<li><a href="http://agr.goyang.go.kr/" target="_blank">
-			<img src="./index_files/8.gif" alt="고양시 농업기술센터">
-			</a>
-		</li>
-		<li><a href="http://its.goyang.go.kr/" target="_blank">
-			<img src="./index_files/9.gif" alt="고양시 교통정보센터">
-			</a>
-		</li>
-		<li><a href="http://www.hjfestival.or.kr/" target="_blank">
-			<img src="./index_files/11.gif" alt="고양행주문화제">
-			</a>
-		</li>
-		
-		
-	</ul>
-</div>
-	
-<style>
-#footer {
-    clear: both;
-    border-top: #c1c1c1 solid 1px;
-    background: #f1f1f1;
-    height: 109px;
-}
-</style>
-<footer class="footer">
-  <div class="container poRe">
-  	<div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
-    <p>
-        <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청) 031-909-9000 수화상담(경기도) 070-7947-3939
-		<br>Copyright 2018 GOYANGCITY. All rights reserved.
-    </p> 
-  </div>
-</footer>
-	
+        <ul>
+            <li><a href="http://www.xn--299au8v81i1iaw91b5jf.com/" target="_blank">
+                    <img src="./index_files/24.gif" alt="고양아트마켓">
+                </a>
+            </li>
+            <li><a href="https://dmz.gg.go.kr/gg_dmz-tour/peace/" target="_blank">
+                    <img src="./index_files/21.gif" alt="평화누리길">
+                </a>
+            </li>
+            <li><a href="http://ggtour.or.kr/" target="_blank">
+                    <img src="./index_files/22.gif" alt="평화누리길 다음카페">
+                </a>
+            </li>
+            <li><a href="https://www.goyang.go.kr/index.do" target="_blank">
+                    <img src="./index_files/1.gif" alt="고양시">
+                </a>
+            </li>
+            <li><a href="https://goyangcitytour.modoo.at/" target="_blank">
+                    <img src="./index_files/14.gif" alt="고양시티투어">
+                </a>
+            </li>
+            <li><a href="http://agr.goyang.go.kr/" target="_blank">
+                    <img src="./index_files/8.gif" alt="고양시 농업기술센터">
+                </a>
+            </li>
+            <li><a href="http://its.goyang.go.kr/" target="_blank">
+                    <img src="./index_files/9.gif" alt="고양시 교통정보센터">
+                </a>
+            </li>
+            <li><a href="http://www.hjfestival.or.kr/" target="_blank">
+                    <img src="./index_files/11.gif" alt="고양행주문화제">
+                </a>
+            </li>
+        </ul>
+    </div>
 
-</body></html>
+    <footer class="footer">
+        <div class="container poRe">
+            <div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
+            <p>
+                <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
+                031-909-9000 수화상담(경기도) 070-7947-3939
+                <br>Copyright 2018 GOYANGCITY. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

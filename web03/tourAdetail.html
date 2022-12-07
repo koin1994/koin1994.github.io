@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <!-- saved from url=(0028)http://localhost:8090/pro03/ -->
 <html>
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>메인 페이지</title>
-    <link rel="stylesheet" href="./tourAdetail_files/bulma.min.css">
-    <link rel="stylesheet" href="./tourAdetail_files/bulma-carousel.min.css">
-    <script src="./tourAdetail_files/bulma-carousel.min.js.다운로드"></script>
-    <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <script src="./tourAdetail_files/jquery-latest.js.다운로드"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <style>
         body,
         html {
@@ -142,110 +141,8 @@
 
         .table {
             min-width: 960px;
-        
-    
-        background-size:100% auto;
-        background-repeat:no-repeat;
-        }
-
-       
-    
-  
-    
-        body {
-            background: white;
-        }
-    
-    
-   
-        .notice {
-            float: left;
-            width: 420px;
-            height: 180px;
-            margin: 30px 0;
-            position: relative;
-        }
-
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            clear: both;
-            display: block;
-        }
-
-        .speaker {
-            float: right;
-            width: 701px;
-            margin: -148px -800px;
-        }
-
-        .slider-text {
-            position: absolute;
-            right: 0;
-            bottom: 0
-        }
-
-        #slider .card-content {
-            max-width: 50%;
-        }
-
-        #slider {
-            overflow: hidden;
-            height: 588px;
-        }
-
-        @media screen and (max-width: 1023px) {
-            #slider .card-content {
-                display: none;
-            }
-        }
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .item-slide img {
-            max-width: 1200px;
-        }
-
-        .caption-container {
-            color: white;
-        }
-
-        .mBan ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            text-align: center;
-            margin: 246px -393px 52px;
-            float: left;
+            background-size: 100% auto;
+            background-repeat: no-repeat;
         }
 
         .content {
@@ -255,9 +152,16 @@
         .content:target {
             display: block;
         }
+
+        #footer {
+            clear: both;
+            border-top: #c1c1c1 solid 1px;
+            background: #f1f1f1;
+            height: 109px;
+        }
     </style>
-    <style type="text/css"></style>
 </head>
+
 <body>
     <div id="nav-group">
         <div class="container">
@@ -367,7 +271,6 @@
                             <a class="navbar-link is-arrowless">
                                 고양관광정보
                             </a>
-
                             <div class="navbar-dropdown single">
                                 <a class="navbar-item"
                                     href="https://www.goyang.go.kr/visitgoyang/contents/information/mapRequest.asp?cate_depth2=CD6300&amp;cateCode=CD6320">
@@ -398,36 +301,34 @@
                                     로그인
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </nav>
         </div>
     </div>
-  
     <div class="content" id="page1">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-        style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
-        <ul style="float:right;">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tourlist.html">전체 장소</a></li>
-            <li><a href="tourA.html"><span>관광</span>
-            <li class="is-active"><a href="tourAdetail.html#page1" aria-current="page1">서오릉(西五陵)</a></li>
-            </a></li>
-           
-        </ul>
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
+            <ul style="float:right;">
+                <li><a></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tourlist.html">전체 장소</a></li>
+                <li><a href="tourA.html"><span>관광</span>
+                <li class="is-active"><a href="tourAdetail.html#page1" aria-current="page1">서오릉(西五陵)</a></li>
+                </a></li>
+            </ul>
         </nav>
         <section class="section">
-            <div class="container" style="clear : both; margin-right:420px;">
+            <div class="container">
                 <h1 class="title">장소 상세보기</h1>
                 <div id="con">
                     <table class="table">
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourAdetail_files/seo.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourA_files/seo.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -486,11 +387,10 @@
 
                     </tbody>
                 </table>
-               
                 <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25274.67637814633!2d126.85061392474098!3d37.64133813886459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c97649f38bc99%3A0x837b152f927ae1c!2z7ISc7Jik66aJ!5e0!3m2!1sko!2skr!4v1670202624444!5m2!1sko!2skr"
-                width="600" height="450" style="border:0; padding-left: 10px;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25274.67637814633!2d126.85061392474098!3d37.64133813886459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c97649f38bc99%3A0x837b152f927ae1c!2z7ISc7Jik66aJ!5e0!3m2!1sko!2skr!4v1670202624444!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0; padding-left: 10px;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourA.html" class="button is-info">카테고리 목록</a>
@@ -498,21 +398,20 @@
             </div>
         </section>
     </div>
-  
     <div class="content" id="page2">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-        style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
-        <ul style="float:right;">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tourlist.html">전체 장소</a></li>
-            <li><a href="tourA.html"><span>관광</span>
-                </a>
-            </li>
-            <li class="is-active"><a href="tourAdetail.html#page2" aria-current="page2">킨텍스(KINTEX)</a></li>
-        </ul>
-    </nav>
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
+            <ul style="float:right;">
+                <li><a></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tourlist.html">전체 장소</a></li>
+                <li><a href="tourA.html"><span>관광</span>
+                    </a>
+                </li>
+                <li class="is-active"><a href="tourAdetail.html#page2" aria-current="page2">킨텍스(KINTEX)</a></li>
+            </ul>
+        </nav>
         <section class="section">
-          
             <div class="container">
                 <h1 class="title">장소 상세보기</h1>
                 <div id="con">
@@ -520,9 +419,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourAdetail_files/kintex.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
-                                    <!-- onerror="this.style.display='none'"  -->
+                                    <img src="./tourA_files/kintex.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                 </td>
                             </tr>
                         </tbody>
@@ -576,22 +474,22 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25265.280008767575!2d126.70613357910156!3d37.668948000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8577af38f6a9%3A0x7c68820222a0f168!2z7YKo7YWN7Iqk!5e0!3m2!1sko!2skr!4v1670228567391!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25265.280008767575!2d126.70613357910156!3d37.668948000000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8577af38f6a9%3A0x7c68820222a0f168!2z7YKo7YWN7Iqk!5e0!3m2!1sko!2skr!4v1670228567391!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourA.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
-
         </section>
     </div>
-
-
     <div class="content" id="page3">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourA.html"><span>관광</span>
@@ -608,8 +506,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourAdetail_files/hansan.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourA_files/hansan.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -665,21 +563,22 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12634.01844163594!2d126.98457824107523!3d37.660849113317425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbdd5b945eccf%3A0xfb9486536d6d79f9!2z67aB7ZWc7IKw!5e0!3m2!1sko!2skr!4v1670228623805!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12634.01844163594!2d126.98457824107523!3d37.660849113317425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357cbdd5b945eccf%3A0xfb9486536d6d79f9!2z67aB7ZWc7IKw!5e0!3m2!1sko!2skr!4v1670228623805!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourA.html" class="button is-info">카테고리 목록</a>
                 </div>
-    
             </div>
-           
         </section>
     </div>
-
     <div class="content" id="page4">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourA.html"><span>관광</span>
@@ -696,9 +595,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourAdetail_files/temple.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
-                                    <!-- onerror="this.style.display='none'"  -->
+                                    <img src="./tourA_files/temple.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                 </td>
                             </tr>
                         </tbody>
@@ -752,21 +650,22 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50534.140545266986!2d126.86987705820312!3d37.663688900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c961625d96d7d%3A0xe659c51f09a2721b!2z7Z2l6rWt7IKs!5e0!3m2!1sko!2skr!4v1670228667037!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50534.140545266986!2d126.86987705820312!3d37.663688900000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c961625d96d7d%3A0xe659c51f09a2721b!2z7Z2l6rWt7IKs!5e0!3m2!1sko!2skr!4v1670228667037!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourA.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
-
         </section>
     </div>
-
     <div class="content" id="page5">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourA.html"><span>관광</span>
@@ -783,8 +682,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourAdetail_files/hosu.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourA_files/hosu.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -839,31 +738,21 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202135.87668400587!2d126.76481340592129!3d37.663940629769755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229291980!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202135.87668400587!2d126.76481340592129!3d37.663940629769755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229291980!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourA.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-          
-
         </section>
     </div>
 
-
-
-
-    <style>
-        #footer {
-            clear: both;
-            border-top: #c1c1c1 solid 1px;
-            background: #f1f1f1;
-            height: 109px;
-        }
-    </style>
     <footer class="footer">
         <div class="container poRe">
-            <div class="fLogo"><img src="./tourAdetail_files/f_logo.png" alt="고양시 문화관광"></div>
+            <div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
             <p>
                 <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
                 031-909-9000 수화상담(경기도) 070-7947-3939
@@ -871,7 +760,6 @@
             </p>
         </div>
     </footer>
-
 </body>
 
 </html>

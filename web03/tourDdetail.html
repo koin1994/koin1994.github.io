@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>메인 페이지</title>
-    <link rel="stylesheet" href="./tourAdetail_files/bulma.min.css">
-    <link rel="stylesheet" href="./tourAdetail_files/bulma-carousel.min.css">
-    <script src="./tourAdetail_files/bulma-carousel.min.js.다운로드"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <style>
         body,
         html {
@@ -145,100 +145,6 @@
             background-repeat: no-repeat;
         }
 
-    
-    </style>
-    <script src="./tourAdetail_files/jquery-latest.js.다운로드"></script>
-    <style>
-        .notice {
-            float: left;
-            width: 420px;
-            height: 180px;
-            margin: 30px 0;
-            position: relative;
-        }
-
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            clear: both;
-            display: block;
-        }
-
-        .speaker {
-            float: right;
-            width: 701px;
-            margin: -148px -800px;
-        }
-
-        .slider-text {
-            position: absolute;
-            right: 0;
-            bottom: 0
-        }
-
-        #slider .card-content {
-            max-width: 50%;
-        }
-
-        #slider {
-            overflow: hidden;
-            height: 588px;
-        }
-
-        @media screen and (max-width: 1023px) {
-            #slider .card-content {
-                display: none;
-            }
-        }
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .item-slide img {
-            max-width: 1200px;
-        }
-
-        .caption-container {
-            color: white;
-        }
-
-        .mBan ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            text-align: center;
-            margin: 246px -393px 52px;
-            float: left;
-        }
-
         .content {
             display: none;
         }
@@ -246,8 +152,14 @@
         .content:target {
             display: block;
         }
+
+        #footer {
+            clear: both;
+            border-top: #c1c1c1 solid 1px;
+            background: #f1f1f1;
+            height: 109px;
+        }
     </style>
-    <style type="text/css"></style>
 </head>
 
 <body>
@@ -399,8 +311,9 @@
     </div>
     <div class="content" id="page1">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourD.html"><span>행사</span>
@@ -418,8 +331,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourDdetail_files/jo.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourD_files/jo.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -472,21 +385,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.67907566545!2d126.76406211564974!3d37.65674832671359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229795179!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.67907566545!2d126.76406211564974!3d37.65674832671359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229795179!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourD.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-          
+
         </section>
     </div>
 
 
     <div class="content" id="page2">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourD.html"><span>행사</span>
@@ -503,8 +420,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourDdetail_files/pare.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourD_files/pare.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -533,7 +450,7 @@
                         <tr>
                             <th>장소명</th>
                             <td>
-								경기국제관광박람회
+                                경기국제관광박람회
                             </td>
                         </tr>
                         <tr>
@@ -557,21 +474,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.2341745816475!2d126.74125881565004!3d37.66720492611357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8f8a08067c47%3A0xb46572c5de3e0eda!2zS0lOVEVYIO2VnOq1req1reygnOyghOyLnOyepQ!5e0!3m2!1sko!2skr!4v1670229818770!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.2341745816475!2d126.74125881565004!3d37.66720492611357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8f8a08067c47%3A0xb46572c5de3e0eda!2zS0lOVEVYIO2VnOq1req1reygnOyghOyLnOyepQ!5e0!3m2!1sko!2skr!4v1670229818770!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourD.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
 
-   	<div class="content" id="page3">
+    <div class="content" id="page3">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourD.html"><span>행사</span>
@@ -588,8 +509,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourDdetail_files/fire.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourD_files/fire.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -618,7 +539,7 @@
                         <tr>
                             <th>장소명</th>
                             <td>
-								고양호수꽃빛축제
+                                고양호수꽃빛축제
                             </td>
                         </tr>
                         <tr>
@@ -630,7 +551,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>낮에는 어린이를 위한 공연과 실내놀이터, 체험존이 가득한 환상적인 공간! 밤에는 화려한 불빛으로 수놓아진 로맨틱한 공간! 100만 고양시민의 핫플레이스 호수공원과 다이나믹한 불꽃쇼, 맛있는 먹거리까지 함께하는 대한민국 대표 빛 축제</p>
+                                <p>낮에는 어린이를 위한 공연과 실내놀이터, 체험존이 가득한 환상적인 공간! 밤에는 화려한 불빛으로 수놓아진 로맨틱한 공간! 100만 고양시민의 핫플레이스
+                                    호수공원과 다이나믹한 불꽃쇼, 맛있는 먹거리까지 함께하는 대한민국 대표 빛 축제</p>
                             </td>
                         </tr>
                         <tr>
@@ -642,21 +564,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.67907566545!2d126.76406211564974!3d37.65674832671359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229837314!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.67907566545!2d126.76406211564974!3d37.65674832671359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229837314!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourD.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
 
     <div class="content" id="page4">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourD.html"><span>행사</span>
@@ -673,8 +599,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourDdetail_files/sun.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourD_files/sun.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -696,7 +622,7 @@
                         <tr>
                             <th>장소 번호</th>
                             <td>
-                                <p>	D0017</p>
+                                <p> D0017</p>
                                 <input type="hidden" name="tourno" id="tourno" value="D0017">
                             </td>
                         </tr>
@@ -715,7 +641,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>희망찬 새해를 기원하는 해맞이 축제가 매년 행주산성에서 화려하게 펼쳐진다. 행주산성 정상은 조망이 뛰어나 새해 첫해를 감상하기에 최적의 장소로 꼽히는데 각종 공연과 새해소망 풍선 날리기, 불꽃놀이 등 새해 일출을 감상하며 소망을 다짐할 수 있는 다채로운 프로그램이 마련되어 축제의 흥을 더한다.</p>
+                                <p>희망찬 새해를 기원하는 해맞이 축제가 매년 행주산성에서 화려하게 펼쳐진다. 행주산성 정상은 조망이 뛰어나 새해 첫해를 감상하기에 최적의 장소로 꼽히는데
+                                    각종 공연과 새해소망 풍선 날리기, 불꽃놀이 등 새해 일출을 감상하며 소망을 다짐할 수 있는 다채로운 프로그램이 마련되어 축제의 흥을 더한다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -727,31 +654,23 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.0967038624626!2d126.82258661564877!3d37.599883029974684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9b09fc193cfd%3A0x39a4c1019b970dc0!2z7ZaJ7KO87IKw7ISx!5e0!3m2!1sko!2skr!4v1670229852591!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3161.0967038624626!2d126.82258661564877!3d37.599883029974684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9b09fc193cfd%3A0x39a4c1019b970dc0!2z7ZaJ7KO87IKw7ISx!5e0!3m2!1sko!2skr!4v1670229852591!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourD.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
-    
 
-
-
-    <style>
-        #footer {
-            clear: both;
-            border-top: #c1c1c1 solid 1px;
-            background: #f1f1f1;
-            height: 109px;
-        }
-    </style>
     <footer class="footer">
         <div class="container poRe">
-            <div class="fLogo"><img src="./tourAdetail_files/f_logo.png" alt="고양시 문화관광"></div>
+            <div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
             <p>
                 <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
                 031-909-9000 수화상담(경기도) 070-7947-3939

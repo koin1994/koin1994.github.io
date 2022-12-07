@@ -6,9 +6,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>메인 페이지</title>
-    <link rel="stylesheet" href="./tourAdetail_files/bulma.min.css">
-    <link rel="stylesheet" href="./tourAdetail_files/bulma-carousel.min.css">
-    <script src="./tourAdetail_files/bulma-carousel.min.js.다운로드"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
     <style>
         body,
         html {
@@ -145,100 +145,6 @@
             background-repeat: no-repeat;
         }
 
-       
-    </style>
-    <script src="./tourAdetail_files/jquery-latest.js.다운로드"></script>
-    <style>
-        .notice {
-            float: left;
-            width: 420px;
-            height: 180px;
-            margin: 30px 0;
-            position: relative;
-        }
-
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            clear: both;
-            display: block;
-        }
-
-        .speaker {
-            float: right;
-            width: 701px;
-            margin: -148px -800px;
-        }
-
-        .slider-text {
-            position: absolute;
-            right: 0;
-            bottom: 0
-        }
-
-        #slider .card-content {
-            max-width: 50%;
-        }
-
-        #slider {
-            overflow: hidden;
-            height: 588px;
-        }
-
-        @media screen and (max-width: 1023px) {
-            #slider .card-content {
-                display: none;
-            }
-        }
-
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .item-slide img {
-            max-width: 1200px;
-        }
-
-        .caption-container {
-            color: white;
-        }
-
-        .mBan ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            text-align: center;
-            margin: 246px -393px 52px;
-            float: left;
-        }
-
         .content {
             display: none;
         }
@@ -246,8 +152,14 @@
         .content:target {
             display: block;
         }
+
+        #footer {
+            clear: both;
+            border-top: #c1c1c1 solid 1px;
+            background: #f1f1f1;
+            height: 109px;
+        }
     </style>
-    <style type="text/css"></style>
 </head>
 
 <body>
@@ -399,8 +311,9 @@
     </div>
     <div class="content" id="page1">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourC.html"><span>행사</span>
@@ -418,8 +331,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourCdetail_files/flower.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourC_files/flower.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -460,7 +373,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>대한민국 꽃문화발전을 도모하여 아름다운 문화를 영위하기 위한 목적으로 시작된 고양시의 화훼산업은 70년대초부터 발전하기 시작하여 80년대에 이르러 국내에서는 물론 동북아에서 가장 명성있는 꽃의 중심도시로, 대한민국의 대표 꽃박람회이자 국내외 참가업체의 교역의 장으로 발전했다.</p>
+                                <p>대한민국 꽃문화발전을 도모하여 아름다운 문화를 영위하기 위한 목적으로 시작된 고양시의 화훼산업은 70년대초부터 발전하기 시작하여 80년대에 이르러
+                                    국내에서는 물론 동북아에서 가장 명성있는 꽃의 중심도시로, 대한민국의 대표 꽃박람회이자 국내외 참가업체의 교역의 장으로 발전했다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -472,21 +386,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.803312282034!2d126.76666431564972!3d37.653827926881235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c854654af619d%3A0x14ddecc7b303eb0!2z7Zi47IiY6rO17JuQIOqzoOyWkeq9g-yghOyLnOq0gA!5e0!3m2!1sko!2skr!4v1670229612074!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.803312282034!2d126.76666431564972!3d37.653827926881235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c854654af619d%3A0x14ddecc7b303eb0!2z7Zi47IiY6rO17JuQIOqzoOyWkeq9g-yghOyLnOq0gA!5e0!3m2!1sko!2skr!4v1670229612074!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourC.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
         </section>
     </div>
 
 
     <div class="content" id="page2">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourC.html"><span>행사</span>
@@ -503,8 +421,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourCdetail_files/hengju.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourC_files/hengju.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -545,7 +463,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>행주대첩은 권율 장군이 1593년 2월 행주산성에서 2300명의 관군과 의병, 승병, 부녀자 등 3000여 명의 백성들과 함께 3만여 명의 왜군에 맞서 싸워 승리로 이끈 전투로 한산대첩,진주대첩과 함께 임진왜란 3대 대첩으로 꼽힌다.</p>
+                                <p>행주대첩은 권율 장군이 1593년 2월 행주산성에서 2300명의 관군과 의병, 승병, 부녀자 등 3000여 명의 백성들과 함께 3만여 명의 왜군에 맞서
+                                    싸워 승리로 이끈 전투로 한산대첩,진주대첩과 함께 임진왜란 3대 대첩으로 꼽힌다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -557,21 +476,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50540.80739051828!2d126.73383362004589!3d37.653894932104684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ba745c80fa7%3A0x30ef013a4fcd7811!2z7ZaJ7KO864yA7LKp67mE!5e0!3m2!1sko!2skr!4v1670229637507!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50540.80739051828!2d126.73383362004589!3d37.653894932104684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9ba745c80fa7%3A0x30ef013a4fcd7811!2z7ZaJ7KO864yA7LKp67mE!5e0!3m2!1sko!2skr!4v1670229637507!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourC.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
 
-   	<div class="content" id="page3">
+    <div class="content" id="page3">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourC.html"><span>행사</span>
@@ -588,8 +511,8 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourCdetail_files/pet.jpg" class="lazy"
-                                        onerror="this.style.display='none'" alt="배너">
+                                    <img src="./tourC_files/pet.jpg" class="lazy" onerror="this.style.display='none'"
+                                        alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
                             </tr>
@@ -618,7 +541,7 @@
                         <tr>
                             <th>장소명</th>
                             <td>
-								펫츠런(Pets Run) 고양
+                                펫츠런(Pets Run) 고양
                             </td>
                         </tr>
                         <tr>
@@ -630,7 +553,9 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>12월 2일~3일에 일산문화공원에서 열리는 2022 펫츠런에서는 반려동물 산업 박람회(전시관, 반려관, 산업관, 체험관 등), 펫츠런 (인플루언서 독과 함께 호수 한바퀴), 미션런 (가자 고양, 체험경품 이벤트, 플로깅, 퀴즈퀴즈, SNS 등), 플레이그라운드 (펫티켓, 댕댕이업고 뛰기, 독테스트, 어질리티 등), 무대행사 ( 펫토크 콘서트, SNS탑 10 소개)등 다양한 프로그램이 준비되어 있으니 많은 참여 부탁드립니다.</p>
+                                <p>12월 2일~3일에 일산문화공원에서 열리는 2022 펫츠런에서는 반려동물 산업 박람회(전시관, 반려관, 산업관, 체험관 등), 펫츠런 (인플루언서 독과
+                                    함께 호수 한바퀴), 미션런 (가자 고양, 체험경품 이벤트, 플로깅, 퀴즈퀴즈, SNS 등), 플레이그라운드 (펫티켓, 댕댕이업고 뛰기, 독테스트,
+                                    어질리티 등), 무대행사 ( 펫토크 콘서트, SNS탑 10 소개)등 다양한 프로그램이 준비되어 있으니 많은 참여 부탁드립니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -642,21 +567,25 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.60589286734!2d126.76852071564984!3d37.658468526614946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c854565128af3%3A0x1428cac79844e855!2z7J287IKw66y47ZmU6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229653619!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.60589286734!2d126.76852071564984!3d37.658468526614946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c854565128af3%3A0x1428cac79844e855!2z7J287IKw66y47ZmU6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229653619!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourC.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
+
 
         </section>
     </div>
 
     <div class="content" id="page4">
         <nav class="breadcrumb" aria-label="breadcrumbs"
-            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:48px; line-height:48px;">
+            style="border-bottom:2px solid #ddd; padding-bottom:8px; min-height:56px; line-height:15px;">
             <ul style="float:right;">
+                <li><a></a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="tourlist.html">전체 장소</a></li>
                 <li><a href="tourC.html"><span>행사</span>
@@ -673,7 +602,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="./tourCdetail_files/goyangart.jpg" class="lazy"
+                                    <img src="./tourC_files/goyangart.jpg" class="lazy"
                                         onerror="this.style.display='none'" alt="배너">
                                     <!-- onerror="this.style.display='none'"  -->
                                 </td>
@@ -715,7 +644,8 @@
                         <tr>
                             <th>장소 상세 설명</th>
                             <td>
-                                <p>엄선된 국내외 초청작들과 자유 참가작은 물론, 지역 예술가를 비롯한 고양버스커즈 퍼포먼스 팀들과 함께하는 특별 기획 프로그램까지! 2022년 고양특례시 원년을 맞아 더욱 풍성한 볼거리를 준비했습니다.</p>
+                                <p>엄선된 국내외 초청작들과 자유 참가작은 물론, 지역 예술가를 비롯한 고양버스커즈 퍼포먼스 팀들과 함께하는 특별 기획 프로그램까지! 2022년 고양특례시
+                                    원년을 맞아 더욱 풍성한 볼거리를 준비했습니다.</p>
                             </td>
                         </tr>
                         <tr>
@@ -727,31 +657,22 @@
                         </tr>
                     </tbody>
                 </table>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.8034920916775!2d126.76447563488763!3d37.65382370000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229676523!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.8034920916775!2d126.76447563488763!3d37.65382370000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c8541726f44d1%3A0xe2a7cae3a3b21eed!2z7J287IKw7Zi47IiY6rO17JuQ!5e0!3m2!1sko!2skr!4v1670229676523!5m2!1sko!2skr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div class="buttons">
                     <a href="tourList.html" class="button is-info">전체 목록</a>
                     <a href="tourC.html" class="button is-info">카테고리 목록</a>
                 </div>
             </div>
-           
 
         </section>
     </div>
-    
 
-
-
-    <style>
-        #footer {
-            clear: both;
-            border-top: #c1c1c1 solid 1px;
-            background: #f1f1f1;
-            height: 109px;
-        }
-    </style>
     <footer class="footer">
         <div class="container poRe">
-            <div class="fLogo"><img src="./tourAdetail_files/f_logo.png" alt="고양시 문화관광"></div>
+            <div class="fLogo"><img src="./index_files/f_logo.png" alt="고양시 문화관광"></div>
             <p>
                 <a href="http://opensource.org/licenses/mit-license.php"></a>경기도 고양시 덕양구 고양시청로10 (우) 10460 민원콜센터(시청)
                 031-909-9000 수화상담(경기도) 070-7947-3939
