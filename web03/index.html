@@ -138,106 +138,31 @@
             background: #f1f1f1;
             height: 109px;
         }
-
-        /* 부분스타일 */
-        .table {
-            min-width: 960px;
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-        }
-
-        .notice {
-            float: left;
-            width: 420px;
-            height: 180px;
-            margin: 30px 0;
-            position: relative;
-        }
-
-        .container {
-            width: 1200px;
-            margin: 0 auto;
-            clear: both;
-            display: block;
-        }
-
-        .speaker {
-            float: right;
-            width: 701px;
-            margin: -148px -800px;
-        }
-
-        .slider-text {
-            position: absolute;
-            right: 0;
-            bottom: 0
-        }
-
-        #slider .card-content {
-            max-width: 50%;
-        }
-
-        #slider {
-            overflow: hidden;
-            height: 588px;
-        }
-
-        @media screen and (max-width: 1023px) {
-            #slider .card-content {
-                display: none;
-            }
-        }
-
+    </style>
+      
+    <style>
+        .table { min-width: 960px; background-size: 100% auto; background-repeat: no-repeat; }
+        .notice { float: left; width: 420px; height: 180px; margin: 30px 0; position: relative; }
+        .container { width: 1200px; margin: 0 auto; clear: both; display: block; }
+        .speaker { float: right; width: 701px; margin: -148px -800px; }
+        .slider-text { position: absolute; right: 0; bottom: 0; }
+        #slider .card-content { max-width: 50%; }
+        #slider { overflow: hidden; height: 588px; }
+        @media screen and (max-width: 1023px) { #slider .card-content { display: none; }}
         .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            right: 0;
-            top: 0;
-        }
-
-        .item-slide img {
-            max-width: 1200px;
-        }
-
-        .caption-container {
-            color: white;
-        }
-
-        .mBan ul {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            text-align: center;
-            margin: 246px -393px 52px;
-            float: left;
-        }
+        .next { cursor: pointer; position: absolute; top: 50%; width: auto; padding: 16px;
+            margin-top: -50px; color: white; font-weight: bold; font-size: 20px; transition: 0.6s ease;
+            border-radius: 0 3px 3px 0; user-select: none; -webkit-user-select: none; }
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .numbertext { color: #f2f2f2; font-size: 12px; padding: 8px 12px; position: absolute;
+            right: 0; top: 0; }
+        .item-slide img { max-width: 1200px; }
+        .caption-container { color: white; }
+        .mBan ul { display: flex; justify-content: space-between;
+            align-items: flex-end; text-align: center; margin: 246px -393px 52px;
+            float: left; }
     </style>
 </head>
-
 <body>
     <div id="nav-group">
         <div class="container">
@@ -343,29 +268,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="navbar-item has-dropdown is-hoverable single">
-                            <a class="navbar-link is-arrowless">
-                                고양관광정보
-                            </a>
-
-                            <div class="navbar-dropdown single">
-                                <a class="navbar-item"
-                                    href="https://www.goyang.go.kr/visitgoyang/contents/information/mapRequest.asp?cate_depth2=CD6300&amp;cateCode=CD6320">
-                                    관광안내홍보물신청
-                                </a>
-                                <a class="navbar-item"
-                                    href="https://www.goyang.go.kr/visitgoyang/contents/information/explain_guide.asp?cate_depth2=CD6200&amp;cateCode=CD6230">
-                                    문화관광해설 안내 및 예약
-                                </a>
-                                <a class="navbar-item" href="http://www.goyang.go.kr/ghistory/index.do">
-                                    사이버 역사 박물관
-                                </a>
-                                <hr class="navbar-divider">
-                                <a class="navbar-item" href="https://goyangcitytour.modoo.at/">
-                                    시티투어
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <div class="navbar-end" id="tnb">
                         <div class="navbar-item">
@@ -381,9 +283,9 @@
                     </div>
                 </div>
             </nav>
-
         </div>
     </div>
+
     <section>
         <div id="slider">
             <div class="card">
@@ -414,48 +316,28 @@
             <h1><strong>공지사항</strong></h1>
             <ul>
                 <li>
-                    <a href="NoticeList.html#page1">
-                        2022 고양관광특구 페스티벌 BIG3
-                    </a>
-
+                    <a href="NoticeList.html#page1">2022 고양관광특구 페스티벌 BIG3</a>
                     <span class="date">2022-10-21</span>
                 </li>
-
                 <li>
-                    <a href="NoticeList.html#page2">
-                        2022 고양가을꽃축제 개최안내
-                    </a>
-
+                    <a href="NoticeList.html#page2">2022 고양가을꽃축제 개최안내</a>
                     <span class="date">2022-10-07</span>
                 </li>
-
                 <li>
-                    <a href="NoticeList.html#page3">
-                        2022 고양호수예술축제 개최안내
-                    </a>
-
+                    <a href="NoticeList.html#page3">2022 고양호수예술축제 개최안내</a>
                     <span class="date">2022-09-28</span>
                 </li>
-
                 <li>
-                    <a href="NoticeList.html#page4">
-                        뮤비 속 고양시를 찾아라! 고양 평화누리길...
-                    </a>
-
+                    <a href="NoticeList.html#page4">뮤비 속 고양시를 찾아라! 고양 평화누리길</a>
                     <span class="date">2021-12-30</span>
                 </li>
-
                 <li>
-                    <a href="NoticeList.html#page5">
-                        한강하구 생태역사평화이야기
-                    </a>
-
+                    <a href="NoticeList.html#page5">한강하구 생태역사평화이야기</a>
                     <span class="date">2021-12-02</span>
                 </li>
             </ul>
             <div class="speaker">
-
-                <a href="https://goyang.dadora.kr/client/index.html" target="_blank"><img
+                <a href="tourList.html" target="_blank"><img
                         src="./index_files/speaker.jpg" alt="고양 스마트관광전자지도 다도라" style="max-width:100%;"></a>
             </div>
         </div>
@@ -469,15 +351,12 @@
         });
         var slideIndex = 1;
         showSlides(slideIndex);
-
         function plusSlides(n) {
             showSlides(slideIndex += n);
         }
-
         function currentSlide(n) {
             showSlides(slideIndex = n);
         }
-
         function showSlides(n) {
             var i;
             var slides = document.getElementsByClassName("item-slide");
@@ -491,35 +370,35 @@
     </script>
     <div class="mBan">
         <ul>
-            <li><a href="http://www.xn--299au8v81i1iaw91b5jf.com/" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/24.gif" alt="고양아트마켓">
                 </a>
             </li>
-            <li><a href="https://dmz.gg.go.kr/gg_dmz-tour/peace/" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/21.gif" alt="평화누리길">
                 </a>
             </li>
-            <li><a href="http://ggtour.or.kr/" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/22.gif" alt="평화누리길 다음카페">
                 </a>
             </li>
-            <li><a href="https://www.goyang.go.kr/index.do" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/1.gif" alt="고양시">
                 </a>
             </li>
-            <li><a href="https://goyangcitytour.modoo.at/" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/14.gif" alt="고양시티투어">
                 </a>
             </li>
-            <li><a href="http://agr.goyang.go.kr/" target="_blank">
+            <li><a href=" target="_blank">
                     <img src="./index_files/8.gif" alt="고양시 농업기술센터">
                 </a>
             </li>
-            <li><a href="http://its.goyang.go.kr/" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/9.gif" alt="고양시 교통정보센터">
                 </a>
             </li>
-            <li><a href="http://www.hjfestival.or.kr/" target="_blank">
+            <li><a href="" target="_blank">
                     <img src="./index_files/11.gif" alt="고양행주문화제">
                 </a>
             </li>
