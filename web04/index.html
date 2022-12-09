@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8093/ -->
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>메인페이지</title>
+	<!-- 헤드 부분 인클루드 -->
+
+	<!-- <script src="include/jquery.js"></script>
+<script src="include/foundation.js"></script>
+<link href="inculde/foundation.css" rel="stylesheet" /> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/foundation.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-float.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-prototype.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation-rtl.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/css/foundation.min.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.accordion.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.accordionMenu.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdown.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.5/js/plugins/foundation.dropdownMenu.min.js"></script>
+<script type="text/javascript" src="https://www.youtube.com/iframe_api"></script> -->
+	<script src="./index_files/jquery-latest.js.다운로드"></script>
+	<link rel="stylesheet" href="./index_files/normalize.css">
+	<link rel="stylesheet" href="./index_files/foundation.min.css">
+	<link rel="stylesheet" href="./index_files/motion-ui.min.css">
+	<link rel="stylesheet" href="./index_files/foundation-prototype.min.css">
+	<link href="./index_files/foundation-icons.css" rel="stylesheet" type="text/css">
+	<script src="./index_files/jquery-2.1.4.min.js.다운로드"></script>
+	<script src="./index_files/foundation.min.js.다운로드"></script>
+	<script src="./index_files/motion-ui.min.js.다운로드"></script>
+	<script>
+		$(document).ready(function () {
+			$(document).foundation();
+		});
+	</script>
+	<style>
+		ul {
+			list-style: none;
+		}
+
+		#gnb>ul>li[role="menuitem"] {
+			height: 38px;
+		}
+
+		#gnb>ul>li.menu-text[role="menuitem"] {
+			padding-top: 0px;
+			padding-bottom: 0px;
+		}
+
+		.h1 {
+			padding-top: 0.9rem;
+			padding-bottom: 0.3rem;
+		}
+
+		.container {
+			clear: both;
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		.container::after {
+			content: "";
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+
+		#table1 th {
+			border-bottom: 1px solid #fff;
+		}
+
+		.footer-nav {
+			background-color: #2d2d2d;
+			height: 80px;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+
+		.footer-nav>article {
+			clear: both;
+			width: 1200px;
+			margin: 0px auto;
+			height: 80px;
+		}
+
+		.footer-nav>article>div {
+			float: left;
+		}
+
+		.footer-nav-left {
+			color: #fff;
+			width: 25%;
+			line-height: 80px;
+		}
+
+		.footer-nav-center {
+			width: 50%;
+		}
+
+		.footer-nav-right {
+			width: 25%;
+		}
+
+		#footer .footer-nav-left .footer-copyright {
+			line-height: 80px;
+		}
+
+		#footer>article>div>ul>li.footer-nav-item {
+			float: left;
+			width: auto;
+			padding: 1.8rem;
+			min-width: 40px;
+		}
+
+		#footer>article>div.footer-nav-right>ul>li.footer-nav-item {
+			width: 25%;
+			height: 25%;
+		}
+	</style>
+
+	<meta class="foundation-mq">
+	<style type="text/css"></style>
+</head>
+
+<body>
+	<header id="header">
+		<!-- 헤더 부분 인클루드 -->
+
+
+
+
+
+		<!-- 헤더 내용 기술 -->
+		<nav class="top-bar">
+			<div class="top-bar-left" id="gnb">
+				<!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
+				<ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="960d4w-e">
+					<li class="menu-text" role="menuitem"><img src="./index_files/logo_header.png" class="logo"></li>
+					<li role="menuitem"><a href="http://localhost:8093/">Home</a></li>
+					<li role="menuitem"><a href="http://localhost:8093/#">회사소개</a></li>
+					<li role="menuitem"><a href="http://localhost:8093/brand/brandlist">브랜드소개</a></li>
+					<li role="menuitem"><a href="http://localhost:8093/#">투자정보</a></li>
+					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
+						aria-label="고객센터">
+						<a href="http://localhost:8093/#">고객센터</a>
+						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="http://localhost:8093/board/list.do">공지사항</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="http://localhost:8093/#">자료실</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="http://localhost:8093/qna/list.do">질문 및 답변</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="http://localhost:8093/free/list.do">자유게시판</a></li>
+						</ul>
+					</li>
+					<li role="menuitem"><a href="http://localhost:8093/#">소셜라이브</a></li>
+				</ul>
+			</div>
+
+			<div class="top-bar-right">
+				<ul class="menu">
+
+					<li><a href="http://localhost:8093/member/loginForm.do">로그인</a></li>
+					<li><a href="http://localhost:8093/member/agree.do">회원가입</a></li>
+
+
+
+				</ul>
+			</div>
+		</nav>
+		<!-- End Top Bar -->
+		<!-- End Top Bar -->
+
+		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="" data-resize="xle4q6-orbit"
+			id="xle4q6-orbit" data-e="ui7ad7-e">
+			<ul class="orbit-container" tabindex="0" style="height: 800px;">
+				<button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous
+						Slide</span>◀</button>
+				<button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next
+						Slide</span>▶</button>
+				<li class="orbit-slide" data-slide="0" style="display: none; position: relative; top: 0px;">
+					<img src="./index_files/bg_mainVisual01.jpg" alt="더미이미지">
+				</li>
+				<li class="orbit-slide is-active" data-slide="1" style="position: relative; top: 0px; display: block;"
+					aria-live="polite">
+					<img src="./index_files/bg_mainVisual02.jpg" alt="더미이미지">
+				</li>
+
+			</ul>
+		</div>
+	</header>
+	<div id="content">
+		<div class="container">
+			<div class="text-center">
+				<h1>Brand</h1>
+				<hr>
+			</div>
+			<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+				<div class="cell">
+					<img class="thumbnail" src="./index_files/gnb_thumb01.jpg">
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">건강한 식생활의
+						<br> 기본</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./index_files/gnb_thumb02.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">현대적으로 재탄생한
+						<br> 전통의 맛과 멋</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./index_files/gnb_thumb04.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">세계 수준의
+						<br> 고급 유제품</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./index_files/gnb_thumb05.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">자연의 행복을
+						<br> 담은 우유</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./index_files/gnb_thumb06.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">맛있고 푸짐한
+						<br> 동원 개성 만두</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./index_files/gnb_thumb07.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">진짜 게살이 들어가
+						<br> 맛있다!</a>
+				</div>
+			</div>
+			<hr>
+			<h1>Social Live</h1>
+			<div class="grid-container">
+				<div class="grid-x grid-margin-x small-up-2 medium-up-3">
+					<div class="cell">
+						<div class="card">
+							<img src="./index_files/dda9cab5c1c44dc7bd08790fce3866a2.jpg">
+							<div class="card-section">
+								<h4>[전지적 동원 시점]K-치즈의 고소한 풍미, 덴마크 리코타치즈!</h4>
+								<p>2022-04-26 11:34:36</p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<img src="./index_files/67b70e43d58f4735afa64f181971db5a.jpg">
+							<div class="card-section">
+								<h4>[요리감상] Ep 10 늦은 아침 크루아상 샌드위치와 커피 한잔의 여유로움 어때?</h4>
+								<p>2022-04-26 11:34:17</p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<img src="./index_files/818d2d22aaa64d2b9d334e60d1b54835.jpg">
+							<div class="card-section">
+								<h4>[동원TV X 미식일기] 아이들 사이에서 인기만점 병아리 핫도그~</h4>
+								<p>2022-04-26 11:33:40</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer id="footer" class="footer-nav row expanded collapse">
+		
+		<article class="ft_wrap">
+			<div class="footer-nav-left">
+				<img src="./index_files/logo_footer03.png">
+				<p class="footer-copyright">ⓒ 2015 동원. All rights reserved.</p>
+			</div>
+			<div class="footer-nav-center">
+				<ul class="footer-nav-menu">
+					<li class="footer-nav-item">
+						<a href="https://www.dongwonfnb.com/services/Etc/Terms">법적고지</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://www.dongwonfnb.com/services/Etc/Privacy">개인정보처리방침</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://www.dongwon.com/ethics/report/write">정도경영신고센터</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-nav-right">
+				<ul class="footer-nav-menu-icons">
+					<li class="footer-nav-item">
+						<a href="http://localhost:8093/get-involved/support.html"><img class="footer-social-icon"
+								src="./index_files/email-icon.svg" alt=""></a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://www.facebook.com/foundation/"><img class="footer-social-icon"
+								src="./index_files/facebook-icon.svg" alt=""></a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon"
+								src="./index_files/twitter-icon.svg" alt=""></a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img
+								class="footer-social-icon" src="./index_files/youtube-icon.svg" alt=""></a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</footer>
+
+
+</body>
+
+</html>
