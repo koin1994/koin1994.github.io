@@ -6,7 +6,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>주력메뉴</title>
+	<title>게시판 목록</title>
 	<!-- 헤드 부분 인클루드 -->
 
 	<script src="./source/js,css/postcode.v2.js"></script>
@@ -181,64 +181,41 @@
 		</div>
 	</header>
 
-	<div class="contents_header" style="text-align:center; padding-top:40px;">
-		<h1> 주력 제품안내 </h1>
-		<p class="h1_summary">동원 F&amp;B는 다양하고 건강한 제품으로 고객님께 날마다 좋은 음식을 선사하고 있습니다.</p>
-	</div>
-	<article class="grid-container">
-		<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-4">
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu1.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu2.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu3.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu4.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu5.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu6.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu7.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu8.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu9.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu10.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu11.jpg">
-
-			</div>
-			<div class="cell">
-				<img class="thumbnail" src="./source/image/menu12.jpg">
-
+	<div class="content" id="content">
+		<div class="row column text-center">
+			<h2 class="h1">공지사항 글 수정</h2>
+			<hr>
+			<div class="container">
+				<form action="boardModify.html" method="post">
+					<table id="table1">
+						<tbody>
+							<tr>
+								<th style="background-color:#dcdcdc">글 제목</th>
+								<td>
+									<input type="hidden" name="seq" id="seq" value="12">
+									<input type="text" name="title" id="title" placeholder="제목 입력" value="ㄴㅁㅇㄹ"
+										maxlength="98" required="">
+								</td>
+							</tr>
+							<tr>
+								<th style="background-color:#dcdcdc">글 내용</th>
+								<td>
+									<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100"
+										maxlength="800" required="">ㅁㄹ</textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="submit" class="submit success button" value="글 수정">
+									<a class="button" href="boardList.html">글 목록</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
 			</div>
 		</div>
-	</article>
-
-
+	</div>
 	<footer id="footer" class="footer-nav row expanded collapse">
 		<article class="ft_wrap">
 			<div class="footer-nav-left">

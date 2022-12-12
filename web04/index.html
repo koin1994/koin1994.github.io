@@ -1,222 +1,309 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)http://localhost:8093/ -->
 <html>
-	<head>
+
+<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>동원 F&B</title>
 	<!-- 헤드 부분 인클루드 -->
-    
+
 	<script src="./source/js,css/postcode.v2.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
-	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
+		type='text/css'>
 	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
-	
+
 	<script>
-	$(document).ready(function(){
-		$(document).foundation();
-	});
+		$(document).ready(function () {
+			$(document).foundation();
+		});
 	</script>
 	<style>
-		ul { list-style:none; }
-		#gnb > ul > li[role="menuitem"] { height:38px; }
-		#gnb > ul > li.menu-text[role="menuitem"] { padding-top:0px; padding-bottom:0px; }
-		.h1 { padding-top:0.9rem; padding-bottom:0.3rem; }
-		.container { clear:both; width:1200px; margin:0 auto; }
-		.container::after { content:""; display:block; width:100%; clear:both; }
-		#table1 th { border-bottom:1px solid #fff; }
-		.footer-nav {	background-color:#2d2d2d; height:80px; box-sizing:border-box; overflow:hidden; }
-		.footer-nav > article { clear:both; width:1200px; margin:0px auto; height:80px; }
-		.footer-nav > article > div { float:left; }
-		.footer-nav-left { color:#fff; width:25%; line-height:80px; }
-		.footer-nav-center {
-			width:50%;
-		}
-		.footer-nav-right {
-			width:25%; 
-		}
-		#footer .footer-nav-left .footer-copyright {
-			line-height:80px;
+		ul {
+			list-style: none;
 		}
 
-		#footer > article > div > ul > li.footer-nav-item { 
-			float:left; width:auto; padding:1.8rem;  
-			min-width:40px;
+		#gnb>ul>li[role="menuitem"] {
+			height: 38px;
 		}
-		#footer > article > div.footer-nav-right > ul > li.footer-nav-item {
-			width:25%; height:25%;
+
+		#gnb>ul>li.menu-text[role="menuitem"] {
+			padding-top: 0px;
+			padding-bottom: 0px;
 		}
-		</style>
+
+		.h1 {
+			padding-top: 0.9rem;
+			padding-bottom: 0.3rem;
+		}
+
+		.container {
+			clear: both;
+			width: 1200px;
+			margin: 0 auto;
+		}
+
+		.container::after {
+			content: "";
+			display: block;
+			width: 100%;
+			clear: both;
+		}
+
+		#table1 th {
+			border-bottom: 1px solid #fff;
+		}
+
+		.footer-nav {
+			background-color: #2d2d2d;
+			height: 80px;
+			box-sizing: border-box;
+			overflow: hidden;
+		}
+
+		.footer-nav>article {
+			clear: both;
+			width: 1200px;
+			margin: 0px auto;
+			height: 80px;
+		}
+
+		.footer-nav>article>div {
+			float: left;
+		}
+
+		.footer-nav-left {
+			color: #fff;
+			width: 25%;
+			line-height: 80px;
+		}
+
+		.footer-nav-center {
+			width: 50%;
+		}
+
+		.footer-nav-right {
+			width: 25%;
+		}
+
+		#footer .footer-nav-left .footer-copyright {
+			line-height: 80px;
+		}
+
+		#footer>article>div>ul>li.footer-nav-item {
+			float: left;
+			width: auto;
+			padding: 1.8rem;
+			min-width: 40px;
+		}
+
+		#footer>article>div.footer-nav-right>ul>li.footer-nav-item {
+			width: 25%;
+			height: 25%;
+		}
+	</style>
 
 	<meta class="foundation-mq">
 	<style type="text/css"></style>
-	</head>
+</head>
+
 <body>
-<header id="header">
-<nav class="top-bar">
-   <div class="top-bar-left" id="gnb">
-   	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
-     <ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e">
-       <li class="menu-text" role="menuitem"><img src="./source/image/logo_header.png" class="logo"></li>
-       <li role="menuitem"><a href="index.html">Home</a></li>
-       <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="회사소개">
-			<a href="#">회사소개</a>
-				<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="intro.html">한눈에 보는 동원F&amp;B</a></li>
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="ceo.html">CEO 인사말</a></li></ul>
-       		</li><li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="브랜드소개">
-       		<a href="#">브랜드소개</a>
-				<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="brand.html">한눈에 보는 브랜드</a></li>
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="menu.html">주력 브랜드 상품</a></li></ul>
-       </li><li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="고객센터" data-is-click="false">
-			<a href="#">고객센터</a>
-		<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu" >
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="boardList.html">공지사항</a></li>
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="qna.html">질문 및 답변</a></li>
-				<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="free.html">자유게시판</a></li>
+	<header id="header">
+		<nav class="top-bar">
+			<div class="top-bar-left" id="gnb">
+				<!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
+				<ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e">
+					<li class="menu-text" role="menuitem"><img src="./source/image/logo_header.png" class="logo"></li>
+					<li role="menuitem"><a href="index.html">Home</a></li>
+					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
+						aria-label="회사소개">
+						<a href="#">회사소개</a>
+						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="intro.html">한눈에 보는 동원F&amp;B</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="ceo.html">CEO
+									인사말</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
+						aria-label="브랜드소개">
+						<a href="#">브랜드소개</a>
+						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="brand.html">한눈에 보는 브랜드</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="menu.html">주력
+									브랜드 상품</a></li>
+						</ul>
+					</li>
+					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
+						aria-label="고객센터" data-is-click="false">
+						<a href="#">고객센터</a>
+						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="boardList.html">공지사항</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a href="qna.html">질문 및
+									답변</a></li>
+							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
+									href="free.html">자유게시판</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="top-bar-right">
+				<ul class="menu">
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="agree.html">회원가입</a></li>
+				</ul>
+			</div>
+		</nav>
+		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="" data-resize="mi6vi7-orbit"
+			id="mi6vi7-orbit" data-e="5cihe4-e" data-events="resize">
+			<ul class="orbit-container" tabindex="0" style="height: 792.906px;">
+				<button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous
+						Slide</span>◀</button>
+				<button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next
+						Slide</span>▶</button>
+				<li class="orbit-slide" data-slide="0" style="display: none; position: relative;">
+					<img src="./source/image/slider1.jpg" alt="더미이미지">
+				</li>
+				<li class="orbit-slide is-active" data-slide="1" style="position: relative; top: 0px; display: block;"
+					aria-live="polite">
+					<img src="./source/image/slider2.jpg" alt="더미이미지">
+				</li>
 			</ul>
-    	</li>
-     </ul>
-   </div>
-     <div class="top-bar-right">
-       <ul class="menu">
-          <li><a href="login.html">로그인</a></li>
-          <li><a href="agree.html">회원가입</a></li>
-       </ul>
-     </div>
-  </nav>
-    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="" data-resize="mi6vi7-orbit" id="mi6vi7-orbit" data-e="5cihe4-e" data-events="resize">
-      <ul class="orbit-container" tabindex="0" style="height: 792.906px;">
-        <button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous Slide</span>◀</button>
-        <button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next Slide</span>▶</button>
-        <li class="orbit-slide" data-slide="0" style="display: none; position: relative;">
-          <img src="./source/image/slider1.jpg" alt="더미이미지">
-        </li>
-        <li class="orbit-slide is-active" data-slide="1" style="position: relative; top: 0px; display: block;" aria-live="polite">
-          <img src="./source/image/slider2.jpg" alt="더미이미지">
-        </li>
-      </ul>
-    </div>
-</header>
-<br><br>
-<div id="content">
-	<div class="container">
-	<div class="text-center">
-          <h1>Brand</h1>
-        <hr>
-        </div>
-
-          <div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
-          <div class="cell">
-            <img class="thumbnail" src="./source/image/mainlogo1.jpg">
-             <a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">건강한 식생활의 <br> 기본</a>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="./source/image/mainlogo2.jpg">
-            
-            <a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">현대적으로 재탄생한 <br> 전통의 맛과 멋</a>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="./source/image/mainlogo3.jpg">
-           
-            <a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">세계 수준의 <br> 고급 유제품</a>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="./source/image/mainlogo4.jpg">
-            
-            <a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">자연의 행복을 <br> 담은 우유</a>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="./source/image/mainlogo5.jpg">
-            
-            <a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">맛있고 푸짐한 <br> 동원 개성 만두</a>
-          </div>
-          <div class="cell">
-            <img class="thumbnail" src="./source/image/mainlogo6.jpg">
-            
-            <a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">진짜 게살이 들어가 <br> 맛있다!</a>
-          </div>
-        </div>
-        <hr>
-         <h1>Social Live</h1>
-       <div class="grid-container">
-		  <div class="grid-x grid-margin-x small-up-2 medium-up-3">
-		    <div class="cell">
-		      <div class="card">
-		        <img src="./source/image/main1.jpg">
-		        <div class="card-section">
-		        <h4>[전지적 동원 시점]K-치즈의 고소한 풍미, 덴마크 리코타치즈!</h4>
-		          <p>2022-04-26 11:34:36</p>
-		        </div>
-		      </div>
-		    </div>
-		    <div class="cell">
-		      <div class="card">
-		        <img src="./source/image/main2.jpg">
-		        <div class="card-section">
-		          <h4>[요리감상] Ep 10 늦은 아침 크루아상 샌드위치와 커피 한잔의 여유로움 어때?</h4>
-		          <p>2022-04-26 11:34:17</p>
-		        </div>
-		      </div>
-		    </div>
-		    <div class="cell">
-		      <div class="card">
-		        <img src="./source/image/main3.jpg">
-		        <div class="card-section">
-		          <h4>[동원TV X 미식일기] 아이들 사이에서 인기만점 병아리 핫도그~</h4>
-		          <p>2022-04-26 11:33:40</p>
-		        </div>
-		      </div>
-		    </div>
-		  </div>
 		</div>
-  	</div>
-</div>
-	
+	</header>
+	<br><br>
+	<div id="content">
+		<div class="container">
+			<div class="text-center">
+				<h1>Brand</h1>
+				<hr>
+			</div>
+
+			<div class="grid-x grid-margin-x small-up-2 medium-up-3 large-up-6">
+				<div class="cell">
+					<img class="thumbnail" src="./source/image/mainlogo1.jpg">
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">건강한 식생활의
+						<br> 기본</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./source/image/mainlogo2.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">현대적으로 재탄생한
+						<br> 전통의 맛과 멋</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./source/image/mainlogo3.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">세계 수준의
+						<br> 고급 유제품</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./source/image/mainlogo4.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">자연의 행복을
+						<br> 담은 우유</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./source/image/mainlogo5.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">맛있고 푸짐한
+						<br> 동원 개성 만두</a>
+				</div>
+				<div class="cell">
+					<img class="thumbnail" src="./source/image/mainlogo6.jpg">
+
+					<a href="http://localhost:8093/#" class="clear button secondary so-basic expanded hollow">진짜 게살이 들어가
+						<br> 맛있다!</a>
+				</div>
+			</div>
+			<hr>
+			<h1>Social Live</h1>
+			<div class="grid-container">
+				<div class="grid-x grid-margin-x small-up-2 medium-up-3">
+					<div class="cell">
+						<div class="card">
+							<img src="./source/image/main1.jpg">
+							<div class="card-section">
+								<h4>[전지적 동원 시점]K-치즈의 고소한 풍미, 덴마크 리코타치즈!</h4>
+								<p>2022-04-26 11:34:36</p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<img src="./source/image/main2.jpg">
+							<div class="card-section">
+								<h4>[요리감상] Ep 10 늦은 아침 크루아상 샌드위치와 커피 한잔의 여유로움 어때?</h4>
+								<p>2022-04-26 11:34:17</p>
+							</div>
+						</div>
+					</div>
+					<div class="cell">
+						<div class="card">
+							<img src="./source/image/main3.jpg">
+							<div class="card-section">
+								<h4>[동원TV X 미식일기] 아이들 사이에서 인기만점 병아리 핫도그~</h4>
+								<p>2022-04-26 11:33:40</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 
-<footer id="footer" class="footer-nav row expanded collapse">
-<article class="ft_wrap">
-	<div class="footer-nav-left">
-		<img src="./source/image/logo_footer.png">
-	  <p class="footer-copyright">ⓒ 2015 동원. All rights reserved.</p>
-	</div>
-	<div class="footer-nav-center">
-	  <ul class="footer-nav-menu">
-	    <li class="footer-nav-item">
-	      <a href="#">법적고지</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="#">개인정보처리방침</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="#">정도경영신고센터</a>
-	    </li>
-	  </ul>
-	</div>
-	<div class="footer-nav-right">
-	  <ul class="footer-nav-menu-icons">
-	    <li class="footer-nav-item">
-	      <a href="https://www.instagram.com/dongwongroup/"><img class="footer-social-icon" src="./source/svg/email-icon.svg" alt="이메일"></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://ko-kr.facebook.com/dongwongroup/"><img class="footer-social-icon" src="./source/svg/facebook-icon.svg" alt="페이스북"></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://blog.naver.com/dongwon_well"><img class="footer-social-icon" src="./source/svg/twitter-icon.svg" alt="트위터"></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.youtube.com/watch?v=69o2x3kL3gE&t=6s"><img class="footer-social-icon" src="./source/svg/youtube-icon.svg" alt="유튜브"></a>
-	    </li>
-	  </ul>
-	</div>
-</article>
-</footer>
+
+	<footer id="footer" class="footer-nav row expanded collapse">
+		<article class="ft_wrap">
+			<div class="footer-nav-left">
+				<img src="./source/image/logo_footer.png">
+				<p class="footer-copyright">ⓒ 2015 동원. All rights reserved.</p>
+			</div>
+			<div class="footer-nav-center">
+				<ul class="footer-nav-menu">
+					<li class="footer-nav-item">
+						<a href="#">법적고지</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">개인정보처리방침</a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="#">정도경영신고센터</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-nav-right">
+				<ul class="footer-nav-menu-icons">
+					<li class="footer-nav-item">
+						<a href="https://www.instagram.com/dongwongroup/"><img class="footer-social-icon"
+								src="./source/svg/email-icon.svg" alt="이메일"></a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://ko-kr.facebook.com/dongwongroup/"><img class="footer-social-icon"
+								src="./source/svg/facebook-icon.svg" alt="페이스북"></a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://blog.naver.com/dongwon_well"><img class="footer-social-icon"
+								src="./source/svg/twitter-icon.svg" alt="트위터"></a>
+					</li>
+					<li class="footer-nav-item">
+						<a href="https://www.youtube.com/watch?v=69o2x3kL3gE&t=6s"><img class="footer-social-icon"
+								src="./source/svg/youtube-icon.svg" alt="유튜브"></a>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</footer>
 </body>
+
 </html>
