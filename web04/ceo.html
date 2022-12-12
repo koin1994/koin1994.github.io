@@ -5,19 +5,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>메인페이지</title>
+	<title>CEO 소개</title>
 	<!-- 헤드 부분 인클루드 -->
     
-	<script src="./index_files/jquery-latest.js.다운로드"></script>
-	<link rel="stylesheet" href="./index_files/normalize.css">
-	<link rel="stylesheet" href="./index_files/foundation.min.css">
-	<link rel="stylesheet" href="./index_files/motion-ui.min.css">
-	<link rel="stylesheet" href="./index_files/foundation-prototype.min.css">
-	<link href="./index_files/foundation-icons.css" rel="stylesheet" type="text/css">
-	<script src="./index_files/jquery-2.1.4.min.js.다운로드"></script>
-	<script src="./index_files/foundation.min.js.다운로드"></script>
-	<script src="./index_files/motion-ui.min.js.다운로드"></script>
-	<link rel="stylesheet" type="text/css" href="./index_files/ecommerce-product-slider.scss">
+	<script src="./source/js,css/postcode.v2.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation-prototype.min.css">
+	<link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.3/motion-ui.min.js"></script>
+	
 	<script>
 	$(document).ready(function(){
 		$(document).foundation();
@@ -63,7 +62,7 @@
    <div class="top-bar-left" id="gnb">
    	 <!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
      <ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e">
-       <li class="menu-text" role="menuitem"><img src="./index_files/logo_header.png" class="logo"></li>
+       <li class="menu-text" role="menuitem"><img src="./source/image/logo_header.png" class="logo"></li>
        <li role="menuitem"><a href="index.html">Home</a></li>
        <li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true" aria-label="회사소개">
 			<a href="#">회사소개</a>
@@ -97,10 +96,10 @@
         <button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous Slide</span>◀</button>
         <button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next Slide</span>▶</button>
         <li class="orbit-slide" data-slide="0" style="display: none; position: relative;">
-          <img src="./index_files/bg_mainVisual01.jpg" alt="더미이미지">
+          <img src="./source/image/slider1.jpg" alt="더미이미지">
         </li>
         <li class="orbit-slide is-active" data-slide="1" style="position: relative; top: 0px; display: block;" aria-live="polite">
-          <img src="./index_files/bg_mainVisual02.jpg" alt="더미이미지">
+          <img src="./source/image/slider2.jpg" alt="더미이미지">
         </li>
       </ul>
     </div>
@@ -112,13 +111,13 @@
 			</div>
     <article class="grid-container">
         <div class="grid-x grid-margin-x">
-          <div class="medium-6 cell small-order-2 medium-order-1">
+          <div class="medium-6 cell small-order-2 style="padding-left:150px; medium-order-1">
             <h4>안녕하십니까! 동원F&amp;B CEO 김재옥입니다.</h4>
             <p>동원F&amp;B는 동원산업의 식품사업부문이 분리 독립하여 2000년 11월 1일에 탄생한 종합식품회사입니다. 동원F&amp;B라는 사명(社名)은 ‘동원 Food &amp; Beverage’의 준말이자 First &amp; Best를 추구하겠다는 굳은 의지의 상징입니다.
 				동원F&amp;B는 1982년 첫 출시된 이후 2019년 누적판매량 65억 캔을 돌파한 국가대표 참치캔 ‘동원참치’를 시작으로 국내 시장 1위를 놓치지 않고 소비자들의 사랑을 받고 있는 ‘양반김’과 ‘양반죽’, 짜지 않아 맛 좋은 고급 캔햄 ‘리챔’, 100% 국내산 1A 등급 원유로 만든 유가공 브랜드 ‘덴마크’ 등 다양한 프리미엄 제품들을 소비자들에게 선보이며 지속적으로 성장하고 있습니다.</p>
           </div>
           <div class="medium-6 cell small-order-1 medium-order-2">
-            <img class="thumbnail" src="./ceo_files/img_ceo.jpg">
+            <img class="thumbnail" src="./source/image/ceo.jpg">
           </div>
         </div>
     
@@ -137,49 +136,42 @@
           </div>
         </div>
     </article>
- 	<footer id="footer" class="footer-nav row expanded collapse">
-    	<!-- 푸터 부분 인클루드 -->
-    	
-
-
-
-
-<!-- 푸터 내용 기술 -->
-<article class="ft_wrap">
-	<div class="footer-nav-left">
-		<img src="./ceo_files/logo_footer03.png">
-	  <p class="footer-copyright">ⓒ 2015 동원. All rights reserved.</p>
-	</div>
-	<div class="footer-nav-center">
-	  <ul class="footer-nav-menu">
-	    <li class="footer-nav-item">
-	      <a href="https://www.dongwonfnb.com/services/Etc/Terms">법적고지</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.dongwonfnb.com/services/Etc/Privacy">개인정보처리방침</a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.dongwon.com/ethics/report/write">정도경영신고센터</a>
-	    </li>
-	  </ul>
-	</div>
-	<div class="footer-nav-right">
-	  <ul class="footer-nav-menu-icons">
-	    <li class="footer-nav-item">
-	      <a href="http://localhost:8093/ceo.do/get-involved/support.html"><img class="footer-social-icon" src="./ceo_files/email-icon.svg" alt=""></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.facebook.com/foundation/"><img class="footer-social-icon" src="./ceo_files/facebook-icon.svg" alt=""></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://twitter.com/FoundationCSS"><img class="footer-social-icon" src="./ceo_files/twitter-icon.svg" alt=""></a>
-	    </li>
-	    <li class="footer-nav-item">
-	      <a href="https://www.youtube.com/channel/UCS7eqSwmBYuslPEKeJBq-kg"><img class="footer-social-icon" src="./ceo_files/youtube-icon.svg" alt=""></a>
-	    </li>
-	  </ul>
-	</div>
-</article>
-    </footer>
-
-</body></html>
+	<footer id="footer" class="footer-nav row expanded collapse">
+		<article class="ft_wrap">
+			<div class="footer-nav-left">
+				<img src="./source/image/logo_footer.png">
+			  <p class="footer-copyright">ⓒ 2015 동원. All rights reserved.</p>
+			</div>
+			<div class="footer-nav-center">
+			  <ul class="footer-nav-menu">
+				<li class="footer-nav-item">
+				  <a href="#">법적고지</a>
+				</li>
+				<li class="footer-nav-item">
+				  <a href="#">개인정보처리방침</a>
+				</li>
+				<li class="footer-nav-item">
+				  <a href="#">정도경영신고센터</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="footer-nav-right">
+			  <ul class="footer-nav-menu-icons">
+				<li class="footer-nav-item">
+				  <a href="https://www.instagram.com/dongwongroup/"><img class="footer-social-icon" src="./source/svg/email-icon.svg" alt="이메일"></a>
+				</li>
+				<li class="footer-nav-item">
+				  <a href="https://ko-kr.facebook.com/dongwongroup/"><img class="footer-social-icon" src="./source/svg/facebook-icon.svg" alt="페이스북"></a>
+				</li>
+				<li class="footer-nav-item">
+				  <a href="https://blog.naver.com/dongwon_well"><img class="footer-social-icon" src="./source/svg/twitter-icon.svg" alt="트위터"></a>
+				</li>
+				<li class="footer-nav-item">
+				  <a href="https://www.youtube.com/watch?v=69o2x3kL3gE&t=6s"><img class="footer-social-icon" src="./source/svg/youtube-icon.svg" alt="유튜브"></a>
+				</li>
+			  </ul>
+			</div>
+		</article>
+		</footer>
+		</body>
+		</html>
