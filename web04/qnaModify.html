@@ -26,12 +26,21 @@
 		});
 	</script>
 	<style>
+		.top-bar {
+			background: #fff;
+		}
+
+		.a {
+			color: #fff;
+		}
+
 		ul {
 			list-style: none;
 		}
 
 		#gnb>ul>li[role="menuitem"] {
-			height: 38px;
+			height: 65px;
+			background-color: #fff;
 		}
 
 		#gnb>ul>li.menu-text[role="menuitem"] {
@@ -116,14 +125,15 @@
 
 <body>
 	<header id="header">
-		<nav class="top-bar">
+		<nav class="top-bar" style="height : 60px;">
 			<div class="top-bar-left" id="gnb">
 				<!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
-				<ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e">
-					<li class="menu-text" role="menuitem"><img src="./source/image/logo_header.png" class="logo"></li>
-					<li role="menuitem"><a href="index.html">Home</a></li>
+				<ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e"
+					style="background: white;">
+					<li><a href="index.html"><img src="./source/image/logo_header.png" alt="logo"></a></li>
+					<li role="menuitem" style="padding-top:15px;"><a href="index.html">Home</a></li>
 					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
-						aria-label="회사소개">
+						aria-label="회사소개" style="padding-top:15px">
 						<a href="#">회사소개</a>
 						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
 							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
@@ -133,7 +143,7 @@
 						</ul>
 					</li>
 					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
-						aria-label="브랜드소개">
+						aria-label="브랜드소개" style="padding-top:15px">
 						<a href="#">브랜드소개</a>
 						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
 							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
@@ -143,7 +153,7 @@
 						</ul>
 					</li>
 					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
-						aria-label="고객센터" data-is-click="false">
+						aria-label="고객센터" data-is-click="false" style="padding-top:15px">
 						<a href="#">고객센터</a>
 						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
 							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
@@ -157,7 +167,7 @@
 				</ul>
 			</div>
 			<div class="top-bar-right">
-				<ul class="menu">
+				<ul class="menu" style="background : white;">
 					<li><a href="login.html">로그인</a></li>
 					<li><a href="agree.html">회원가입</a></li>
 				</ul>
@@ -166,10 +176,7 @@
 		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="" data-resize="mi6vi7-orbit"
 			id="mi6vi7-orbit" data-e="5cihe4-e" data-events="resize">
 			<ul class="orbit-container" tabindex="0" style="height: 792.906px;">
-				<button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous
-						Slide</span>◀</button>
-				<button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next
-						Slide</span>▶</button>
+
 				<li class="orbit-slide" data-slide="0" style="display: none; position: relative;">
 					<img src="./source/image/slider1.jpg" alt="더미이미지">
 				</li>
@@ -180,41 +187,43 @@
 			</ul>
 		</div>
 	</header>
-	
+
 	<div class="content" id="content">
-	    <div class="row column text-center">
-	      <h2 class="h1">질문 및 답변 수정</h2>
-	      <hr>
-	      <div class="container">
-	      	<form action="qnaWrite.html" method="post">
-			      <table id="table1">
-			      	<tbody>
-			      		<tr>
-			      			<th style="background-color:#dcdcdc">글 제목</th>
-			      			<td>
-			      				<input type="hidden" name="no" id="no" value="1">
-			      				<input type="text" name="title" id="title" placeholder="제목 입력" value="질문1" maxlength="98" required="">
-			      			</td>
-			      		</tr>
-			      		<tr>
-			      			<th style="background-color:#dcdcdc">글 내용</th>
-			      			<td>
-			      				<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100" maxlength="800" required="">질문1</textarea>
-			      			</td>
-			      		</tr>
-			      		<tr>
-			      			<td colspan="2">
-			      				<input type="submit" class="submit success button" value="글 수정">
-			      				<a class="button" href="qna.html">글 목록</a>
-			      			</td>
-			      		</tr>
-			      	</tbody>
-			      </table>
-			   </form>   
-	      </div>
-	    </div>
+		<div class="row column text-center">
+			<h2 class="h1">질문 및 답변 수정</h2>
+			<hr>
+			<div class="container">
+				<form action="qnaWrite.html" method="post">
+					<table id="table1">
+						<tbody>
+							<tr>
+								<th style="background-color:#dcdcdc">글 제목</th>
+								<td>
+									<input type="hidden" name="no" id="no" value="1">
+									<input type="text" name="title" id="title" placeholder="제목 입력" value="질문1"
+										maxlength="98" required="">
+								</td>
+							</tr>
+							<tr>
+								<th style="background-color:#dcdcdc">글 내용</th>
+								<td>
+									<textarea name="content" id="content" placeholder="내용 입력" rows="8" cols="100"
+										maxlength="800" required="">질문1</textarea>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<input type="submit" class="submit success button" value="글 수정">
+									<a class="button" href="qna.html">글 목록</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</form>
+			</div>
+		</div>
 	</div>
-    <footer id="footer" class="footer-nav row expanded collapse">
+	<footer id="footer" class="footer-nav row expanded collapse">
 		<article class="ft_wrap">
 			<div class="footer-nav-left">
 				<img src="./source/image/logo_footer.png">
@@ -256,14 +265,14 @@
 		</article>
 	</footer>
 	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:3286259,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 3286259, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
 			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 	</script>
 </body>
 

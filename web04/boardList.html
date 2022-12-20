@@ -26,12 +26,21 @@
 		});
 	</script>
 	<style>
+		.top-bar {
+			background: #fff;
+		}
+
+		.a {
+			color: #fff;
+		}
+
 		ul {
 			list-style: none;
 		}
 
 		#gnb>ul>li[role="menuitem"] {
-			height: 38px;
+			height: 65px;
+			background-color: #fff;
 		}
 
 		#gnb>ul>li.menu-text[role="menuitem"] {
@@ -116,14 +125,15 @@
 
 <body>
 	<header id="header">
-		<nav class="top-bar">
+		<nav class="top-bar" style="height : 60px;">
 			<div class="top-bar-left" id="gnb">
 				<!-- <button class="menu-icon" type="button" data-toggle="responsive-menu"></button> -->
-				<ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e">
-					<li class="menu-text" role="menuitem"><img src="./source/image/logo_header.png" class="logo"></li>
-					<li role="menuitem"><a href="index.html">Home</a></li>
+				<ul class="dropdown menu" data-dropdown-menu="" role="menubar" data-e="gezuiw-e"
+					style="background: white;">
+					<li><a href="index.html"><img src="./source/image/logo_header.png" alt="logo"></a></li>
+					<li role="menuitem" style="padding-top:15px;"><a href="index.html">Home</a></li>
 					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
-						aria-label="회사소개">
+						aria-label="회사소개" style="padding-top:15px">
 						<a href="#">회사소개</a>
 						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
 							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
@@ -133,7 +143,7 @@
 						</ul>
 					</li>
 					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
-						aria-label="브랜드소개">
+						aria-label="브랜드소개" style="padding-top:15px">
 						<a href="#">브랜드소개</a>
 						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
 							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
@@ -143,7 +153,7 @@
 						</ul>
 					</li>
 					<li class="has-submenu is-dropdown-submenu-parent opens-right" role="menuitem" aria-haspopup="true"
-						aria-label="고객센터" data-is-click="false">
+						aria-label="고객센터" data-is-click="false" style="padding-top:15px">
 						<a href="#">고객센터</a>
 						<ul class="submenu menu vertical is-dropdown-submenu first-sub" data-submenu="" role="menu">
 							<li role="menuitem" class="is-submenu-item is-dropdown-submenu-item"><a
@@ -157,147 +167,143 @@
 				</ul>
 			</div>
 			<div class="top-bar-right">
-				<ul class="menu">
+				<ul class="menu" style="background : white;">
 					<li><a href="login.html">로그인</a></li>
 					<li><a href="agree.html">회원가입</a></li>
 				</ul>
 			</div>
 		</nav>
-		<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="" data-resize="mi6vi7-orbit"
-			id="mi6vi7-orbit" data-e="5cihe4-e" data-events="resize">
-			<ul class="orbit-container" tabindex="0" style="height: 792.906px;">
-				<button class="orbit-previous" aria-label="previous" tabindex="0"><span class="show-for-sr">Previous
-						Slide</span>◀</button>
-				<button class="orbit-next" aria-label="next" tabindex="0"><span class="show-for-sr">Next
-						Slide</span>▶</button>
-				<li class="orbit-slide" data-slide="0" style="display: none; position: relative;">
-					<img src="./source/image/slider1.jpg" alt="더미이미지">
-				</li>
-				<li class="orbit-slide is-active" data-slide="1" style="position: relative; top: 0px; display: block;"
-					aria-live="polite">
-					<img src="./source/image/slider2.jpg" alt="더미이미지">
-				</li>
-			</ul>
-		</div>
+
 	</header>
-	<div class="content" id="content">
+	<div class="callout large">
 		<div class="row column text-center">
-			<h2 class="h1">공지사항</h2>
-			<hr>
-			<div class="container">
-				<table>
-					<thead>
-						<tr>
-							<th width="80">No</th>
-							<th>Title</th>
-							<th width="120">RegDate</th>
-							<th width="100">Visited</th>
-						</tr>
-					</thead>
-					<tbody>
+			<h1>공지사항</h1>
 
-						<tr>
-							<td>1</td>
-							<td><a href="./boardDetail1.html">동원F&amp;B, 더현대 서울에 ‘양반’ 팝업스토어 운영</a></td>
-							<td>
-								
-								2022-11-25
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>2</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=6">동원F&B, 진한 가쓰오부시 풍미의 안주용 맛살 ‘리얼 가쓰오 크랩스’ 출시</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>3</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=11">동원F&B 뉴트리플랜, 연극 ‘옥탑방고양이’와 유기묘 후원 캠페인 진행</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>4</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=10">동원F&B 동원샘물, 샘물 업계 최초 친환경 상품 ‘그린스타’ 인증 획득</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>5</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=4">동원F&B, ‘동원참치’&’영화 E.T’ 40주년 기념 콜라보 한정판 출시</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>6</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=5">동원F&B, 바삭한 치킨에 사이드 메뉴까지 담은 ‘퀴진 인싸이드 치킨’ 출시</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>7</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=7">동원F&B, 한국새생명복지재단과 사회공헌을 위한 MOU 체결</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>8</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=8">동원F&B, 동원참치 ‘#한숨에한캔’ 챌린지 틱톡 우수 광고 사례 선정</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						<tr>
-							<td>9</td>
-							<td><a href="http://localhost:8093/board/detail.do?seq=9">동원F&B, 와인 안주로 즐기기 좋은 스낵치즈 ‘덴마크 픽앤고’ 2종 출시</a></td>
-							<td>
-
-								2022-11-23
-							</td>
-							<td>0</td>
-						</tr>
-
-						
-
-					</tbody>
-				</table>
-
-				<div class="button-group">
-					<a class="button" href="http://localhost:8093/board/insert.do">글쓰기</a>
-				</div>
-
-			</div>
 
 		</div>
+	</div>
+
+	<div class="container">
+		<table>
+			<thead>
+				<tr>
+					<th width="80">No</th>
+					<th>Title</th>
+					<th width="120">RegDate</th>
+					<th width="100">Visited</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<td>1</td>
+					<td><a href="./boardDetail1.html">동원F&amp;B, 더현대 서울에 ‘양반’ 팝업스토어 운영</a></td>
+					<td>
+
+						2022-11-25
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=6">동원F&B, 진한 가쓰오부시 풍미의 안주용 맛살 ‘리얼 가쓰오 크랩스’
+							출시</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=11">동원F&B 뉴트리플랜, 연극 ‘옥탑방고양이’와 유기묘 후원 캠페인
+							진행</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=10">동원F&B 동원샘물, 샘물 업계 최초 친환경 상품 ‘그린스타’ 인증
+							획득</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>5</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=4">동원F&B, ‘동원참치’&’영화 E.T’ 40주년 기념 콜라보 한정판
+							출시</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>6</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=5">동원F&B, 바삭한 치킨에 사이드 메뉴까지 담은 ‘퀴진 인싸이드 치킨’
+							출시</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>7</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=7">동원F&B, 한국새생명복지재단과 사회공헌을 위한 MOU 체결</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>8</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=8">동원F&B, 동원참치 ‘#한숨에한캔’ 챌린지 틱톡 우수 광고 사례
+							선정</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+				<tr>
+					<td>9</td>
+					<td><a href="http://localhost:8093/board/detail.do?seq=9">동원F&B, 와인 안주로 즐기기 좋은 스낵치즈 ‘덴마크 픽앤고’ 2종
+							출시</a></td>
+					<td>
+
+						2022-11-23
+					</td>
+					<td>0</td>
+				</tr>
+
+
+
+			</tbody>
+		</table>
+
+		<div class="button-group">
+			<a class="button" href="http://localhost:8093/board/insert.do">글쓰기</a>
+		</div>
+
+	</div>
+
+	</div>
 	</div>
 	<footer id="footer" class="footer-nav row expanded collapse">
 		<article class="ft_wrap">
@@ -341,14 +347,14 @@
 		</article>
 	</footer>
 	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:3286259,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+		(function (h, o, t, j, a, r) {
+			h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+			h._hjSettings = { hjid: 3286259, hjsv: 6 };
+			a = o.getElementsByTagName('head')[0];
+			r = o.createElement('script'); r.async = 1;
+			r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
 			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+		})(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
 	</script>
 </body>
 
