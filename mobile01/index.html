@@ -77,119 +77,76 @@
     <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
     <style>
-        .agree_fr {
-			width: 300px;
-			white-space: pre-wrap;
-			margin: 10px auto;
-			padding: 24px;
-			border: 2px solid #eee;
-			height: 300px;
-			overflow-y: auto;
-		}
+        /* Swiper */
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+  
         .swiper {
-            width: 100%;
-            height: 100%;
+          width: 100%;
+          height: 100%;
         }
-
+  
         .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
         }
-
+  
         .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
+        /* header */
+        .custom::after { background-image: url("assets/icon/icon.png");  background-size:20px 20px;} 
 
-        .page_tit {
-            font-size: 5vw;
-            clear: both;
-            padding-bottom: 2rem;
-        }
+        /* page2 */
+        .agree_fr { width: 80%px; white-space:pre-wrap; margin: 0 auto; padding: 24px; border:2px solid #eee; height:300px; overflow-y:auto; }
 
+        /* page10~15 */
+        .sa { text-decoration: line-through;}
 
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            user-select: none;
-        }
-
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-
-        .bi {
-            vertical-align: -.125em;
-            fill: currentColor;
-        }
-
-        .nav-scroller {
-            position: relative;
-            z-index: 2;
-            height: 2.75rem;
-            overflow-y: hidden;
-        }
-
-        .nav-scroller .nav {
-            display: flex;
-            flex-wrap: nowrap;
-            padding-bottom: 1rem;
-            margin-top: -1px;
-            overflow-x: auto;
-            text-align: center;
-            white-space: nowrap;
-            -webkit-overflow-scrolling: touch;
-        }
         /* page17 */
         .kkt-video-player { clear:both; }
         .kkt-video-player::after { content:""; display:block; clear:both;}
         .vdo1-dimensions { width:320px; margin: 0; padding: 0; min-width:320px;  min-height:300px; }
         .vdo1-dimensions::after { content:""; clear:both; display:block; }
         .video-js .vjs-tech { display:block; width:auto; min-width:320px; min-height:300px;}
-    </style>
-    
-<style>
+      </style>
+      <style>
         /* 미디어 쿼리(미디어 규칙) */    
         /* 스마트폰 320px ~ 767px -> 중단점(break point) */
         @media screen and (min-width:320px) and (max-width:767px) {
             .pt { font-size:0.6rem; text-align: center;}
             .st { text-align: center;}
-            .vdo1-dimensions { width:80%; } 
+            .vdo1-dimensions { width:50%; } 
         }
         /* 태블릿 768px ~ 959px */
         @media screen and (min-width:768px) and (max-width:959px) { 
@@ -202,7 +159,6 @@
             .st { text-align: center;}
         }
         </style>
-
   
     
     <!-- TODO page0 메인 -->
@@ -503,7 +459,7 @@
                 <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
                 <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
                 <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+                
                 <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
             </nav>
         </div>
