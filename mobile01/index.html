@@ -8,7 +8,7 @@
     <title>KANGOL®</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
@@ -18,7 +18,12 @@
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+     <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
     <style>
         .agree_fr {
@@ -119,8 +124,15 @@
             white-space: nowrap;
             -webkit-overflow-scrolling: touch;
         }
+        /* page17 */
+        .kkt-video-player { clear:both; }
+        .kkt-video-player::after { content:""; display:block; clear:both;}
+        .vdo1-dimensions { width:320px; margin: 0; padding: 0; min-width:320px;  min-height:300px; }
+        .vdo1-dimensions::after { content:""; clear:both; display:block; }
+        .video-js .vjs-tech { display:block; width:auto; min-width:320px; min-height:300px;}
     </style>
-    <!-- TODO page0 -->
+    
+    <!-- TODO page0 메인 -->
 
     <body class="ui-mobile-viewport ui-overlay-a">
         <div id="page0" data-role="page" class="ui-page ui-page-theme-a ui-page-active">
@@ -151,34 +163,27 @@
                         회원가입
                     </a>
                 </div>
-                <div data-role="collapsible" data-mini="true">
-                    <h4>HEADWEAR</h4>
-                    <ul data-role="listview">
-                        <li><a href="#">Bucket</a></li>
-                        <li><a href="#">BaseBall Cap</a></li>
-                        <li><a href="#">Hunting Cap</a></li>
-                    </ul>
-                </div>
+                
                 <div data-role="collapsible" data-mini="true">
                     <h4>BEST</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Bag</a></li>
-                        <li><a href="#">Clothes</a></li>
-                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#page7">Bag</a></li>
+                        <li><a href="#page8">Clothes</a></li>
+                        <li><a href="#page9">Shoes</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
-                    <h4>EVENT</h4>
+                    <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">진행중</a></li>
-                        <li><a href="#">진행예정</a></li>
+                        <li><a href="#page17">비디오1</a></li>
+                        <li><a href="#page18">비디오2</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>NOTICE</h4>
                     <ul data-role="listview">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page5">공지사항</a></li>
+                        <li><a href="#page6">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
@@ -187,12 +192,12 @@
         <!-- TODO page0 nav -->
         <div class="nav-scroller py-1 mb-2 ">
             <nav class="nav d-flex justify-content-evenly">
-                <a class="p-2 link-secondary text-decoration-none" href="#">BAG</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">CLOTHES</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">SHOES</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">ACC</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">EVENT</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">SALE</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
             </nav>
         </div>
         <div class="swiper mySwiper">
@@ -241,7 +246,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-5 pt-0 border-top-4 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">More</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#page7">More</a></div>
                             </div>
                         </div>
                     </div>
@@ -260,7 +265,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">More</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#page8">More</a></div>
                             </div>
                         </div>
                     </div>
@@ -284,7 +289,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">More</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#page9">More</a></div>
                             </div>
                         </div>
                     </div>
@@ -304,7 +309,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">More</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#page10">More</a></div>
                             </div>
                         </div>
                     </div>
@@ -325,7 +330,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">More</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#page11">More</a></div>
                             </div>
                         </div>
                     </div>
@@ -342,7 +347,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-5 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">More</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#page4">More</a></div>
                             </div>
                         </div>
                     </div>
@@ -350,11 +355,11 @@
         <!-- TODO footer -->
             <footer class="py-3 my-4">
                 <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                    <li class="nav-item"><a href="#page0" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#page4" class="nav-link px-2 text-muted">Features</a></li>
+                    <li class="nav-item"><a href="#page7" class="nav-link px-2 text-muted">Pricing</a></li>
+                    <li class="nav-item"><a href="#page6" class="nav-link px-2 text-muted">FAQs</a></li>
+                    <li class="nav-item"><a href="#page5" class="nav-link px-2 text-muted">About</a></li>
                 </ul>
                 <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
             </footer>
@@ -363,7 +368,7 @@
 
 
 
-    <!-- TODO page1 -->
+    <!-- TODO page1 로그인 -->
         <div id="page1" data-role="page" class="ui-page ui-page-theme-a">
             <div class="container">
                 <!-- TODO page0 header -->
@@ -392,47 +397,41 @@
                         회원가입
                     </a>
                 </div>
-                <div data-role="collapsible" data-mini="true">
-                    <h4>HEADWEAR</h4>
-                    <ul data-role="listview">
-                        <li><a href="#">Bucket</a></li>
-                        <li><a href="#">BaseBall Cap</a></li>
-                        <li><a href="#">Hunting Cap</a></li>
-                    </ul>
-                </div>
+                
                 <div data-role="collapsible" data-mini="true">
                     <h4>BEST</h4>
                     <ul data-role="listview">
-                        <li><a href="#">Bag</a></li>
-                        <li><a href="#">Clothes</a></li>
-                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#page7">Bag</a></li>
+                        <li><a href="#page8">Clothes</a></li>
+                        <li><a href="#page9">Shoes</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
-                    <h4>EVENT</h4>
+                    <h4>홍보영상</h4>
                     <ul data-role="listview">
-                        <li><a href="#">진행중</a></li>
-                        <li><a href="#">진행예정</a></li>
+                        <li><a href="#page17">비디오1</a></li>
+                        <li><a href="#page18">비디오2</a></li>
                     </ul>
                 </div>
                 <div data-role="collapsible" data-mini="true">
                     <h4>NOTICE</h4>
                     <ul data-role="listview">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">질문 및 답변</a></li>
+                        <li><a href="#page5">공지사항</a></li>
+                        <li><a href="#page6">질문 및 답변</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- TODO page1 nav -->
+    
+        <!-- TODO page0 nav -->
         <div class="nav-scroller py-1 mb-2 ">
             <nav class="nav d-flex justify-content-evenly">
-                <a class="p-2 link-secondary text-decoration-none" href="#">BAG</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">CLOTHES</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">SHOES</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">ACC</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">EVENT</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#">SALE</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+                <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
             </nav>
         </div>
         <!-- TODO page1 content -->
@@ -440,7 +439,7 @@
             <div class="hero is-halfheight">
                 <div class="hero-body is-justify-content-center is-align-items-center">
                     <div class="columns is-flex is-flex-direction-column box">
-                        <form method="post" th:action="@{/ajax/getLogin.do}">
+                        <form method="post" a href="#page2">
                             <div class="column">
                                 <label for="id">아이디</label>
                                 <input class="input is-primary" type="text" placeholder="아이디 입력" name="id" id="id">
@@ -453,7 +452,7 @@
                                 <button class="button is-primary is-fullwidth" type="submit">Login</button>
                             </div>
                             <div class="has-text-centered">
-                                <p class="is-size-7"> 회원이 아니신가요? <a th:href="@{/member/agree.do}" class="has-text-primary">회원가입</a>
+                                <p class="is-size-7"> 회원이 아니신가요? <a href="#page2" class="has-text-primary">회원가입</a>
                                 </p>
                             </div>
                         </form>
@@ -477,7 +476,7 @@
     </div>
 
 
-    <!-- TODO page2 -->
+    <!-- TODO page2 약관 -->
     <div id="page2" data-role="page" class="ui-page ui-page-theme-a">
         <div class="container">
             <!-- TODO page2 header -->
@@ -506,47 +505,41 @@
                     회원가입
                 </a>
             </div>
-            <div data-role="collapsible" data-mini="true">
-                <h4>HEADWEAR</h4>
-                <ul data-role="listview">
-                    <li><a href="#">Bucket</a></li>
-                    <li><a href="#">BaseBall Cap</a></li>
-                    <li><a href="#">Hunting Cap</a></li>
-                </ul>
-            </div>
+            
             <div data-role="collapsible" data-mini="true">
                 <h4>BEST</h4>
                 <ul data-role="listview">
-                    <li><a href="#">Bag</a></li>
-                    <li><a href="#">Clothes</a></li>
-                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#page7">Bag</a></li>
+                    <li><a href="#page8">Clothes</a></li>
+                    <li><a href="#page9">Shoes</a></li>
                 </ul>
             </div>
             <div data-role="collapsible" data-mini="true">
-                <h4>EVENT</h4>
+                <h4>홍보영상</h4>
                 <ul data-role="listview">
-                    <li><a href="#">진행중</a></li>
-                    <li><a href="#">진행예정</a></li>
+                    <li><a href="#page17">비디오1</a></li>
+                    <li><a href="#page18">비디오2</a></li>
                 </ul>
             </div>
             <div data-role="collapsible" data-mini="true">
                 <h4>NOTICE</h4>
                 <ul data-role="listview">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">질문 및 답변</a></li>
+                    <li><a href="#page5">공지사항</a></li>
+                    <li><a href="#page6">질문 및 답변</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- TODO page2 nav -->
+
+    <!-- TODO page0 nav -->
     <div class="nav-scroller py-1 mb-2 ">
         <nav class="nav d-flex justify-content-evenly">
-            <a class="p-2 link-secondary text-decoration-none" href="#">BAG</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">CLOTHES</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">SHOES</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">ACC</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">EVENT</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">SALE</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
         </nav>
     </div>
     <!-- TODO page2 content -->
@@ -1612,7 +1605,7 @@
 </div>
 
 
-    <!-- TODO page3 -->
+    <!-- TODO page3 회원가입 -->
     <div id="page3" data-role="page" class="ui-page ui-page-theme-a">
         <div class="container">
             <!-- TODO page3 header -->
@@ -1641,47 +1634,41 @@
                     회원가입
                 </a>
             </div>
-            <div data-role="collapsible" data-mini="true">
-                <h4>HEADWEAR</h4>
-                <ul data-role="listview">
-                    <li><a href="#">Bucket</a></li>
-                    <li><a href="#">BaseBall Cap</a></li>
-                    <li><a href="#">Hunting Cap</a></li>
-                </ul>
-            </div>
+            
             <div data-role="collapsible" data-mini="true">
                 <h4>BEST</h4>
                 <ul data-role="listview">
-                    <li><a href="#">Bag</a></li>
-                    <li><a href="#">Clothes</a></li>
-                    <li><a href="#">Shoes</a></li>
+                    <li><a href="#page7">Bag</a></li>
+                    <li><a href="#page8">Clothes</a></li>
+                    <li><a href="#page9">Shoes</a></li>
                 </ul>
             </div>
             <div data-role="collapsible" data-mini="true">
-                <h4>EVENT</h4>
+                <h4>홍보영상</h4>
                 <ul data-role="listview">
-                    <li><a href="#">진행중</a></li>
-                    <li><a href="#">진행예정</a></li>
+                    <li><a href="#page17">비디오1</a></li>
+                    <li><a href="#page18">비디오2</a></li>
                 </ul>
             </div>
             <div data-role="collapsible" data-mini="true">
                 <h4>NOTICE</h4>
                 <ul data-role="listview">
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">질문 및 답변</a></li>
+                    <li><a href="#page5">공지사항</a></li>
+                    <li><a href="#page6">질문 및 답변</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <!-- TODO page3 nav -->
+
+    <!-- TODO page0 nav -->
     <div class="nav-scroller py-1 mb-2 ">
         <nav class="nav d-flex justify-content-evenly">
-            <a class="p-2 link-secondary text-decoration-none" href="#">BAG</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">CLOTHES</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">SHOES</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">ACC</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">EVENT</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#">SALE</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
         </nav>
     </div>
     <!-- TODO page3 content -->
@@ -1756,6 +1743,148 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>video
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+        </footer>
+    </div>
+</div>
+
+    <!-- TODO page4 lookbook -->
+    <div id="page4" data-role="page" class="ui-page ui-page-theme-a">
+        <div class="container">
+            <!-- TODO page4 header -->
+            <header class="blog-header lh-1 py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4 pt-1">
+                        <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                    </div>
+                    <div class="col-4 text-center">
+                        <a class="blog-header-logo text-dark" href="/"><img
+                                src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <a data-iconpos="notext" href="#pane4" data-role="button" data-icon="bars"></a>
+                    </div>
+                </div>
+        </div>
+    <!-- TODO page4 panel -->
+    <div data-role="panel" id="pane4" data-position="right" data-theme="a" data-display="push">
+        <div data-role="container">
+            <div data-role="button-groups">
+                <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                    로그인
+                </a>
+                <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                    회원가입
+                </a>
+            </div>
+            
+            <div data-role="collapsible" data-mini="true">
+                <h4>BEST</h4>
+                <ul data-role="listview">
+                    <li><a href="#page7">Bag</a></li>
+                    <li><a href="#page8">Clothes</a></li>
+                    <li><a href="#page9">Shoes</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible" data-mini="true">
+                <h4>video</h4>
+                <ul data-role="listview">
+                    <li><a href="#page17">비디오1</a></li>
+                    <li><a href="#page18">비디오2</a></li>
+                </ul>
+            </div>
+            <div data-role="collapsible" data-mini="true">
+                <h4>NOTICE</h4>
+                <ul data-role="listview">
+                    <li><a href="#page5">공지사항</a></li>
+                    <li><a href="#page6">질문 및 답변</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- TODO page0 nav -->
+    <div class="nav-scroller py-1 mb-2 ">
+        <nav class="nav d-flex justify-content-evenly">
+            <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+            <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+        </nav>
+    </div>
+    <!-- TODO page4 content -->
+    <div data-role="content" class="ui-content">
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Notice...">
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count ui-first-child">2022-12-28
+                <span class="ui-li-count ui-body-inherit">2</span>
+            </li>
+            <li>
+                <a href="#page17" class="ui-btn ui-btn-icon-right ui-icon-carat-r" data-rel="dialog" data-transition="pop">
+                    <h2>당신이 몰랐던 캉골의 이야기. 아는 척하기 좋은 브랜드 지식.</h2>
+                    <p>
+                        <strong>하긴 생각해보면 캥거루는 호주에만 사는데 영국 브랜드랑 무슨 상관이지?</strong>
+                    </p>
+                    <p>하긴 생각해보면 캥거루는 호주에만 사는데 영국 브랜드랑 무슨 상관이지?</p>
+                    <p class="ui-li-aside">
+                        <strong>17:30</strong>
+                    </p>
+                </a>
+            </li>
+            <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count">Thursday, October 7, 2022
+                <span class="ui-li-count ui-body-inherit">1</span>
+            </li>
+            <li class="ui-last-child">
+                <a href="#page18" class="ui-btn ui-btn-icon-right ui-icon-carat-r" data-rel="dialog" data-transition="pop">
+                    <h2>캉골 광고</h2>
+                    <p>
+                        <strong>캉골은 원래 캥거루가 아니었다? </strong>
+                    </p>
+                    <p>캉골은 원래 캥거루가 아니었다? </p>
+                    <p class="ui-li-aside">
+                        <strong>17:30</strong>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- TODO page17 비디오1 -->
+    <div id="page17" data-role="page" class="ui-page ui-page-theme-a ">
+        <div data-role="content" class="ui-content">
+            <div class="player">
+                <div class="kkt-video-player">
+                   <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
+                       <source src="assets/video/video1.mp4" type="video/mp4" />
+                   </video>
+                </div>
+              </div>
+            <a href="#page4" class="button is-fullwidth">뒤로 가기</a>
+        </div>
+    </div>
+    <!-- TODO page18 비디오2 -->
+    <div id="page18" data-role="page" class="ui-page ui-page-theme-a ">
+        <div data-role="content" class="ui-content">
+            <div class="player">
+                <div class="kkt-video-player">
+                   <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
+                       <source src="assets/video/video2.mp4" type="video/mp4" />
+                   </video>
+                </div>
+              </div>
+            <a href="#page4" class="button is-fullwidth">뒤로 가기</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
@@ -1767,9 +1896,1016 @@
     </div>
 </div>
 
+<!-- TODO page5 -->
+<div id="page5" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane5" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="pane5" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page5 content -->
+<div data-role="content" class="ui-content">
+    <h2 class="ui-title">공지사항</h2>
+    <div class="ui-container">
+        <div id="table-column-toggle-popup-placeholder" class="ui-screen-hidden"></div><a href="#table-column-toggle-popup" id="table-column-toggle-button" data-rel="popup" data-theme="inherit" class="ui-button ui-shadow ui-corner-all ui-widget ui-button-inherit ui-table-columntoggle-btn ui-mini" role="button" style="display:none">Columns...</a><table data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-responsive table-stroke ui-table ui-table-columntoggle">
+            <thead>
+                <tr>
+                    <th data-priority="2" data-colstart="2" class="ui-table-priority-2 ui-table-cell-visible">연번</th>
+                    <th data-colstart="2">제목</th>
+                    <th data-priority="3" data-colstart="3" class="ui-table-priority-3 ui-table-cell-visible">작성일</th>
+                    <th data-priority="1" data-colstart="4" class="ui-table-priority-1"><abbr title="Rotten Tomato Rating">만족도</abbr></th>
+                    <th data-priority="5" data-colstart="5" class="ui-table-priority-5 ui-table-cell-hidden">조회수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">1</th>
+                    <td><a href="#page21" data-rel="external">★세금계산서 발행 안내★</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">2</th>
+                    <td><a href="#page21" data-rel="external">▶ 캉골 가품 주의 안내</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">3</th>
+                    <td><a href="#page21" data-rel="external">★적립금 소멸 안내 (2020.12.31 이전 적립금)★</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">4</th>
+                    <td><a href="#page21" data-rel="external">10/3, 10 휴무 안내</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/288</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">5</th>
+                    <td><a href="#page21" data-rel="external">6/1, 6 휴무 안내</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">6</th>
+                    <td><a href="#page21" data-rel="external">6/1, 6 휴무 안내</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">1</th>
+                    <td><a href="#page21" data-rel="external">6/1, 6 휴무 안내</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+                <tr>
+                    <th class="ui-table-priority-2 ui-table-cell-visible">1</th>
+                    <td><a href="#page21" data-rel="external">6/1, 6 휴무 안내</a></td>
+                    <td class="ui-table-priority-3 ui-table-cell-visible">22/1/28</td>
+                    <td class="ui-table-priority-1">100%</td>
+                    <td class="ui-table-priority-5 ui-table-cell-hidden">74</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+<div id="page6" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane6" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="pane6" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page5 content -->
+<div data-role="content" class="ui-content">
+    <div data-role="container">
+        <h2 class="ui-title">자주 묻는 질문</h2>
+        <div data-role="collapsible">
+            <h3>배송은 얼마나 걸리나요?</h3>
+            <p>구매일 기준 1~3일 소모 됩니다.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>교환은 무료 인가요?</h3>
+            <p>결제일 기준 7일 안에 교환신청 시 무료 입니다.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>교환후 환불이 가능한가요?</h3>
+            <p>교환 후 7일이내에 환불 신청 시 가능 합니다.</p>
+        </div>
+        <div data-role="collapsible">
+            <h3>입고알람 기능이 따로 있나요?</h3>
+            <p>입고 알람 기능은 따로 없습니다.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+
+<div id="page7" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane7" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="pane7" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page5 가방 -->
+<div data-role="content" class="ui-content">
+    <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
+        <li class="ui-li-has-thumb ui-first-child">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
+                <h2>가방</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
+                <h2>가방</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
+                <h2>가방</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
+                <h2>가방</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
+                <h2>가방</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
+                <h2>가방</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+
+<div id="page8" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane8" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="pane8" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page8 옷 -->
+<div data-role="content" class="ui-content">
+    <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
+        <li class="ui-li-has-thumb ui-first-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
+                <h2>옷</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
+                <h2>옷</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
+                <h2>옷</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
+                <h2>옷</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
+                <h2>옷</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
+                <h2>옷</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+<div id="page9" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane9" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="pane9" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page8 옷 -->
+<div data-role="content" class="ui-content">
+    <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
+        <li class="ui-li-has-thumb ui-first-child">
+            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
+                <h2>신발</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb">
+            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
+                <h2>신발</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
+                <h2>신발</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
+                <h2>신발</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
+                <h2>신발</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
+                <h2>신발</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+<div id="page10" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane10" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="panel0" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page8 ACC -->
+<div data-role="content" class="ui-content">
+    <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
+        <li class="ui-li-has-thumb ui-first-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
+                <h2>acc</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
+                <h2>acc</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
+                <h2>acc</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
+                <h2>acc</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
+                <h2>acc</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
+                <h2>acc</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+<div id="page11" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane11" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="panel11" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page11 세일 -->
+<div data-role="content" class="ui-content">
+    <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
+        <li class="ui-li-has-thumb ui-first-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/img/main/74.jpg">
+                <h2>sale</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/img/main/74.jpg">
+                <h2>sale</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/img/main/74.jpg">
+                <h2>sale</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/img/main/74.jpg">
+                <h2>sale</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/img/main/74.jpg">
+                <h2>sale</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+        <li class="ui-li-has-thumb ui-last-child">
+            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+                <img src="https://m.kangolkorea.com/img/main/74.jpg">
+                <h2>sale</h2>
+                <p>150,000원</p>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
+
+
+<div id="page12" data-role="page" class="ui-page ui-page-theme-a">
+    <div class="container">
+        <!-- TODO page5 header -->
+        <header class="blog-header lh-1 py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a data-iconpos="notext" data-role="button" href="#page0" data-icon="home" title="Home">Home</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/"><img
+                            src="https://www.kangolkorea.com/img/header/logo.png"></a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a data-iconpos="notext" href="#pane11" data-role="button" data-icon="bars"></a>
+                </div>
+            </div>
+    </div>
+<!-- TODO page5 panel -->
+<div data-role="panel" id="panel12" data-position="right" data-theme="a" data-display="push">
+    <div data-role="container">
+        <div data-role="button-groups">
+            <a href="#page1" class="ui-btn" data-rel="dialog" data-transition="pop">
+                로그인
+            </a>
+            <a href="#page2" class="ui-btn" data-rel="dialog" data-transition="pop">
+                회원가입
+            </a>
+        </div>
+        
+        <div data-role="collapsible" data-mini="true">
+            <h4>BEST</h4>
+            <ul data-role="listview">
+                <li><a href="#page7">Bag</a></li>
+                <li><a href="#page8">Clothes</a></li>
+                <li><a href="#page9">Shoes</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>video</h4>
+            <ul data-role="listview">
+                <li><a href="#page17">비디오1</a></li>
+                <li><a href="#page18">비디오2</a></li>
+            </ul>
+        </div>
+        <div data-role="collapsible" data-mini="true">
+            <h4>NOTICE</h4>
+            <ul data-role="listview">
+                <li><a href="#page5">공지사항</a></li>
+                <li><a href="#page6">질문 및 답변</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- TODO page0 nav -->
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
+</div>
+<!-- TODO page11 세일 -->
+<div data-role="content" class="ui-content">
+    <img src="" alt="">
+    <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview">
+     <li class="ui-li-static ui-body-inherit ui-first-child">
+         <p class="button">옷</p>
+         <p class="button">
+             <span class="sa">150000원</span> 100000원
+         </p>
+         <select name="sh" id="sh">
+             <option selected>사이즈 선택</option>
+             <option value="S">S</option>
+             <option value="M">M</option>
+             <option value="M">L</option>
+             
+         </select>
+         <input class="input" type="text"  placeholder="주소 입력" maxlength="150" required>
+         <input class="input" type="text"  placeholder="이름 입력" maxlength="150" required>
+         <input class="input" type="text"  placeholder="번호 입력" maxlength="150" required>
+     </li>
+     <li class="ui-li-static ui-body-inherit ui-last-child">
+          <button class="button is-primary is-fullwidth" type="submit">구매하기</button>
+     </li>
+ </ul>
+ </div>
+
+<div class="container">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
+    </footer>
+</div>
+</div>
 
 
 
 </body>
+<script>
+    if("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+            navigator.serviceWorker.register("/service-worker.js");
+        });
+    }
+    </script>
 
 </html>
