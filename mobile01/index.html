@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,6 +7,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable="no">
     <title>KANGOL®</title>
+
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="refresh" content="600">
+    <meta http-equiv="Page-Enter" content="revealtrans(Duration=1,Transition=12)">
+    <meta name="application-name" content="Kangol">
+    <meta name="subject" content="Kangol">
+    <meta name="keywords" content="(주)에스제이그룹, 가방, 옷, 신발">
+    <meta name="description" content="캉골 공식 스토어. 가방, 모자, 의류, 액세서리 판매.">
+    <meta name="author" content="koin1994">
+    <meta name="email" content="rlaxoduq133@naver.com">
+    <meta name="url" content="https://koin1994.github.io/mobile01">
+    <meta name="robots" content="index, flow">
+    
+    <!-- 그래픽 특성별 연동 설정-->
+    
+    <!-- 오픈 그래프 -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://koin1994.github.io/mobile01">
+    <meta property="og:title" content="Kangol">
+    <meta property="og:site_name" content="Kangol">
+    <meta property="og:image" content="siteimage.jpg">
+    <meta property="og:image:width" content="1000">
+    <meta property="og:image:height" content="400">
+    <meta property="og:locale" content="ko_KR">
+    <meta name="twitter:card" content="video">
+    <meta name="twitter:title" content="Kangol">
+    <meta name="twitter:description" content="캉골 공식 스토어. 가방, 모자, 의류, 액세서리 판매.">
+    <meta name="twitter:image" content="siteimage.jpg">
+
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
@@ -132,6 +164,28 @@
         .video-js .vjs-tech { display:block; width:auto; min-width:320px; min-height:300px;}
     </style>
     
+<style>
+        /* 미디어 쿼리(미디어 규칙) */    
+        /* 스마트폰 320px ~ 767px -> 중단점(break point) */
+        @media screen and (min-width:320px) and (max-width:767px) {
+            .pt { font-size:0.6rem; text-align: center;}
+            .st { text-align: center;}
+            .vdo1-dimensions { width:80%; } 
+        }
+        /* 태블릿 768px ~ 959px */
+        @media screen and (min-width:768px) and (max-width:959px) { 
+            .pt { font-size:0.9rem; text-align: center;}
+            .st { text-align: center;}
+        } 
+        /* 데스크탑 또는 랩탑 960px 이상 */     
+        @media screen and (min-width:960px) { 
+            .pt { font-size:1rem; text-align: center;}
+            .st { text-align: center;}
+        }
+        </style>
+
+  
+    
     <!-- TODO page0 메인 -->
 
     <body class="ui-mobile-viewport ui-overlay-a">
@@ -196,7 +250,7 @@
                 <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
                 <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
                 <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-                <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+                
                 <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
             </nav>
         </div>
@@ -538,7 +592,7 @@
             <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
             <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
             <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+           
             <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
         </nav>
     </div>
@@ -1667,7 +1721,7 @@
             <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
             <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
             <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+           
             <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
         </nav>
     </div>
@@ -1816,12 +1870,13 @@
             <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
             <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
             <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-            <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+            
             <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
         </nav>
     </div>
     <!-- TODO page4 content -->
     <div data-role="content" class="ui-content">
+        <h2 class="st">홍보영상 </h2>
         <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Notice...">
             <li data-role="list-divider" role="heading" class="ui-li-divider ui-bar-inherit ui-li-has-count ui-first-child">2022-12-28
                 <span class="ui-li-count ui-body-inherit">2</span>
@@ -1834,7 +1889,7 @@
                     </p>
                     <p>하긴 생각해보면 캥거루는 호주에만 사는데 영국 브랜드랑 무슨 상관이지?</p>
                     <p class="ui-li-aside">
-                        <strong>17:30</strong>
+                        <strong>15:28</strong>
                     </p>
                 </a>
             </li>
@@ -1845,47 +1900,21 @@
                 <a href="#page18" class="ui-btn ui-btn-icon-right ui-icon-carat-r" data-rel="dialog" data-transition="pop">
                     <h2>캉골 광고</h2>
                     <p>
-                        <strong>캉골은 원래 캥거루가 아니었다? </strong>
+                        <strong>캉골은 원래 캥거루가 아니었다?</strong>
                     </p>
-                    <p>캉골은 원래 캥거루가 아니었다? </p>
+                    <p>캉골은 원래 캥거루가 아니었다?</p>
                     <p class="ui-li-aside">
-                        <strong>17:30</strong>
+                        <strong>15:28</strong>
                     </p>
                 </a>
             </li>
         </ul>
     </div>
-    <!-- TODO page17 비디오1 -->
-    <div id="page17" data-role="page" class="ui-page ui-page-theme-a ">
-        <div data-role="content" class="ui-content">
-            <div class="player">
-                <div class="kkt-video-player">
-                   <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
-                       <source src="assets/video/video1.mp4" type="video/mp4" />
-                   </video>
-                </div>
-              </div>
-            <a href="#page4" class="button is-fullwidth">뒤로 가기</a>
-        </div>
-    </div>
-    <!-- TODO page18 비디오2 -->
-    <div id="page18" data-role="page" class="ui-page ui-page-theme-a ">
-        <div data-role="content" class="ui-content">
-            <div class="player">
-                <div class="kkt-video-player">
-                   <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
-                       <source src="assets/video/video2.mp4" type="video/mp4" />
-                   </video>
-                </div>
-              </div>
-            <a href="#page4" class="button is-fullwidth">뒤로 가기</a>
-        </div>
-    </div>
-
+    <!-- TODO page16 footer -->
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>video
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
@@ -1895,6 +1924,35 @@
         </footer>
     </div>
 </div>
+<!-- TODO page17 -->
+<div id="page17" data-role="page" class="ui-page ui-page-theme-a ">
+    <div data-role="content" class="ui-content">
+        <div class="player">
+            <div class="kkt-video-player">
+               <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
+                   <source src="./assets/video/video1.mp4" type="video/mp4" />
+               </video>
+            </div>
+          </div>
+        <a href="#page4" class="button is-fullwidth">뒤로 가기</a>
+    </div>
+</div>
+
+<!-- TODO page18 -->
+<div id="page18" data-role="page" class="ui-page ui-page-theme-a ">
+    <div data-role="content" class="ui-content">
+        <div class="player">
+            <div class="kkt-video-player">
+               <video id="vdo1" class="video-js" controls preload="auto" data-setup="{}" autoplay>
+                   <source src="./assets/video/video2.mp4" type="video/mp4" />
+               </video>
+            </div>
+          </div>
+        <a href="#page4" class="button is-fullwidth">뒤로 가기</a>
+    </div>
+</div>
+
+    
 
 <!-- TODO page5 -->
 <div id="page5" data-role="page" class="ui-page ui-page-theme-a">
@@ -1958,7 +2016,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+       
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2113,7 +2171,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+       
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2216,7 +2274,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2224,42 +2282,42 @@
 <div data-role="content" class="ui-content">
     <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
         <li class="ui-li-has-thumb ui-first-child">
-            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
                 <h2>가방</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb">
-            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
                 <h2>가방</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
                 <h2>가방</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
                 <h2>가방</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
                 <h2>가방</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/3e7826ad1058af9d68f610b1ae2fd454.jpg">
                 <h2>가방</h2>
                 <p>150,000원</p>
@@ -2344,7 +2402,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+        
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2352,42 +2410,42 @@
 <div data-role="content" class="ui-content">
     <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
         <li class="ui-li-has-thumb ui-first-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
                 <h2>옷</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
                 <h2>옷</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
                 <h2>옷</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
                 <h2>옷</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
                 <h2>옷</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202211/6d8add46714a36d53f760dd7abd1d59a.jpg">
                 <h2>옷</h2>
                 <p>150,000원</p>
@@ -2471,7 +2529,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+       
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2479,42 +2537,42 @@
 <div data-role="content" class="ui-content">
     <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
         <li class="ui-li-has-thumb ui-first-child">
-            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
                 <h2>신발</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb">
-            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
                 <h2>신발</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
                 <h2>신발</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
                 <h2>신발</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
                 <h2>신발</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202209/f08a9a9d7ce9ff1e20079014811d5054.jpg">
                 <h2>신발</h2>
                 <p>150,000원</p>
@@ -2598,7 +2656,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+       
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2606,42 +2664,42 @@
 <div data-role="content" class="ui-content">
     <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
         <li class="ui-li-has-thumb ui-first-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
                 <h2>acc</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
                 <h2>acc</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
                 <h2>acc</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
                 <h2>acc</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
                 <h2>acc</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/web/product/tiny/202212/0f922cf3df1dc770cd0c45c6e29246c9.jpg">
                 <h2>acc</h2>
                 <p>150,000원</p>
@@ -2725,7 +2783,7 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
+       
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2733,42 +2791,42 @@
 <div data-role="content" class="ui-content">
     <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow" data-inset="true" data-role="listview" data-filter="true" data-filter-placeholder="Search Station...">
         <li class="ui-li-has-thumb ui-first-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/img/main/74.jpg">
                 <h2>sale</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/img/main/74.jpg">
                 <h2>sale</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/img/main/74.jpg">
                 <h2>sale</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/img/main/74.jpg">
                 <h2>sale</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/img/main/74.jpg">
                 <h2>sale</h2>
                 <p>150,000원</p>
             </a>
         </li>
         <li class="ui-li-has-thumb ui-last-child">
-            <a href="#page8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+            <a href="#page12" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
                 <img src="https://m.kangolkorea.com/img/main/74.jpg">
                 <h2>sale</h2>
                 <p>150,000원</p>
@@ -2777,17 +2835,14 @@
     </ul>
 </div>
 
-<div class="container">
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-        </ul>
-        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
-    </footer>
+<div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+       <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
 </div>
 </div>
 
@@ -2853,7 +2908,6 @@
         <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
-        <a class="p-2 link-secondary text-decoration-none" href="#page5">EVENT</a>
         <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
     </nav>
 </div>
@@ -2864,7 +2918,7 @@
      <li class="ui-li-static ui-body-inherit ui-first-child">
          <p class="button">옷</p>
          <p class="button">
-             <span class="sa">150000원</span> 100000원
+             <span class="sa">150000원</span> 
          </p>
          <select name="sh" id="sh">
              <option selected>사이즈 선택</option>
@@ -2883,17 +2937,14 @@
  </ul>
  </div>
 
-<div class="container">
-    <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-        </ul>
-        <p class="text-center text-muted">COPYRIGHTⓒ <br>2016 KANGOL®</p>
-    </footer>
+ <div class="nav-scroller py-1 mb-2 ">
+    <nav class="nav d-flex justify-content-evenly">
+        <a class="p-2 link-secondary text-decoration-none" href="#page7">BAG</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page8">CLOTHES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page9">SHOES</a>
+        <a class="p-2 link-secondary text-decoration-none" href="#page10">ACC</a>
+       <a class="p-2 link-secondary text-decoration-none" href="#page11">SALE</a>
+    </nav>
 </div>
 </div>
 
